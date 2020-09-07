@@ -48,7 +48,1440 @@
       <div id="content-wrapper">
         <h1 class="display-4" id="forum-activities-dashboard">Forum activities dashboard<a class="fa fa-anchor" href="#forum-activities-dashboard" onclick="event.stopPropagation()"></a></h1>
         <div>
-          <p><span class="dimmed">[No data yet]</span></p>
+          <p><span class="dimmed">[This page was last updated on Sep 06 2020]</span></p>
+          <panel type="info" collapsed id="1-neil-rjee-neilbaner-14-posts"><template slot="_header">
+              <h3 id="1-neil-rjee-neilbaner-14-posts">1. NEIL..RJEE <code v-pre>@neilbaner</code> (14 posts)<a class="fa fa-anchor" href="#1-neil-rjee-neilbaner-14-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/36" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Using * wildcard for imports</strong></p>
+              </template>
+              <p>Is it ever acceptable to use the * wildcard in an import statement? For example, I have a package called &quot;task&quot; with some different classes, all of which are accessed by my main Duke class in another package. Is it necessary to import every single class separately, or may I use, say, <code v-pre>import com.neilbaner.duke.task.*</code> ?</p>
+              <p>Thank you!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/27" expanded><template slot="_header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Policy on use of this keyword</strong></p>
+              </template>
+              <p>Can I clarify when we are expected to use the &quot;this&quot; keyword to access member variables in a class? Personally, I prefer to use &quot;this&quot; at all times to be explicit, but I seem to remember being told (either in lecture or in tutorial, can't seem to recall which) not to use it when not required to cut down on clutter. I couldn't find anything on this in the Java coding standard guide. The notes on the website on the use of the &quot;this&quot; keyword don't cover this either.</p>
+              <p>I just wanted to confirm if I should always use it or not?</p>
+              <p>Thank you!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/16" expanded><template slot="_header">
+                <p><strong>3. <span aria-hidden="true" class="fas fa-info-circle"></span> 💡[<a href="http://repl.it">repl.it</a>] Replit Java version</strong></p>
+              </template>
+              <p>Note that <a href="http://repl.it">repl.it</a> uses Java version 1.8.0, aka Java 8, NOT Java 11 as we are using for class normally. This may or may not have implications for one of the exercises, due to differences in the String class (eg. Java 11 having some very convenient additions not present in Java 8...)
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/15" expanded><template slot="_header">
+                <p><strong>4. <span aria-hidden="true" class="fas fa-info-circle"></span> [Week 3 Ex3] Instructions slightly unclear</strong></p>
+              </template>
+              <p><a href="https://nus-cs2113-ay2021s1.github.io/website/schedule/week3/topics.html#key-exercise-pass-objects-to-move-method">https://nus-cs2113-ay2021s1.github.io/website/schedule/week3/topics.html#key-exercise-pass-objects-to-move-method</a></p>
+              <p>The instructions for creating the move method specifies the following behaviour:</p>
+              <blockquote>
+                <ul>
+                  <li>Returns null and does nothing if either p or r is null</li>
+                </ul>
+              </blockquote>
+              <blockquote>
+                <ul>
+                  <li>Returns a new Point object that has attributes x and y that match those of r</li>
+                </ul>
+              </blockquote>
+              <blockquote>
+                <ul>
+                  <li>Does not modify p</li>
+                </ul>
+              </blockquote>
+              <blockquote>
+                <ul>
+                  <li>Updates r so that its attributes x and y match those of p</li>
+                </ul>
+              </blockquote>
+              <p>I think the instructions do not make clear whether the returned Point object should have attributes x and y matching those of r before the modification or after.</p>
+              <p>The expected output seems to indicate that it is the former; that is, the method returns the previous/initial position of the rectangle as a Point. There's also little point (no pun intended) in directly returning one of the parameters.</p>
+              <p>Perhaps the written instructions could be made slightly more explicit in mentioning this?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/14" expanded><template slot="_header">
+                <p><strong>5. <span aria-hidden="true" class="fas fa-info-circle"></span> [Week 3 Ex2] Using Accessors/Getters vs directly accessing member variables</strong></p>
+              </template>
+              <p>Hi Prof,</p>
+              <p>Week 3 Ex2 on <a href="http://repl.it">repl.it</a> requires us to calculate the area of a rectangle object, by multiplying its height and width together. Is it recommended to use the getter methods for the dimensions of the rectangle, or to just directly access the height and width variables? I noticed the model solution used the latter approach, but I used the getter methods myself.</p>
+              <p>The comments in the skeleton code suggest using the setter for changing the dimensions rather than directly modifying the member variables, so I'm wondering why the model solution accessed the member variables directly rather than using the getters.</p>
+              <p>Thank you, have a great day!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/12" expanded><template slot="_header">
+                <p><strong>6. <span aria-hidden="true" class="fas fa-info-circle"></span> 💡AdoptOpenJDK - potential solution to JDK installation issues?</strong></p>
+              </template>
+              <p>I hear a lot of my friends having issues with installing Java - specifically, the part about getting it to show up in their PATH as expected - so I thought I'd share what worked for me.</p>
+              <p>I installed OpenJDK using the AdoptOpenJDK installer, linked <a href="https://adoptopenjdk.net/">here</a>. I chose OpenJDK 11 and Hotspot JVM.</p>
+              <p>Simply downloading and running the installer should, in theory, configure everything as necessary. By default, the installer will add the JDK to the PATH, so you should not need to perform any additional setup, except configuring your IDE (IntelliJ IDEA or whatever you might be using) to use the appropriate JDK.</p>
+              <p>Has anyone else had success using this particular installer?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/3" expanded><template slot="_header">
+                <p><strong>7. <span aria-hidden="true" class="fas fa-info-circle"></span> Individual Project Repo: Public or Private?</strong></p>
+              </template>
+              <p>Hi Prof, should our repository for the individual project be made public or private? If the latter, then who should we add as collaborators?</p>
+              <p>Thank you!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/2" expanded><template slot="_header">
+                <p><strong>8. <span aria-hidden="true" class="fas fa-info-circle"></span> Glitter link broken</strong></p>
+              </template>
+              <p>Good day 😃</p>
+              <p>I might be getting ahead of myself, but I was trying to access the class Gitter chat, and can't seem to do so.</p>
+              <p>The first link on <a href="https://nus-cs2113-ay2021s1.github.io/website/admin/tools.html">this</a> page, which appears to link to <a href="https://nus-cs2113-ay2021s1.github.io/website/admin/urt_gitter">https://nus-cs2113-ay2021s1.github.io/website/admin/urt_gitter</a>, leads me to a 404 page on GitHub, while the other link <a href="https://gitter.im/nus-cs2113-AY2021S1/community">https://gitter.im/nus-cs2113-AY2021S1/community</a> takes me to a 404 on the Gitter website.</p>
+              <p>Is the chat just not up yet?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/2#issuecomment-670808653" expanded><template slot="_header">
+                <p><strong>9 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Ah, thank you. I suspected I was being a bit eager. I'll check back later.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/11#issuecomment-678306177" expanded><template slot="_header">
+                <p><strong>10 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Agreed, I'm fairly sure indentation counts towards the limit.</p>
+              <p>Don't ask me what happens if you have 30 levels of nested indentation though.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/15#issuecomment-678749094" expanded><template slot="_header">
+                <p><strong>11 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Ah, I didn't look at the hint. I figured it out when I saw the expected output. Thank you!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26#issuecomment-683349638" expanded><template slot="_header">
+                <p><strong>12 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>If it makes you feel any better @farice9 I did the same thing. Whoops. A bit more care while reading the instructions would go a long way I guess 😛
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/27#issuecomment-683482929" expanded><template slot="_header">
+                <p><strong>13 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Ah, thank you @hughjazzman don't know how I missed that.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/25#issuecomment-683483096" expanded><template slot="_header">
+                <p><strong>14 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I appear to have received the invite a few hours ago.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="2-wira-hmad-hughjazzman-12-posts"><template slot="_header">
+              <h3 id="2-wira-hmad-hughjazzman-12-posts">2. WIRA..HMAD <code v-pre>@hughjazzman</code> (12 posts)<a class="fa fa-anchor" href="#2-wira-hmad-hughjazzman-12-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/22" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Automated Text UI Testing</strong></p>
+              </template>
+              <p>OS: Windows 10</p>
+              <p>Increment: <a href="https://nus-cs2113-ay2021s1.github.io/website/schedule/week4/project.html#a-textuitesting">'A-TextUiTesting'</a></p>
+              <p>File: 'runtest.bat'</p>
+              <p>While working on the increment, I find an issue when using file compare ('FC') for the special characters '✓' and '✘'. In the output file 'ACTUAL.TXT', the corresponding characters seem to get converted to '?' (question mark), and the follow lines will be shown in the diff:</p>
+              <p>'''</p>
+              <p>Comparing files ACTUAL.TXT and EXPECTED.TXT</p>
+              <p>***** ACTUAL.TXT</p>
+              <p>Got it. I've added this task:</p>
+              <p>[D][?] do homework (by: no idea)</p>
+              <p>Now you have 8 tasks in the list.</p>
+              <p>***** EXPECTED.TXT</p>
+              <p>Got it. I've added this task:</p>
+              <p>[D][Γ£ÿ] do homework (by: no idea)</p>
+              <p>Now you have 8 tasks in the list.</p>
+              <hr>
+              <p>***** ACTUAL.TXT</p>
+              <p>Nice! I've marked this task as done:</p>
+              <p>[T][?] read book</p>
+              <hr>
+              <p>***** EXPECTED.TXT</p>
+              <p>Nice! I've marked this task as done:</p>
+              <p>[T][Γ£ô] read book</p>
+              <hr>
+              <hr>
+              <p>'''</p>
+              <p>To fix it, I basically had to change the the expected character to be a '?' in 'EXPECTED.TXT' and it will give me that no differences were encountered. However, this would mean that the test cannot check for '✓' and '✘' characters being different.</p>
+              <p>I guess that the error probably comes from the special characters being unicode characters which is an issue if 'FC' isn't expecting it. From the <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/fc">docs</a>, there is an option for unicode, but it will be on the whole file and not just a single character.</p>
+              <p>I also note that in <a href="https://se-education.org/guides/tutorials/textUiTesting.html#updating-tests-as-the-program-evolves">Updating test as the program evolves</a>, &quot;we accept that the actual behavior should be the new expected behavior&quot;.</p>
+              <p>Is there any way for the test to check for those characters, or should I just stick with the question marks?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/20" expanded><template slot="_header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Week 3 Tutorial Exercise - Coding Standard Violations</strong></p>
+              </template>
+              <p>'''Java</p>
+              <p>import java.util.*;</p>
+              <p>public class Task {</p>
+              <pre><code v-pre>public static final String descriptionPrefix = &quot;description: &quot;;
+
+private String description;
+
+private boolean important;
+
+List&lt;string cwf=&quot;C:\repos\nus-cs2103\dashboards-base\contents\cs2113\forum-activities-panels.mbdf&quot;&gt; pastDescription = new ArrayList&lt;&gt;(); // a list of past descriptions
+
+
+
+public Task(String d) {
+
+  this.description = d;
+
+  if (!d.isEmpty())
+
+      this.important = true;
+
+}
+
+
+
+public String getAsXML() { return &quot;&lt;task cwf=&quot;C:\repos\nus-cs2103\dashboards-base\contents\cs2113\forum-activities-panels.mbdf&quot;&gt;&quot;+description+&quot;&lt;/task&gt;&quot;; }
+
+
+
+/**
+
+ * Print the description as a string.
+
+ */
+
+public void printingDescription(){ System.out.println(this); }
+
+
+
+@Override
+
+public String toString() { return descriptionPrefix + description; }
+</code></pre>
+              <p>}</p>
+              <p>'''</p>
+              <p>Other than the given ones regarding 'descriptionPrefix', 'printingDescription()', and 'important', these should be the other ones:</p>
+              <ul>
+                <li>
+                  <p>'import java.util.*' should be 'import java.util.ArrayList' to be explicit</p>
+                </li>
+                <li>
+                  <p>'pastDescription' should be 'pastDescriptions' to indicate collection</p>
+                </li>
+                <li>
+                  <p>'this.description = d' can just be 'description = d' to reduce noise</p>
+                </li>
+                <li>
+                  <p>'if' statement should be in wrapped in brackets</p>
+                </li>
+                <li>
+                  <p>'getAsXML()' should be 'getAsXml()' - lowercase</p>
+                </li>
+              </ul>
+              <p>Did I miss anything?</p>
+              <p></p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/11#issuecomment-678271798" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I assume since the wrapped lines is about the layout to improve readability, it is so that the code is easily viewable on smaller widths. Then this means the spaces would be part of the limit.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/21#issuecomment-680952533" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I would assume all the input we get is completely ideal, and that we will learn about catching errors in future weeks.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/22#issuecomment-681765124" expanded><template slot="_header">
+                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Nice! It works, thanks @wangqinNick.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/27#issuecomment-683380238" expanded><template slot="_header">
+                <p><strong>6 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>It’s here: <a href="https://se-education.org/guides/conventions/java/index.html#variables">https://se-education.org/guides/conventions/java/index.html#variables</a></p>
+              <blockquote>
+                <p><strong>Avoid unnecessary use of <code v-pre>this</code> with fields.</strong></p>
+              </blockquote>
+              <blockquote>
+                <p>Use the <code v-pre>this</code> keyword only when a field is shadowed by a method or constructor parameter.</p>
+              </blockquote>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26#issuecomment-683398093" expanded><template slot="_header">
+                <p><strong>7 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Assuming the data from the classrooms follows what's said here - <a href="https://docs.repl.it/classrooms/exports">https://docs.repl.it/classrooms/exports</a> - then that's probably why they can't use our <a href="http://repl.it">repl.it</a> usernames. If only <a href="http://repl.it">repl.it</a> gave the data with usernames.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683418650" expanded><template slot="_header">
+                <p><strong>8 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>@adinata15 What's your OS? The forward/backslash seems like something to do with using the right file on the right OS.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683440611" expanded><template slot="_header">
+                <p><strong>9 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>@adinata15 Hmm then maybe not. Looking at your package structure, because you packaged Duke in 'main.java' I believe these should work:</p>
+              <p>'''bash</p>
+              <p>javac -cp ..\src -Xlint:none -d ..\bin ..\src\main\java\Duke.java</p>
+              <p>java -Dfile.encoding=UTF-8 -classpath ..\bin main.java.Duke &lt; input.txt &gt; ACTUAL.TXT</p>
+              <p>'''
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/22#issuecomment-683806460" expanded><template slot="_header">
+                <p><strong>10 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>@kaijiel24 Yep, since they are special characters you would need to change the console code page as well as the font to print them. Of the fonts available in my 'cmd', only MS Gothic, NSimSun, SimSun-ExtB could display them.</p>
+              <p>'''</p>
+              <p>chcp 65001</p>
+              <p>'''</p>
+              <p>Sources:</p>
+              <p><a href="https://ss64.com/nt/chcp.html">https://ss64.com/nt/chcp.html</a></p>
+              <p><a href="https://github.com/rrrene/credo/issues/422">https://github.com/rrrene/credo/issues/422</a></p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/31#issuecomment-684621953" expanded><template slot="_header">
+                <p><strong>11 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Answered in #22
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/36#issuecomment-687758900" expanded><template slot="_header">
+                <p><strong>12 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>It's in the Coding Standard: <a href="https://se-education.org/guides/conventions/java/basic.html#package-and-import-statements">https://se-education.org/guides/conventions/java/basic.html#package-and-import-statements</a></p>
+              <blockquote>
+                <p>Imported classes should always be listed explicitly.
+                </p>
+              </blockquote>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="3-wang-qin-wangqinnick-11-posts"><template slot="_header">
+              <h3 id="3-wang-qin-wangqinnick-11-posts">3. WANG.. QIN <code v-pre>@wangqinNick</code> (11 posts)<a class="fa fa-anchor" href="#3-wang-qin-wangqinnick-11-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/34" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Questions regarding DukeException</strong></p>
+              </template>
+              <p>I want to ask the DukeException class should inherit whether the Exception class or the RuntimeException class.</p>
+              <p>The example in the textbook, uses the Exception class as the father class, but I find in the project, it is more convenient to use runtimeException as the father class.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/18#issuecomment-680074633" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I think perhaps it is because you use the ArrayList, but you did not declare the generic.</p>
+              <p>Since generic does not do type-check and you did not declare either, it gave such warning.</p>
+              <p>Try ArrayList &lt; String &gt; filteredList = new ArrayList &lt;&gt;();
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/22#issuecomment-681746444" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>There is a line in <a href="http://runtest.sh">runtest.sh</a> doing &quot;# run the program, feed commands from input.txt file and redirect the output to the ACTUAL.TXT&quot;</p>
+              <p>Change it to:</p>
+              <p>java -Dfile.encoding=UTF-8 -classpath ../bin sample.Main &lt; input.txt &gt; ACTUAL.TXT</p>
+              <p>don't forget to change the class name to yours</p>
+              <p>(I am using a Mac and not sure if this works or not. )
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683376398" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>This is perhaps you have changed you main class name, or moved it to another package.</p>
+              <p>You can try to change this line.</p>
+              <p>For example, if you have moved it to another package, you should also compile it with your class name with the package's name</p>
+              <p>eg. &quot;sample.Main&quot;.</p>
+              <p>java -Dfile.encoding=UTF-8 -classpath ../bin sample.Main &lt; input.txt &gt; ACTUAL.TXT
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/30#issuecomment-683376840" expanded><template slot="_header">
+                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>You need to declare and compile all the classes you have, not only the main class.</p>
+              <p>Like this:</p>
+              <p>if ! javac -cp ../src -Xlint:none -d ../bin ../src/main/java/sample.Main.java ../src/main/java/commands/add/<em>.java ../src/main/java/commands/</em>.java ../src/main/java/common/<em>.java ../src/main/java/data/exceptions/</em>.java ../src/main/java/data/task/<em>.java ../src/main/java/data/</em>.java ../src/main/java/parser/<em>.java ../src/main/java/storage/</em>.java ../src/main/java/ui/*.java</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/30#issuecomment-683376922" expanded><template slot="_header">
+                <p><strong>6 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Or you could run the test-ui by a jar file, which is more convenient when you have complicated structures such as multiple classes and packages.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/33#issuecomment-686346191" expanded><template slot="_header">
+                <p><strong>7 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <p>@Colin386</p>
+              </blockquote>
+              <blockquote>
+                <p>Hi,</p>
+              </blockquote>
+              <blockquote>
+                <p>Yes that is my project structure, however, when I run the java -classpath ..\bin main.java.Duke &lt; input.txt &gt; ACTUAL.TXT, it gives me the error &quot;Error: Could not find or load main class main.java.Duke&quot;.</p>
+              </blockquote>
+              <blockquote>
+                <p>Even though an ACTUAL.txt is created, it does not get updated based on the inputs given.</p>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <img alt="Capture" width="228" src="https://user-images.githubusercontent.com/59180102/91990284-2c521e80-ed4f-11ea-9b22-3f5deffd00d5.PNG"></blockquote>
+              <p>This is because your project structure. Your source file is &quot;java&quot; folder (the blue one in the picture) instead of src folder</p>
+              <img width="240" alt="Screenshot 2020-09-03 at 4 41 34 PM" src="https://user-images.githubusercontent.com/50083580/92092174-56194d00-ee04-11ea-9613-f0ef9bd1d84e.png">
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/33#issuecomment-686347659" expanded><template slot="_header">
+                <p><strong>8 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>You should either change the project structure or change the command in runtest.bat according to your current structure.</p>
+              <p>To change the structure, you goto File-&gt;Project Structure-&gt; source</p>
+              <p>Or perhaps try this, if you do not want to change your current structure.</p>
+              <p>java -classpath ..\bin Duke &lt; input.txt &gt; ACTUAL.TXT</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-687699906" expanded><template slot="_header">
+                <p><strong>9 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <p><a href="https://user-images.githubusercontent.com/60385689/92317639-d1157a00-f035-11ea-8638-a9b9cbaf228b.png" target="_self"><img src="https://user-images.githubusercontent.com/60385689/92317639-d1157a00-f035-11ea-8638-a9b9cbaf228b.png" alt class="img-fluid"></a></p>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>I tried runtest but the ACTUAL.txt file could not be found. Anyone has any idea...?</p>
+              </blockquote>
+              <p>I have no clear thought. But I am interested in your structure 😕</p>
+              <p>You project content root is week4circus, instead of circus as normal. Did you import the project or you just open it? Could you click File -&gt; Project Structure -&gt;modules and screen shot your modules?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-687707479" expanded><template slot="_header">
+                <p><strong>10 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <p><a href="https://user-images.githubusercontent.com/60385689/92317639-d1157a00-f035-11ea-8638-a9b9cbaf228b.png" target="_self"><img src="https://user-images.githubusercontent.com/60385689/92317639-d1157a00-f035-11ea-8638-a9b9cbaf228b.png" alt class="img-fluid"></a></p>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <p>I tried runtest but the ACTUAL.txt file could not be found. Anyone has any idea...?</p>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote></blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote></blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <p>I have no clear thought. But I am interested in your structure 😕</p>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <p>You project content root is week4circus, instead of circus as normal. Did you import the project or you just open it? Could you click File -&gt; Project Structure -&gt;modules and screen shot your modules?</p>
+                </blockquote>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p><a href="https://user-images.githubusercontent.com/60385689/92318550-661d7080-f040-11ea-8a50-b3bddd2a533c.png" target="_self"><img src="https://user-images.githubusercontent.com/60385689/92318550-661d7080-f040-11ea-8a50-b3bddd2a533c.png" alt class="img-fluid"></a></p>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>This is my project structure.</p>
+              </blockquote>
+              <blockquote>
+                <p>The &quot;week4circus&quot; is a folder created by me and I cloned the github repo into it</p>
+              </blockquote>
+              <p>Maybe you can try this: whenever you have ..\bin, you change it to ..\circus\bin</p>
+              <p>But in case it won't not work, you either &quot;git reset&quot; to reset it later, or save a copy of it beforehand.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/34#issuecomment-687716186" expanded><template slot="_header">
+                <p><strong>11 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <p>It should inherit the <code v-pre>Exception</code> class. (<code v-pre>RuntimeException</code> is a subclass of Exception)</p>
+              </blockquote>
+              <blockquote>
+                <p>See: <a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html">https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html</a></p>
+              </blockquote>
+              <p>Thanks, I understand difference about checked and unchecked exceptions now.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="4-teoh-iang-zhixiangteoh-8-posts"><template slot="_header">
+              <h3 id="4-teoh-iang-zhixiangteoh-8-posts">4. TEOH..IANG <code v-pre>@zhixiangteoh</code> (8 posts)<a class="fa fa-anchor" href="#4-teoh-iang-zhixiangteoh-8-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/1#issuecomment-671171147" expanded><template slot="_header">
+                <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I have found the <a href="http://repl.it">repl.it</a> link under Week 2 Admin Info - <a href="https://repl.it/classroom/invite/sclqjqn">https://repl.it/classroom/invite/sclqjqn</a></p>
+              <p>Seems right
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/10#issuecomment-677460651" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I believe you can keep it, change it, or remove it.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/17#issuecomment-679248745" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I sure hope error-handling is not required considering we technically haven't gone over try-catch statements and other error-handling, but I am curious to know as well!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683376354" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Because you compiled the files into <code v-pre>&lt;root&gt;/bin/</code>, your java command should be</p>
+              <p><code v-pre>java -Dfile.encoding=UTF-8 -classpath ..\bin Duke &lt; input.txt &gt; ACTUAL.TXT</code> ?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/30#issuecomment-683377276" expanded><template slot="_header">
+                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Just change this line in runtest.bat: <code v-pre>javac -cp ..\src -Xlint:none -d ..\bin ..\src\main\java\Duke.java</code></p>
+              <p>to</p>
+              <p><code v-pre>javac -cp ..\src -Xlint:none -d ..\bin ..\src\main\java\*.java</code>, similar to in <a href="http://runtest.sh">runtest.sh</a></p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683398656" expanded><template slot="_header">
+                <p><strong>6 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <p>@zhixiangteoh When <code v-pre>java -Dfile.encoding=UTF-8 -classpath ..\bin Duke &lt; input.txt &gt; ACTUAL.TXT</code> is used, it still gives the same error.</p>
+              </blockquote>
+              <blockquote>
+                <p>@wangqinNick Regarding file location, I do not create another package nor more the file from src/main/java.</p>
+              </blockquote>
+              <blockquote>
+                <p>@AndreWongZH For the uninitialised value, I declared some variable without assigning a value for them at first (only assign when user input data) but everything works fine when I tried running it on the console.</p>
+              </blockquote>
+              <p>Your main class and file are still &quot;Duke&quot; and &quot;Duke.java&quot; respectively?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683401756" expanded><template slot="_header">
+                <p><strong>7 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <p>@zhixiangteoh When <code v-pre>java -Dfile.encoding=UTF-8 -classpath ..\bin Duke &lt; input.txt &gt; ACTUAL.TXT</code> is used, it still gives the same error.</p>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <p>@wangqinNick Regarding file location, I do not create another package nor more the file from src/main/java.</p>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <p>@AndreWongZH For the uninitialised value, I declared some variable without assigning a value for them at first (only assign when user input data) but everything works fine when I tried running it on the console.</p>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote></blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote></blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <p>Your main class and file are still &quot;Duke&quot; and &quot;Duke.java&quot; respectively?</p>
+                </blockquote>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>I am not sure where to find the file Duke.java but my main class is still Duke. This is the screenshot of the directory:</p>
+              </blockquote>
+              <blockquote>
+                <p><a href="https://user-images.githubusercontent.com/48993548/91656076-3f16ea00-eae8-11ea-9478-c6a95cb3cec1.png" target="_self"><img src="https://user-images.githubusercontent.com/48993548/91656076-3f16ea00-eae8-11ea-9478-c6a95cb3cec1.png" alt class="img-fluid"></a></p>
+              </blockquote>
+              <p>Hey, i think perhaps this will work:</p>
+              <p><code v-pre>java -Dfile.encoding=UTF-8 -classpath ..\bin main\java\Duke &lt; input.txt &gt; ACTUAL.TXT</code></p>
+              <p>It seems that because your compilation destination is <root>\bin but the package main.java was compiled and not the files, the classpath is ..\bin but you need to execute the <code v-pre>&lt;package&gt;.&lt;subpackage&gt;.&lt;main class&gt;</code>.</root>
+              </p>
+              <p>See also: <a href="https://stackoverflow.com/questions/7509295/noclassdeffounderror-wrong-name/13697239">https://stackoverflow.com/questions/7509295/noclassdeffounderror-wrong-name/13697239</a></p>
+              <p>If this still doesn't work, try changing your javac command in runtest.bat to:</p>
+              <p><code v-pre>javac -verbose -cp ..\src\main\java -Xlint:none -d ..\bin ..\src\main\java\*.java</code></p>
+              <p>to see what files or packages are being loaded.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/36#issuecomment-687758159" expanded><template slot="_header">
+                <p><strong>8 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I personally feel using explicit imports is still better; on top of the stated benefits, I feel it is also more flexible in that it allows you to more clearly and easily remove particular import statements in the event you reorganize your packages and/or the code in the class to which you are importing the packages/classes to.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="5-adi-nata-adinata15-7-posts"><template slot="_header">
+              <h3 id="5-adi-nata-adinata15-7-posts">5. ADI ..NATA <code v-pre>@adinata15</code> (7 posts)<a class="fa fa-anchor" href="#5-adi-nata-adinata15-7-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Automated Text-UI Testing Issue : Cannot find file</strong></p>
+              </template>
+              <p>I am still a bit confused about automated testing. After following the guide on the cs2113 website and changing the path, I still get the error:</p>
+              <p>'''</p>
+              <p>Error: Could not find or load main class Duke</p>
+              <p>Caused by: java.lang.NoClassDefFoundError: main/java/Duke (wrong name: Duke)</p>
+              <p>'''</p>
+              <p><a href="https://user-images.githubusercontent.com/48993548/91651424-13333e80-eabf-11ea-807b-10f801ebb4f8.png" target="_self"><img src="https://user-images.githubusercontent.com/48993548/91651424-13333e80-eabf-11ea-807b-10f801ebb4f8.png" alt class="img-fluid"></a></p>
+              <p>These are my java and javac command lines:</p>
+              <p>'''</p>
+              <p>javac -cp ..\src\main\java -Xlint:none -d ..\bin ..\src\main\java*.java</p>
+              <p>java -Dfile.encoding=UTF-8 -classpath ..\bin\main\java Duke &lt; input.txt &gt; ACTUAL.TXT</p>
+              <p>'''</p>
+              <p>Does anyone know how to solve this error? Thank you!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/11" expanded><template slot="_header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Indentation settings on wrap lines</strong></p>
+              </template>
+              <p>Regarding the settings for the wrapped lines, do we include the indentation spaces into the 120 chars limit?</p>
+              <p>It is on this part of the website settings:</p>
+              <p><a href="https://user-images.githubusercontent.com/48993548/90884968-4f8ddd00-e3e3-11ea-94a5-679e06c720c8.JPG" target="_self"><img src="https://user-images.githubusercontent.com/48993548/90884968-4f8ddd00-e3e3-11ea-94a5-679e06c720c8.JPG" alt class="img-fluid"></a></p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/11#issuecomment-678590000" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Thank you!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683398377" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>@zhixiangteoh When <code v-pre>java -Dfile.encoding=UTF-8 -classpath ..\bin Duke &lt; input.txt &gt; ACTUAL.TXT</code> is used, it still gives the same error.</p>
+              <p>@wangqinNick Regarding file location, I do not create another package nor more the file from src/main/java.</p>
+              <p>@AndreWongZH For the uninitialised value, I declared some variable without assigning a value for them at first (only assign when user input data) but everything works fine when I tried running it on the console.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683399230" expanded><template slot="_header">
+                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <blockquote>
+                  <p>@zhixiangteoh When <code v-pre>java -Dfile.encoding=UTF-8 -classpath ..\bin Duke &lt; input.txt &gt; ACTUAL.TXT</code> is used, it still gives the same error.</p>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <p>@wangqinNick Regarding file location, I do not create another package nor more the file from src/main/java.</p>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <p>@AndreWongZH For the uninitialised value, I declared some variable without assigning a value for them at first (only assign when user input data) but everything works fine when I tried running it on the console.</p>
+                </blockquote>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>Your main class and file are still &quot;Duke&quot; and &quot;Duke.java&quot; respectively?</p>
+              </blockquote>
+              <p>I am not sure where to find the file Duke.java but my main class is still Duke. This is the screenshot of the directory:</p>
+              <p><a href="https://user-images.githubusercontent.com/48993548/91656076-3f16ea00-eae8-11ea-9478-c6a95cb3cec1.png" target="_self"><img src="https://user-images.githubusercontent.com/48993548/91656076-3f16ea00-eae8-11ea-9478-c6a95cb3cec1.png" alt class="img-fluid"></a></p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683404671" expanded><template slot="_header">
+                <p><strong>6 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <blockquote>
+                      <p>@zhixiangteoh When 'java -Dfile.encoding=UTF-8 -classpath ..\bin Duke &lt; input.txt &gt; ACTUAL.TXT' is used, it still gives the same error.</p>
+                    </blockquote>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <blockquote>
+                      <p>@wangqinNick Regarding file location, I do not create another package nor more the file from src/main/java.</p>
+                    </blockquote>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <blockquote>
+                      <p>@AndreWongZH For the uninitialised value, I declared some variable without assigning a value for them at first (only assign when user input data) but everything works fine when I tried running it on the console.</p>
+                    </blockquote>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote></blockquote>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote></blockquote>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <p>Your main class and file are still &quot;Duke&quot; and &quot;Duke.java&quot; respectively?</p>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote></blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote></blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <p>I am not sure where to find the file Duke.java but my main class is still Duke. This is the screenshot of the directory:</p>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <p><a href="https://user-images.githubusercontent.com/48993548/91656076-3f16ea00-eae8-11ea-9478-c6a95cb3cec1.png" target="_self"><img src="https://user-images.githubusercontent.com/48993548/91656076-3f16ea00-eae8-11ea-9478-c6a95cb3cec1.png" alt class="img-fluid"></a></p>
+                </blockquote>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>Hey, i think perhaps this will work:</p>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>'java -Dfile.encoding=UTF-8 -classpath ..\bin main\java\Duke &lt; input.txt &gt; ACTUAL.TXT'</p>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>It seems that because your compilation destination is \bin but the package main.java was compiled and not the files, the classpath is ..\bin but you need to execute the '<package>.<subpackage>.<main class>'.</main>
+                    </subpackage>
+                  </package>
+                </p>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>See also: <a href="https://stackoverflow.com/questions/7509295/noclassdeffounderror-wrong-name/13697239">https://stackoverflow.com/questions/7509295/noclassdeffounderror-wrong-name/13697239</a></p>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>If this still doesn't work, try changing your javac command in runtest.bat to:</p>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>'javac -verbose -cp ..\src\main\java -Xlint:none -d ..\bin ..\src\main\java*.java'</p>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>to see what files or packages are being loaded.</p>
+              </blockquote>
+              <p>I try changing it to:</p>
+              <p>'''</p>
+              <p>java -Dfile.encoding=UTF-8 -classpath ..\bin main\java\Duke &lt; input.txt &gt; ACTUAL.TXT</p>
+              <p>'''</p>
+              <p>The same error still comes out. However, when I change it to:</p>
+              <p>'''</p>
+              <p>java -Dfile.encoding=UTF-8 -classpath ../bin main/java/Duke &lt; input.txt &gt; ACTUAL.TXT</p>
+              <p>'''</p>
+              <p>It works 😄. I then try to change all backslash to slash in the runtime.bat file and it also works. I am not really sure why this works, but could this lead to a problem in the future?</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683437264" expanded><template slot="_header">
+                <p><strong>7 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <p>@adinata15 What's your OS? The forward/backslash seems like something to do with using the right file on the right OS.</p>
+              </blockquote>
+              <p>My OS is Windows 10.</p>
+              <p><a href="https://user-images.githubusercontent.com/48993548/91663554-317b5780-eb1c-11ea-94f8-405953cc9bc1.png" target="_self"><img src="https://user-images.githubusercontent.com/48993548/91663554-317b5780-eb1c-11ea-94f8-405953cc9bc1.png" alt class="img-fluid"></a></p>
+              <p>The Windows 10 version might be the cause, is it?
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="6-feli-alim-felixhalim-6-posts"><template slot="_header">
+              <h3 id="6-feli-alim-felixhalim-6-posts">6. FELI..ALIM <code v-pre>@felixhalim</code> (6 posts)<a class="fa fa-anchor" href="#6-feli-alim-felixhalim-6-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/10#issuecomment-677465756" expanded><template slot="_header">
+                <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Please refer to #5
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/21#issuecomment-680960994" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Error-handling is not necessary for Level-3. Based on #17
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/7#issuecomment-682308726" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I believe that this issue has been resolved and ready to be closed.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/25#issuecomment-683301227" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Same case here
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/25#issuecomment-683305749" expanded><template slot="_header">
+                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Noted. Thanks prof.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/31#issuecomment-684625922" expanded><template slot="_header">
+                <p><strong>6 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>To prevent repeated question regarding this, it would be better if the solution is added to the documentation. @okkhoy
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="7-muha-wala-muhammadhoze-4-posts"><template slot="_header">
+              <h3 id="7-muha-wala-muhammadhoze-4-posts">7. MUHA..WALA <code v-pre>@MuhammadHoze</code> (4 posts)<a class="fa fa-anchor" href="#7-muha-wala-muhammadhoze-4-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/7" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Exercise: [Key Exercise] getMultipleGradeCaps Method</strong></p>
+              </template>
+              <p>Hi prof, i wanted to clarify, for this exercise, only the main method has to be unchanged right? Am i able to directly edit the getGradeCap method or that has to remain unchanged as well?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/4" expanded><template slot="_header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Exercises in the Topics</strong></p>
+              </template>
+              <p>Hi prof, just wanted to check if the Exercises in the Topics are mandatory to do?<br></p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/4#issuecomment-674396528" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Yes besides the one on <a href="http://repl.it">repl.it</a>.</p>
+              <p>Exercises (For Example)</p>
+              <p>SE vs Civil Engineering</p>
+              <p>Software vs Bridges</p>
+              <p>Coding as a manufacturing activity</p>
+              <p>List pros and cons of SE</p>
+              <p>Which one of these is not included in Brook’s list of ‘Woes of the Craft’?</p>
+              <p>Do these exercises also contribute to the participation marks?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/4#issuecomment-674397335" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Alright thanks
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="8-heng-yuen-hengfuyuen-4-posts"><template slot="_header">
+              <h3 id="8-heng-yuen-hengfuyuen-4-posts">8. HENG..YUEN <code v-pre>@HengFuYuen</code> (4 posts)<a class="fa fa-anchor" href="#8-heng-yuen-hengfuyuen-4-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/13" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> SourceTree red exclamation mark beside Remote icon</strong></p>
+              </template>
+              <p>Hi prof! Is it a problem if there is a red exclamation mark next to my remote icon on SourceTree (refer to picture below)? It seems to be able to successfully redirect me to the github page when I click on it although I have not tried to push any new commits yet.</p>
+              <p><a href="https://user-images.githubusercontent.com/60005925/90949168-bb6e5500-e478-11ea-87f7-968047b02150.png" target="_self"><img src="https://user-images.githubusercontent.com/60005925/90949168-bb6e5500-e478-11ea-87f7-968047b02150.png" alt class="img-fluid"></a></p>
+              <p>Thank you very much!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/13#issuecomment-678651302" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Ok! Thank you very much prof!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/33#issuecomment-685448395" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I also had the same problem of a build failure and the terminal being unable to find the classes that I have used in Duke. However, I was testing things out and either of these two compile lines seems to make it work:</p>
+              <p>javac -cp ..\src -Xlint:none -d ..\bin ..\src\main\java\Task.java</p>
+              <p>javac -cp ..\src -Xlint:none -d ..\bin ..\src\main\java*.java</p>
+              <p>However, I am not sure if this is correct.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/33#issuecomment-685457298" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I see! Thanks for the clarification prof!
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="9-lim-bing-farice9-4-posts"><template slot="_header">
+              <h3 id="9-lim-bing-farice9-4-posts">9. LIM ..BING <code v-pre>@farice9</code> (4 posts)<a class="fa fa-anchor" href="#9-lim-bing-farice9-4-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Did not fulfill participation requirement on Week 2/3</strong></p>
+              </template>
+              <p>Hey! I don't understand why I did not get the participation mark for Week 2/3 despite attending lecture and answered the in-lecture questions (the one hosted on pollev), finished the <a href="http://repl.it">repl.it</a> questions &amp; ip progress before tutorial.</p>
+              <p>I would appreciate it if I can understand why this happened so that I can avoid the same mistake in the future. Thanks!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/1#issuecomment-671157439" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Hi! I noticed that the link to <a href="http://repl.it">repl.it</a> &quot;cs2113-2020 Aug-Dec&quot; classroom is not attached under <a href="https://nus-cs2113-ay2021s1.github.io/website/schedule/week1/admin.html">https://nus-cs2113-ay2021s1.github.io/website/schedule/week1/admin.html</a> &gt; &quot;Tools - <a href="http://repl.it">repl.it</a>&quot;
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26#issuecomment-683304572" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I see, thanks for the reply. I opened up and noticed that my &quot;First Name&quot; on <a href="http://repl.it">repl.it</a> was my real name instead of GitHub name. I hadn't considered that an issue as my <a href="http://repl.it">repl.it</a> username was the same as github.</p>
+              <p><a href="https://user-images.githubusercontent.com/56571027/91640211-602afc80-ea4e-11ea-8ab4-f2157027acb0.png" target="_self"><img src="https://user-images.githubusercontent.com/56571027/91640211-602afc80-ea4e-11ea-8ab4-f2157027acb0.png" alt class="img-fluid"></a></p>
+              <p>I've changed the &quot;First Name&quot; to the GitHub name afterward.</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26#issuecomment-683306192" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Thanks @tobiasceg for pointing out and @okkhoy for verifying the issue. Really appreciate it!</p>
+              <p>I'll keep this issue open, hopefully affected people will notice this.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="10-zhao-iang-e0426051-4-posts"><template slot="_header">
+              <h3 id="10-zhao-iang-e0426051-4-posts">10. ZHAO..IANG <code v-pre>@e0426051</code> (4 posts)<a class="fa fa-anchor" href="#10-zhao-iang-e0426051-4-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/35" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Not sure how to redo circus activity in lecture</strong></p>
+              </template>
+              <p>Hi, I was unable to complete all the steps during the lecture for the circus activity, so I attempted them again. However, I made the mistake of deleting my previous forked repository on Github as I thought it was interfering with my unsuccessful pushes. Currently, the main branch has been updated and hence I was unable to make another branch called &quot;in-lecture&quot;. May I know how I should go about solving this issue?</p>
+              <p>Error:</p>
+              <p>hint: Updates were rejected because the tip of your current branch is behind</p>
+              <p>hint: its remote counterpart. Integrate the remote changes (e.g.</p>
+              <p>hint: 'git pull ...') before pushing again.</p>
+              <p>hint: See the 'Note about fast-forwards' in 'git push --help' for details.</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/32" expanded><template slot="_header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Question regarding traditional task method for Level-4</strong></p>
+              </template>
+              <p>Hi,</p>
+              <p>I was wondering whether we are supposed to retain the traditional task entry feature (e.g. type anything, added as task) as we code Level-4. This seems redundant since the old task method seems to be identical to &quot;ToDo&quot; tasks now.</p>
+              <p>Also, may I ask how strictly should we stick to the example outputs? It seems possible to detect the types of tasks automatically by looking for the &quot;by&quot; and &quot;at&quot; keywords in the string itself, but I'm not sure if such implementation/deviation from example output is allowed. (This method will follow the input of Level-2/Level-3)</p>
+              <p>Thanks for any advice regarding these queries.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/32#issuecomment-684755917" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>@okkhoy Thanks for the clarification.</p>
+              <p>Regarding the second part, I meant to write the program such that it automatically categorizes the type of task by detecting &quot;/at&quot; and &quot;/by&quot; (or the lack thereof) on the input so that the user does not need to enter specifically the type of task(e.g. typing <code v-pre>project meeting /at Mon 2-4pm</code> instead of <code v-pre>event project meeting /at Mon 2-4pm</code>). However, since the Level-2 commands are retained, I am uncertain of how the automated categorization can distinguish (or is required to distinguish) between a Level-2 &quot;task&quot; and To-Do since they seem like the same thing. Is it a better idea to stick with the guidelines provided by the sample output?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/32#issuecomment-684803361" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>@okkhoy Thank you for the advice. I will stick with the recommended method for Level-4 and will instead consider implementing automatic flag detection for the tP.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="11-guni-ttal-gmit22-4-posts"><template slot="_header">
+              <h3 id="11-guni-ttal-gmit22-4-posts">11. GUNI..TTAL <code v-pre>@gmit22</code> (4 posts)<a class="fa fa-anchor" href="#11-guni-ttal-gmit22-4-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/33" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Automated Text-UI Testing Issue : Cannot find file and symbol</strong></p>
+              </template>
+              <p>I am not able to get the automated testing to work. It keeps on giving the error ACTUAL.txt not found and cannot find class that have been incorporated in the main class, resulting in a build failure.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/33#issuecomment-685741084" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>@Colin386</p>
+              <p>Hi,</p>
+              <p>Yes that is my project structure, however, when I run the java -classpath ..\bin main.java.Duke &lt; input.txt &gt; ACTUAL.TXT, it gives me the error &quot;Error: Could not find or load main class main.java.Duke&quot;.</p>
+              <p>Even though an ACTUAL.txt is created, it does not get updated based on the inputs given.</p>
+              <img width="228" alt="Capture" src="https://user-images.githubusercontent.com/59180102/91990284-2c521e80-ed4f-11ea-9b22-3f5deffd00d5.PNG">
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/33#issuecomment-685742128" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>@HengFuYuen @okkhoy</p>
+              <p>Yes this command worked to compile all the classes in the folder.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/33#issuecomment-686611414" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Yes I tried this, it works. Understood the problem, thanks
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="12-shre-umar-shreytheshreyas-4-posts"><template slot="_header">
+              <h3 id="12-shre-umar-shreytheshreyas-4-posts">12. SHRE..UMAR <code v-pre>@shreytheshreyas</code> (4 posts)<a class="fa fa-anchor" href="#12-shre-umar-shreytheshreyas-4-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/10" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Regarding iP</strong></p>
+              </template>
+              <p>Hi Prof,</p>
+              <p>In our Level-0 Greet implementation of the iP our we suppose to retain the initial logo &quot;Duke&quot; that was initially present or do we just remove the logo for now and just add in the code to greet the user?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/8" expanded><template slot="_header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> [Key Exercise] Grade Helper:</strong></p>
+              </template>
+              <p>Hi Prof, Just wanted to raise this issue there doesn't seem to be an assignment file for the Grade helper key exercise on <a href="http://repl.it">repl.it</a>.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/8#issuecomment-675457815" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>oh ok noted, thanks prof 😃
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/10#issuecomment-677518711" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>oh ok thanks guys 😃
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="13-tang-ting-t170815518-3-posts"><template slot="_header">
+              <h3 id="13-tang-ting-t170815518-3-posts">13. TANG..TING <code v-pre>@t170815518</code> (3 posts)<a class="fa fa-anchor" href="#13-tang-ting-t170815518-3-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/18" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> <a href="http://Repl.it">Repl.it</a> Error: Note: Recompile with -Xlint:unchecked for details.</strong></p>
+              </template>
+              <p>I am attempting 'Week 3 Ex9: filterEmails method', using 'java.util.ArrayList'; however, <a href="http://repl.it">repl.it</a> prompts the message in output like:</p>
+              <p>'''</p>
+              <p>Note: Main.java uses unchecked or unsafe operations.</p>
+              <p>Note: Recompile with -Xlint: unchecked for details.</p>
+              <p>[]</p>
+              <p>[]</p>
+              <p>[adam@example.com, <a href="/dashboards/contents/cs2113/mailto:john@example.com">john@example.com</a>, some@]</p>
+              <p>[@bee.com]</p>
+              <p>'''</p>
+              <p>where the first 2 lines make the output different from the expected and thus the solution cannot be accepted.</p>
+              <p>My full code:</p>
+              <p>'''java</p>
+              <p>import java.util.ArrayList;</p>
+              <p>import java.util.Arrays;</p>
+              <p>public class Main {</p>
+              <pre><code v-pre>public static String[] filterEmails(String[] items){
+
+    // TODO: add your code here
+
+    ArrayList filteredList = new ArrayList();
+
+    for (String email: items){
+
+        if (email.contains(&quot;@&quot;)){
+
+            filteredList.add(email);
+
+        }
+
+    }
+
+    String[] result = new String[filteredList.size()];
+
+    filteredList.toArray(result);
+
+    return result;
+
+}
+
+
+
+public static void printItems(String[] items){
+
+    // TODO: add your code here
+
+    System.out.println(Arrays.toString(items));
+
+}
+
+
+
+public static void main(String[] args) {
+
+    printItems(filterEmails(new String[]{}));
+
+    printItems(filterEmails(new String[]{&quot;abc&quot;}));
+
+    printItems(filterEmails(new String[]{&quot;adam@example.com&quot;, &quot;aab&quot;, &quot;john@example.com&quot;, &quot;some@&quot;}));
+
+    printItems(filterEmails(new String[]{&quot;xyz&quot;, &quot;@bee.com&quot;, &quot;aab&quot;}));
+
+}
+</code></pre>
+              <p>}</p>
+              <p>'''</p>
+              <p>How can I solve the issue, especially the one that ' Recompile with -Xlint: unchecked for details.'? (I tried searching from StackOverflow but failed to understand the answers there. 😦 )</p>
+              <p>Any help will be appreciated. 😃
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/18#issuecomment-680144111" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <p>I think perhaps it is because you use the ArrayList, but you did not declare the generic.</p>
+              </blockquote>
+              <blockquote>
+                <p>Since generic does not do type-check and you did not declare either, it gave such warning.</p>
+              </blockquote>
+              <blockquote>
+                <p>Try ArrayList &lt; String &gt; filteredList = new ArrayList &lt;&gt;();</p>
+              </blockquote>
+              <p>That works, thank you! It seems both warnings are caused because of it.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26#issuecomment-683374090" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Same issue. Thank you for pointing out it. Appreciate all the replies here.</p>
+              <p>I've just changed my repl's first name too.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="14-riaz-amed-riazaham-3-posts"><template slot="_header">
+              <h3 id="14-riaz-amed-riazaham-3-posts">14. RIAZ..AMED <code v-pre>@riazaham</code> (3 posts)<a class="fa fa-anchor" href="#14-riaz-amed-riazaham-3-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-687695109" expanded><template slot="_header">
+                <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p><a href="https://user-images.githubusercontent.com/60385689/92317639-d1157a00-f035-11ea-8638-a9b9cbaf228b.png" target="_self"><img src="https://user-images.githubusercontent.com/60385689/92317639-d1157a00-f035-11ea-8638-a9b9cbaf228b.png" alt class="img-fluid"></a></p>
+              <p>I tried runtest but the ACTUAL.txt file could not be found. Anyone has any idea...?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-687700988" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <blockquote>
+                  <p><a href="https://user-images.githubusercontent.com/60385689/92317639-d1157a00-f035-11ea-8638-a9b9cbaf228b.png" target="_self"><img src="https://user-images.githubusercontent.com/60385689/92317639-d1157a00-f035-11ea-8638-a9b9cbaf228b.png" alt class="img-fluid"></a></p>
+                </blockquote>
+              </blockquote>
+              <blockquote>
+                <blockquote>
+                  <p>I tried runtest but the ACTUAL.txt file could not be found. Anyone has any idea...?</p>
+                </blockquote>
+              </blockquote>
+              <blockquote></blockquote>
+              <blockquote>
+                <p>I have no clear thought. But I am interested in your structure 😕</p>
+              </blockquote>
+              <blockquote>
+                <p>You project content root is week4circus, instead of circus as normal. Did you import the project or you just open it? Could you click File -&gt; Project Structure -&gt;modules and screen shot your modules?</p>
+              </blockquote>
+              <p><a href="https://user-images.githubusercontent.com/60385689/92318550-661d7080-f040-11ea-8a50-b3bddd2a533c.png" target="_self"><img src="https://user-images.githubusercontent.com/60385689/92318550-661d7080-f040-11ea-8a50-b3bddd2a533c.png" alt class="img-fluid"></a></p>
+              <p>This is my project structure.</p>
+              <p>The &quot;week4circus&quot; is a folder created by me and I cloned the github repo into it
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-687713389" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <p>The ACTUAL file gets created on successfully running the <code v-pre>runtest.bat</code> file.</p>
+              </blockquote>
+              <blockquote>
+                <p>Were you able to run the <code v-pre>runtest.bat</code>?</p>
+              </blockquote>
+              <p>Oh wow it works now.... 😕 idk what changed but it works now! Thanks for the help
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="15-r-ra-mana-r-ramana-2-posts"><template slot="_header">
+              <h3 id="15-r-ra-mana-r-ramana-2-posts">15. R RA..MANA <code v-pre>@R-Ramana</code> (2 posts)<a class="fa fa-anchor" href="#15-r-ra-mana-r-ramana-2-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/21" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> iP: Level-3</strong></p>
+              </template>
+              <p>For Level-3 of the iP, can we assume that the input from the user will always be done &lt; int &gt; and no other variations like &lt; int &gt; done/I have done &lt; int &gt;?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/21#issuecomment-681617750" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Thanks all
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="16-low-leon-leonlowzd-2-posts"><template slot="_header">
+              <h3 id="16-low-leon-leonlowzd-2-posts">16. LOW ..LEON <code v-pre>@leonlowzd</code> (2 posts)<a class="fa fa-anchor" href="#16-low-leon-leonlowzd-2-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/9" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Bye World problem issue</strong></p>
+              </template>
+              <p>Hi prof, is there a problem with the script/compiler?</p>
+              <img width="686" alt="Screenshot 2020-08-19 at 8 43 45 PM" src="https://user-images.githubusercontent.com/69446308/90638203-a074c880-e25f-11ea-9935-7cebcffd560a.png">
+              <p>A bit of context, I save and did not submit my draft and moved on to the other questions. Now this question have error...</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/9#issuecomment-676339932" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Ohh.. I've reloaded the website, alls good 😃
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="17-prac-enka-prachi2023-2-posts"><template slot="_header">
+              <h3 id="17-prac-enka-prachi2023-2-posts">17. PRAC..ENKA <code v-pre>@prachi2023</code> (2 posts)<a class="fa fa-anchor" href="#17-prac-enka-prachi2023-2-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/31" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Tick and Cross characters not appearing when doing text ui testing</strong></p>
+              </template>
+              <p>When I run the code on IntelliJ, the characters for the ticks and the cross appear. However, when I run the code using the command line, they appear as question marks. How to fix this issue?</p>
+              <p><a href="https://user-images.githubusercontent.com/60388723/91830275-28ea6480-ec75-11ea-85c9-806ffc07eb3b.PNG" target="_self"><img src="https://user-images.githubusercontent.com/60388723/91830275-28ea6480-ec75-11ea-85c9-806ffc07eb3b.PNG" alt class="img-fluid"></a></p>
+              <p><a href="https://user-images.githubusercontent.com/60388723/91830282-2982fb00-ec75-11ea-9532-2a5d8d7ff587.PNG" target="_self"><img src="https://user-images.githubusercontent.com/60388723/91830282-2982fb00-ec75-11ea-9532-2a5d8d7ff587.PNG" alt class="img-fluid"></a></p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/31#issuecomment-684627256" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Sorry I might have missed that. Thanks guys
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="18-neo-ern-neojiaern-2-posts"><template slot="_header">
+              <h3 id="18-neo-ern-neojiaern-2-posts">18. NEO .. ERN <code v-pre>@neojiaern</code> (2 posts)<a class="fa fa-anchor" href="#18-neo-ern-neojiaern-2-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/5" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> iP: Level-0</strong></p>
+              </template>
+              <p>Hi Prof, regarding Level-0 of the iP, the task states that we should commit after making changes, for this increment are we supposed to push the changes to the fork on github after committing? In addition, are we supposed to keep the DUKE logo that shows at the start?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/5#issuecomment-674406397" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Noted, thank you prof
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="19-wu-y-uxin-lezn0-2-posts"><template slot="_header">
+              <h3 id="19-wu-y-uxin-lezn0-2-posts">19. WU Y..UXIN <code v-pre>@Lezn0</code> (2 posts)<a class="fa fa-anchor" href="#19-wu-y-uxin-lezn0-2-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/30" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Automated runtest issues: cannot find symbol</strong></p>
+              </template>
+              <p>I am getting this when trying out the runtest.bat for some reason. List is a custom class I declared. I have not changed my runtest.bat file at all.</p>
+              <p><a href="https://user-images.githubusercontent.com/60455558/91651518-432f1180-eac0-11ea-9d1c-4bbfc7616346.png" target="_self"><img src="https://user-images.githubusercontent.com/60455558/91651518-432f1180-eac0-11ea-9d1c-4bbfc7616346.png" alt class="img-fluid"></a></p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/30#issuecomment-683377275" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Thank you so much! It works now.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="20-ang-yang-acyang97-1-posts"><template slot="_header">
+              <h3 id="20-ang-yang-acyang97-1-posts">20. ANG ..YANG <code v-pre>@acyang97</code> (1 posts)<a class="fa fa-anchor" href="#20-ang-yang-acyang97-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/19" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> IP Level-3</strong></p>
+              </template>
+              <p>Hi prof, for Level-3 of the IP, are we free to use anything we want in the square brackets before the name of the task to indicate if the task is done or not done?
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="21-liau-jie-kaijiel24-1-posts"><template slot="_header">
+              <h3 id="21-liau-jie-kaijiel24-1-posts">21. LIAU.. JIE <code v-pre>@kaijiel24</code> (1 posts)<a class="fa fa-anchor" href="#21-liau-jie-kaijiel24-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/22#issuecomment-683693127" expanded><template slot="_header">
+                <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I faced the same issue and after implementing @wangqinNick solution, the terminal will still show '''Γ£ÿ''' and '''Γ£ô''' instead of '''✘''' and '''✓''' when I have yet to change the '''EXPECTED.txt''' to match '''ACTUAL.txt'''. But when I open '''ACTUAL.txt''' it shows '''✘''' and '''✓''' correctly.</p>
+              <p>After I changed '''EXPECTED.txt''' to match '''ACTUAL.txt''', no differences will be detected when I run runtest.bat so I believe it is the terminal that is not able to show the correct symbol rather than java.</p>
+              <p>'''</p>
+              <p>Comparing files ACTUAL.TXT and EXPECTED.TXT</p>
+              <p>FC: no differences encountered</p>
+              <p>'''</p>
+            </panel>
+          </panel>
+          <panel type="info" collapsed id="22-yeow-ndon-brandonywl-1-posts"><template slot="_header">
+              <h3 id="22-yeow-ndon-brandonywl-1-posts">22. YEOW..NDON <code v-pre>@brandonywl</code> (1 posts)<a class="fa fa-anchor" href="#22-yeow-ndon-brandonywl-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/25" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> No Invitation to nus-cs2113-AY2021S1</strong></p>
+              </template>
+              <p>Hi.</p>
+              <p>I did not receive any invite to the organization and tried to follow the link in the admin info but did not work.</p>
+              <p>I just made the pull request a couple of hours earlier. Is that a factor?
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="23-dani-oong-daniellimws-1-posts"><template slot="_header">
+              <h3 id="23-dani-oong-daniellimws-1-posts">23. DANI..OONG <code v-pre>@daniellimws</code> (1 posts)<a class="fa fa-anchor" href="#23-dani-oong-daniellimws-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/35#issuecomment-687739348" expanded><template slot="_header">
+                <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>You can click on &quot;branches&quot; here (which links you to <a href="https://github.com/e0426051/circus/branches">https://github.com/e0426051/circus/branches</a>)</p>
+              <p><a href="https://user-images.githubusercontent.com/8130120/92322937-274ee100-f067-11ea-8713-7a65b9f0ca9b.png" target="_self"><img src="https://user-images.githubusercontent.com/8130120/92322937-274ee100-f067-11ea-8713-7a65b9f0ca9b.png" alt class="img-fluid"></a></p>
+              <p>Then you should be able to delete the <code v-pre>in-lecture</code> branch on GitHub</p>
+              <p><a href="https://user-images.githubusercontent.com/8130120/92322953-3766c080-f067-11ea-9f02-5982c053655a.png" target="_self"><img src="https://user-images.githubusercontent.com/8130120/92322953-3766c080-f067-11ea-9f02-5982c053655a.png" alt class="img-fluid"></a></p>
+              <p>Then there shouldn't be a problem with pushing anymore.</p>
+            </panel>
+          </panel>
+          <panel type="info" collapsed id="24-ng-n-olin-colin386-1-posts"><template slot="_header">
+              <h3 id="24-ng-n-olin-colin386-1-posts">24. NG N..OLIN <code v-pre>@Colin386</code> (1 posts)<a class="fa fa-anchor" href="#24-ng-n-olin-colin386-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/33#issuecomment-685022185" expanded><template slot="_header">
+                <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Hi there!</p>
+              <p>How does your file structure look like in the project?</p>
+              <p><a href="https://user-images.githubusercontent.com/60383990/91886910-9c639480-ecbc-11ea-8b07-f4480383a7aa.png" target="_self"><img src="https://user-images.githubusercontent.com/60383990/91886910-9c639480-ecbc-11ea-8b07-f4480383a7aa.png" alt class="img-fluid"></a></p>
+              <p>If yours looks like this where you have a main.java folder with all the classes inside it, you may need to change the runtest.bat file:</p>
+              <p>instead of writing:</p>
+              <p><code v-pre>java -classpath ..\bin Duke &lt; input.txt &gt; ACTUAL.TXT</code></p>
+              <p>you will need to write:</p>
+              <p><code v-pre>java -classpath ..\bin main.java.Duke &lt; input.txt &gt; ACTUAL.TXT</code></p>
+              <p>Im not sure if this will help, but it did help me resolve the issue of missing classes. Do let me know how it goes
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="25-andr-hua-andrewongzh-1-posts"><template slot="_header">
+              <h3 id="25-andr-hua-andrewongzh-1-posts">25. ANDR.. HUA <code v-pre>@AndreWongZH</code> (1 posts)<a class="fa fa-anchor" href="#25-andr-hua-andrewongzh-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683378099" expanded><template slot="_header">
+                <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p><a href="https://user-images.githubusercontent.com/21986187/91651800-a53d4600-eac3-11ea-809f-b56cf0302e4b.png" target="_self"><img src="https://user-images.githubusercontent.com/21986187/91651800-a53d4600-eac3-11ea-809f-b56cf0302e4b.png" alt class="img-fluid"></a></p>
+              <p>Maybe you did not initialize a value and called it?
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="26-tan-bias-tobiasceg-1-posts"><template slot="_header">
+              <h3 id="26-tan-bias-tobiasceg-1-posts">26. TAN ..BIAS <code v-pre>@tobiasceg</code> (1 posts)<a class="fa fa-anchor" href="#26-tan-bias-tobiasceg-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26#issuecomment-683304118" expanded><template slot="_header">
+                <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>the prof mentioned that theres a possibility that ur repl account name was set up according to the instructions: github name into the first name part of the repl account
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="27-matt-gani-matthewgani-1-posts"><template slot="_header">
+              <h3 id="27-matt-gani-matthewgani-1-posts">27. MATT..GANI <code v-pre>@matthewgani</code> (1 posts)<a class="fa fa-anchor" href="#27-matt-gani-matthewgani-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/17" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> IP Level-3 Question</strong></p>
+              </template>
+              <p>Hi Prof, for IP level-3 (mark as done), do we have to account for the cases where the user inputs a task number(positive or negative) that does not exist or if the user simply inputs done with no number and print out an error message?</p>
+              <p>Thank you!
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="28-ni-y-ilun-lunzard-1-posts"><template slot="_header">
+              <h3 id="28-ni-y-ilun-lunzard-1-posts">28. NI Y..ILUN <code v-pre>@lunzard</code> (1 posts)<a class="fa fa-anchor" href="#28-ni-y-ilun-lunzard-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/6" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Individual Project: updates in iP progress dashboard</strong></p>
+              </template>
+              <p>Hi Prof, are we able to see the updates in the iP progress dashboard <a href="/dashboards/contents/cs2113/url">https://nus-cs2113-ay2021s1.github.io/dashboards/contents/ip-progress.html</a> now?</p>
+              <p>I have made my first commit to the forked project, with a summary &quot;Update Level-0&quot;, but I didn't see any change in the dashboard. The last update is still on Mar 03 2020.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="29-lim-g-le-limgl1998-1-posts"><template slot="_header">
+              <h3 id="29-lim-g-le-limgl1998-1-posts">29. LIM ..G LE <code v-pre>@limgl1998</code> (1 posts)<a class="fa fa-anchor" href="#29-lim-g-le-limgl1998-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/28" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Commit date and time being messed up due to rebase</strong></p>
+              </template>
+              <p>For some reasons, I had to rebase my commit history to merge 2 different branches. As a result, the timings for my commits became very recent (ie all the commit timings became that of the time where I did my rebase). Will I be penalised because of my commit timings as they are past the deadlines?
+              </p>
+            </panel>
+            <p></p>
+          </panel>
         </div>
       </div>
 
@@ -57,6 +1490,37 @@
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#forum-activities-dashboard">Forum activities dashboard&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#1-neil-rjee-neilbaner-14-posts">1. NEIL..RJEE @neilbaner (14 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#2-wira-hmad-hughjazzman-12-posts">2. WIRA..HMAD @hughjazzman (12 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#3-wang-qin-wangqinnick-11-posts">3. WANG.. QIN @wangqinNick (11 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#4-teoh-iang-zhixiangteoh-8-posts">4. TEOH..IANG @zhixiangteoh (8 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#5-adi-nata-adinata15-7-posts">5. ADI ..NATA @adinata15 (7 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#6-feli-alim-felixhalim-6-posts">6. FELI..ALIM @felixhalim (6 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#7-muha-wala-muhammadhoze-4-posts">7. MUHA..WALA @MuhammadHoze (4 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#8-heng-yuen-hengfuyuen-4-posts">8. HENG..YUEN @HengFuYuen (4 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#9-lim-bing-farice9-4-posts">9. LIM ..BING @farice9 (4 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#10-zhao-iang-e0426051-4-posts">10. ZHAO..IANG @e0426051 (4 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#11-guni-ttal-gmit22-4-posts">11. GUNI..TTAL @gmit22 (4 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#12-shre-umar-shreytheshreyas-4-posts">12. SHRE..UMAR @shreytheshreyas (4 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#13-tang-ting-t170815518-3-posts">13. TANG..TING @t170815518 (3 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#14-riaz-amed-riazaham-3-posts">14. RIAZ..AMED @riazaham (3 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#15-r-ra-mana-r-ramana-2-posts">15. R RA..MANA @R-Ramana (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#16-low-leon-leonlowzd-2-posts">16. LOW ..LEON @leonlowzd (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#17-prac-enka-prachi2023-2-posts">17. PRAC..ENKA @prachi2023 (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#18-neo-ern-neojiaern-2-posts">18. NEO .. ERN @neojiaern (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#19-wu-y-uxin-lezn0-2-posts">19. WU Y..UXIN @Lezn0 (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#20-ang-yang-acyang97-1-posts">20. ANG ..YANG @acyang97 (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#21-liau-jie-kaijiel24-1-posts">21. LIAU.. JIE @kaijiel24 (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#22-yeow-ndon-brandonywl-1-posts">22. YEOW..NDON @brandonywl (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#23-dani-oong-daniellimws-1-posts">23. DANI..OONG @daniellimws (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#24-ng-n-olin-colin386-1-posts">24. NG N..OLIN @Colin386 (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#25-andr-hua-andrewongzh-1-posts">25. ANDR.. HUA @AndreWongZH (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#26-tan-bias-tobiasceg-1-posts">26. TAN ..BIAS @tobiasceg (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#27-matt-gani-matthewgani-1-posts">27. MATT..GANI @matthewgani (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#28-ni-y-ilun-lunzard-1-posts">28. NI Y..ILUN @lunzard (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#29-lim-g-le-limgl1998-1-posts">29. LIM ..G LE @limgl1998 (1 posts)&#x200E;</a>
+            </nav>
 
           </nav>
         </div>
@@ -65,7 +1529,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, 7 Sep 2020, 12:22:27 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, 7 Sep 2020, 13:31:37 GMT+8]</small></div>
     </footer>
   </div>
 </body>
