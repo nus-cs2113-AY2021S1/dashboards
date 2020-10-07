@@ -49,7 +49,7 @@
       <div id="content-wrapper">
         <h1 class="display-4" id="forum-activities-dashboard">Forum activities dashboard<a class="fa fa-anchor" href="#forum-activities-dashboard" onclick="event.stopPropagation()"></a></h1>
         <div>
-          <p><span class="dimmed">[This page was last updated on Oct 02 2020]</span> [<strong><span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <p><span class="dimmed">[This page was last updated on Oct 07 2020]</span> [<strong><span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                   <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
                 </svg></span> indicates those <em>watching</em> the forum</strong> (kudos 👍)]</p>
           <panel type="info" collapsed id="1-wang-qin-wangqinnick-29-posts"><template slot="_header">
@@ -417,8 +417,8 @@
               <p>Thanks for the explanation!</p>
             </panel>
           </panel>
-          <panel type="info" collapsed id="2-neil-rjee-neilbaner-28-posts"><template slot="_header">
-              <h3 id="2-neil-rjee-neilbaner-28-posts">2. NEIL..RJEE <code v-pre>@neilbaner</code> (28 posts)<a class="fa fa-anchor" href="#2-neil-rjee-neilbaner-28-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="2-neil-rjee-neilbaner-29-posts"><template slot="_header">
+              <h3 id="2-neil-rjee-neilbaner-29-posts">2. NEIL..RJEE <code v-pre>@neilbaner</code> (29 posts)<a class="fa fa-anchor" href="#2-neil-rjee-neilbaner-29-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/73" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> How to add resources to your Java project💡</strong></p>
@@ -704,6 +704,18 @@
               </p>
             </panel>
             <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/76#issuecomment-704917483" expanded><template slot="_header">
+                <p><strong>29 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <p>A possible issue is that your Manifest may have been edited/not included in the JAR. So try to rebuild the JAR.</p>
+              </blockquote>
+              <blockquote>
+                <p>Some leads here: <a href="https://stackoverflow.com/questions/7559072/corrupt-jar-file">https://stackoverflow.com/questions/7559072/corrupt-jar-file</a></p>
+              </blockquote>
+              <p>Chiming in to say that I faced this same issue and this was indeed the problem. For me it was because I was working on the project across multiple computers, and the default .gitignore didn't push the manifest, and somehow somewhere along the line it got deleted.<br></p>
+            </panel>
+            <p></p>
           </panel>
           <panel type="info" collapsed id="3-wira-hmad-hughjazzman-20-posts"><template slot="_header">
               <h3 id="3-wira-hmad-hughjazzman-20-posts">3. WIRA..HMAD <code v-pre>@hughjazzman</code> (20 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
@@ -979,10 +991,10 @@ public String toString() { return descriptionPrefix + description; }
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="4-teoh-iang-zhixiangteoh-16-posts"><template slot="_header">
-              <h3 id="4-teoh-iang-zhixiangteoh-16-posts">4. TEOH..IANG <code v-pre>@zhixiangteoh</code> (16 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="4-teoh-iang-zhixiangteoh-17-posts"><template slot="_header">
+              <h3 id="4-teoh-iang-zhixiangteoh-17-posts">4. TEOH..IANG <code v-pre>@zhixiangteoh</code> (17 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#4-teoh-iang-zhixiangteoh-16-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#4-teoh-iang-zhixiangteoh-17-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/1#issuecomment-671171147" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -1197,11 +1209,18 @@ public String toString() { return descriptionPrefix + description; }
               </p>
             </panel>
             <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/64#issuecomment-703159618" expanded><template slot="_header">
+                <p><strong>17 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>FWIW:</p>
+              <p><a href="https://www.reddit.com/r/programming/comments/j459hr/hacktoberfest_now_requires_prs_be_in_a_repo_with/?utm_source=share&amp;utm_medium=ios_app&amp;utm_name=iossmf">Hacktoberfest now requires PRs be in a repo with hacktoberfest topic and be accepted</a>: <a href="https://github.com/digitalocean/hacktoberfest/pull/596">PR</a></p>
+            </panel>
+            <p></p>
           </panel>
-          <panel type="info" collapsed id="5-adi-nata-adinata15-15-posts"><template slot="_header">
-              <h3 id="5-adi-nata-adinata15-15-posts">5. ADI ..NATA <code v-pre>@adinata15</code> (15 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="5-adi-nata-adinata15-16-posts"><template slot="_header">
+              <h3 id="5-adi-nata-adinata15-16-posts">5. ADI ..NATA <code v-pre>@adinata15</code> (16 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#5-adi-nata-adinata15-15-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#5-adi-nata-adinata15-16-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/75" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Team Project Workflow and Grading</strong></p>
@@ -1514,11 +1533,18 @@ public String toString() { return descriptionPrefix + description; }
               </p>
             </panel>
             <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/75#issuecomment-703191168" expanded><template slot="_header">
+                <p><strong>16 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Thank you for the advice! @okkhoy. I will leave this open for future questions.
+              </p>
+            </panel>
+            <p></p>
           </panel>
-          <panel type="info" collapsed id="6-heng-yuen-hengfuyuen-12-posts"><template slot="_header">
-              <h3 id="6-heng-yuen-hengfuyuen-12-posts">6. HENG..YUEN <code v-pre>@HengFuYuen</code> (12 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="6-heng-yuen-hengfuyuen-13-posts"><template slot="_header">
+              <h3 id="6-heng-yuen-hengfuyuen-13-posts">6. HENG..YUEN <code v-pre>@HengFuYuen</code> (13 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#6-heng-yuen-hengfuyuen-12-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#6-heng-yuen-hengfuyuen-13-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/65" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Table formatting for User Guide</strong></p>
@@ -1617,21 +1643,40 @@ public String toString() { return descriptionPrefix + description; }
               </p>
             </panel>
             <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/76#issuecomment-704924011" expanded><template slot="_header">
+                <p><strong>13 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Hi! Sorry, may I know where did your get this error message? Was it via email? Because I actually didn't push my manifest files to my repo but when I checked, it seems to be included in my JAR file (?). So I'm worried that I might have the same error but don't know where to check to see if my JAR passed the smoke test. Also, do I need to push my manifest.mf file? Thank you!
+              </p>
+            </panel>
+            <p></p>
           </panel>
-          <panel type="info" collapsed id="7-king-iang-kstonekuan-10-posts"><template slot="_header">
-              <h3 id="7-king-iang-kstonekuan-10-posts">7. KING..IANG <code v-pre>@kstonekuan</code> (10 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="7-king-iang-kstonekuan-11-posts"><template slot="_header">
+              <h3 id="7-king-iang-kstonekuan-11-posts">7. KING..IANG <code v-pre>@kstonekuan</code> (11 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#7-king-iang-kstonekuan-10-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#7-king-iang-kstonekuan-11-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/79" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Requesting Permission to use JSON.simple</strong></p>
+              </template>
+              <h2 id="library-2">Library<a class="fa fa-anchor" href="#library-2" onclick="event.stopPropagation()"></a></h2>
+              <p><a href="https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple">JSON.simple</a></p>
+              <h2 id="purpose-2">Purpose<a class="fa fa-anchor" href="#purpose-2" onclick="event.stopPropagation()"></a></h2>
+              <p>Parsing json files which stores our data</p>
+              <h2 id="license-2">License<a class="fa fa-anchor" href="#license-2" onclick="event.stopPropagation()"></a></h2>
+              <p>Apache 2.0
+              </p>
+            </panel>
+            <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/64" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> 💡 Hacktoberfest 2020</strong></p>
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> 💡 Hacktoberfest 2020</strong></p>
               </template>
               <p>Since we make many pull requests for this module, you might as well join Hacktoberfest this year if you haven't already. You can gain good exposure to the open source community and get a free t-shirt at the same time. All you need to do is complete 4 pull requests to any public repository during the event period to be eligible.</p>
               <p><a href="https://hacktoberfest.digitalocean.com/">https://hacktoberfest.digitalocean.com/</a></p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/47" expanded><template slot="_header">
-                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Status icons not showing when using JAR file</strong></p>
+                <p><strong>3. <span aria-hidden="true" class="fas fa-info-circle"></span> Status icons not showing when using JAR file</strong></p>
               </template>
               <p>My status icons show &quot;?&quot; instead of the ticks and crosses when I run from my JAR file although they can be saved fine in my duke.txt.</p>
               <p><a href="https://user-images.githubusercontent.com/35717847/93014867-35f94300-f5e7-11ea-8fc4-2b4b9829c021.png" target="_self"><img src="https://user-images.githubusercontent.com/35717847/93014867-35f94300-f5e7-11ea-8fc4-2b4b9829c021.png" alt class="img-fluid"></a></p>
@@ -1639,27 +1684,27 @@ public String toString() { return descriptionPrefix + description; }
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/47#issuecomment-691654025" expanded><template slot="_header">
-                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>I have tried this before and it is already active
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/47#issuecomment-691654525" expanded><template slot="_header">
-                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>I get this error.</p>
               <p><a href="https://user-images.githubusercontent.com/35717847/93016010-92149500-f5f0-11ea-9da1-9437eb7d0392.png" target="_self"><img src="https://user-images.githubusercontent.com/35717847/93016010-92149500-f5f0-11ea-9da1-9437eb7d0392.png" alt class="img-fluid"></a></p>
             </panel>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/47#issuecomment-691657405" expanded><template slot="_header">
-                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>6 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Oh the command doesn't work in powershell but it works in cmd, however, the icons still show as question marks
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/47#issuecomment-691658616" expanded><template slot="_header">
-                <p><strong>6 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>7 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <blockquote>
                 <blockquote>
@@ -1674,7 +1719,7 @@ public String toString() { return descriptionPrefix + description; }
               <p><a href="https://user-images.githubusercontent.com/35717847/93016787-4c5acb00-f5f6-11ea-9064-9a5a411fc957.png" target="_self"><img src="https://user-images.githubusercontent.com/35717847/93016787-4c5acb00-f5f6-11ea-9064-9a5a411fc957.png" alt class="img-fluid"></a></p>
             </panel>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/47#issuecomment-691682955" expanded><template slot="_header">
-                <p><strong>7 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>8 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <blockquote>
                 <p>Maybe because your terminal is using a font that doesn't support this character? Try changing to a different font? Or maybe one from <a href="https://github.com/powerline/fonts">here</a>? I hope this works</p>
@@ -1684,20 +1729,20 @@ public String toString() { return descriptionPrefix + description; }
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/56#issuecomment-693538365" expanded><template slot="_header">
-                <p><strong>8 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>9 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>I think it means you have multiple versions of Java installed and your command prompt defaults to an older version of Java Runtime than what your IDE used to compile, maybe you can check your installations? We should be using Java 11 for this module
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/60#issuecomment-695755610" expanded><template slot="_header">
-                <p><strong>9 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>10 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>If your gif files are only for the README I think you can place them in the docs folder as that should not be compiled. You can then use relative paths in your README such as <code v-pre>![Alt Text](./gifs/one.gif)</code></p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/68#issuecomment-700606581" expanded><template slot="_header">
-                <p><strong>10 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>11 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>I think you can refer to #30
               </p>
@@ -2335,163 +2380,10 @@ public String toString() { return descriptionPrefix + description; }
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="20-dani-jie-daniellimzj-4-posts"><template slot="_header">
-              <h3 id="20-dani-jie-daniellimzj-4-posts">20. DANI..-JIE <code v-pre>@daniellimzj</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="20-tang-ting-t170815518-4-posts"><template slot="_header">
+              <h3 id="20-tang-ting-t170815518-4-posts">20. TANG..TING <code v-pre>@t170815518</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#20-dani-jie-daniellimzj-4-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/59" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> For the increment A-MoreOOP, why do we use instances of classes instead of static methods?</strong></p>
-              </template>
-              <p>Hi,</p>
-              <p>I don't really understand about why the example code for the increment A-MoreOOP initialises instances of classes instead of just using static methods.</p>
-              <p>For example, it initialises a instance <code v-pre>ui</code> of class <code v-pre>Ui</code> to print things, but couldn't we achieve the functionality of printing things with static methods?</p>
-              <p>Would like to know if there's any benefits of using instances of classes instead of static methods in these cases that I'm missing.</p>
-              <p>Thank you!
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/47#issuecomment-691679828" expanded><template slot="_header">
-                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>I seem to have the same issues. Running the command with the -Dfile.encoding=UTF-8 parameter just changes my output from a regular question mark &quot;?&quot; to the same symbol that @kstonekuan sees.
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/59#issuecomment-695753370" expanded><template slot="_header">
-                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <blockquote>
-                <p>I think in terms of member functions: if a method do not invoke any non-static variables, the method should be static.</p>
-              </blockquote>
-              <p>I also thought this way, that's why I was a bit confused why the example code used non-static methods even though I don't see how the methods for those classes could invoke non-static variables.
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/59#issuecomment-695791630" expanded><template slot="_header">
-                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Hi Prof,</p>
-              <p>Okay! Thank you for the clarifications.
-              </p>
-            </panel>
-            <p></p>
-          </panel>
-          <panel type="info" collapsed id="21-lim-bing-farice9-4-posts"><template slot="_header">
-              <h3 id="21-lim-bing-farice9-4-posts">21. LIM ..BING <code v-pre>@farice9</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#21-lim-bing-farice9-4-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Did not fulfill participation requirement on Week 2/3</strong></p>
-              </template>
-              <p>Hey! I don't understand why I did not get the participation mark for Week 2/3 despite attending lecture and answered the in-lecture questions (the one hosted on pollev), finished the <a href="http://repl.it">repl.it</a> questions &amp; ip progress before tutorial.</p>
-              <p>I would appreciate it if I can understand why this happened so that I can avoid the same mistake in the future. Thanks!
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/1#issuecomment-671157439" expanded><template slot="_header">
-                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Hi! I noticed that the link to <a href="http://repl.it">repl.it</a> &quot;cs2113-2020 Aug-Dec&quot; classroom is not attached under <a href="https://nus-cs2113-ay2021s1.github.io/website/schedule/week1/admin.html">https://nus-cs2113-ay2021s1.github.io/website/schedule/week1/admin.html</a> &gt; &quot;Tools - <a href="http://repl.it">repl.it</a>&quot;
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26#issuecomment-683304572" expanded><template slot="_header">
-                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>I see, thanks for the reply. I opened up and noticed that my &quot;First Name&quot; on <a href="http://repl.it">repl.it</a> was my real name instead of GitHub name. I hadn't considered that an issue as my <a href="http://repl.it">repl.it</a> username was the same as github.</p>
-              <p><a href="https://user-images.githubusercontent.com/56571027/91640211-602afc80-ea4e-11ea-8ab4-f2157027acb0.png" target="_self"><img src="https://user-images.githubusercontent.com/56571027/91640211-602afc80-ea4e-11ea-8ab4-f2157027acb0.png" alt class="img-fluid"></a></p>
-              <p>I've changed the &quot;First Name&quot; to the GitHub name afterward.</p>
-            </panel>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26#issuecomment-683306192" expanded><template slot="_header">
-                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Thanks @tobiasceg for pointing out and @okkhoy for verifying the issue. Really appreciate it!</p>
-              <p>I'll keep this issue open, hopefully affected people will notice this.
-              </p>
-            </panel>
-            <p></p>
-          </panel>
-          <panel type="info" collapsed id="22-neo-ern-neojiaern-4-posts"><template slot="_header">
-              <h3 id="22-neo-ern-neojiaern-4-posts">22. NEO .. ERN <code v-pre>@neojiaern</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#22-neo-ern-neojiaern-4-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/50" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Undo fast foward merge</strong></p>
-              </template>
-              <p>Hi, I was merging branch-Level-6 to master branch but did not check the &quot;Create a new commit even if fast forward is possible&quot;. It resulted in something like this:</p>
-              <p><a href="https://user-images.githubusercontent.com/37478363/93120936-ad69c800-f6f6-11ea-89be-e2a3dfa6ee6e.png" target="_self"><img src="https://user-images.githubusercontent.com/37478363/93120936-ad69c800-f6f6-11ea-89be-e2a3dfa6ee6e.png" alt class="img-fluid"></a></p>
-              <p>Then I did a <strong>git reset --keep branch-Level-6@{1}</strong> but was unable to revert back to the previous state before merging as the branch-Level-6 returned to the 2nd last commit in branch-Level-6 and master stayed at my last commit of branch-Level-6. So I merged master back into branch-Level-6 which went back into the situation shown in the picture above. I was unable to revert the merge after that.</p>
-              <p>How do I move master back to origin/master? Would it be safe to checkout origin/master and reset master branch there? Or may I know if there is any other solution to this?</p>
-            </panel>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/5" expanded><template slot="_header">
-                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> iP: Level-0</strong></p>
-              </template>
-              <p>Hi Prof, regarding Level-0 of the iP, the task states that we should commit after making changes, for this increment are we supposed to push the changes to the fork on github after committing? In addition, are we supposed to keep the DUKE logo that shows at the start?
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/5#issuecomment-674406397" expanded><template slot="_header">
-                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Noted, thank you prof
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/50#issuecomment-692439695" expanded><template slot="_header">
-                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Thank you! It is working now.
-              </p>
-            </panel>
-            <p></p>
-          </panel>
-          <panel type="info" collapsed id="23-tan-elia-ameliatyr-4-posts"><template slot="_header">
-              <h3 id="23-tan-elia-ameliatyr-4-posts">23. TAN ..ELIA <code v-pre>@AmeliaTYR</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#23-tan-elia-ameliatyr-4-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/41" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> branch-Level-5 not detected in dashboard</strong></p>
-              </template>
-              <p>Hi sorry I pushed branch-Level-5 two days ago (8sep) and it says the ip progress dashboard updated yesterday (9sep) but it still says it doesn't detect the branch-Level-5.</p>
-              <p><a href="https://user-images.githubusercontent.com/53657436/92683529-b3ae1c00-f365-11ea-9b4d-7fdcf71ac6f1.png" target="_self"><img src="https://user-images.githubusercontent.com/53657436/92683529-b3ae1c00-f365-11ea-9b4d-7fdcf71ac6f1.png" alt class="img-fluid"></a></p>
-              <p><a href="https://user-images.githubusercontent.com/53657436/92683682-1bfcfd80-f366-11ea-850b-a6e6fe4a1118.png" target="_self"><img src="https://user-images.githubusercontent.com/53657436/92683682-1bfcfd80-f366-11ea-850b-a6e6fe4a1118.png" alt class="img-fluid"></a></p>
-              <p>did I do something wrongly?
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/41#issuecomment-690097107" expanded><template slot="_header">
-                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>I merged the branch that it was merged to to the master is that ok?</p>
-              <p><a href="https://user-images.githubusercontent.com/53657436/92706420-119f2b80-f387-11ea-91f3-e2c1ffb424f7.png" target="_self"><img src="https://user-images.githubusercontent.com/53657436/92706420-119f2b80-f387-11ea-91f3-e2c1ffb424f7.png" alt class="img-fluid"></a></p>
-              <p>Or how do I undo the merging mess I made?</p>
-            </panel>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/41#issuecomment-690138541" expanded><template slot="_header">
-                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>I reverted it to branch-Level-5 and then merged it to master so now it's like this:</p>
-              <p><a href="https://user-images.githubusercontent.com/53657436/92716900-043b6e80-f392-11ea-8f05-cbed905ed039.png" target="_self"><img src="https://user-images.githubusercontent.com/53657436/92716900-043b6e80-f392-11ea-8f05-cbed905ed039.png" alt class="img-fluid"></a></p>
-              <p>master now has the latest version of the code</p>
-              <p>is this acceptable? (also do i need to undo all of the other merge stuff I did or can I just leave it? I'm afraid I might accidentally delete something important?)
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/41#issuecomment-690896569" expanded><template slot="_header">
-                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Thank you @okkhoy and @ChanJianHao for your help!
-              </p>
-            </panel>
-            <p></p>
-          </panel>
-          <panel type="info" collapsed id="24-tang-ting-t170815518-3-posts"><template slot="_header">
-              <h3 id="24-tang-ting-t170815518-3-posts">24. TANG..TING <code v-pre>@t170815518</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#24-tang-ting-t170815518-3-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#20-tang-ting-t170815518-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/18" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> <a href="http://Repl.it">Repl.it</a> Error: Note: Recompile with -Xlint:unchecked for details.</strong></p>
@@ -2590,11 +2482,198 @@ public static void main(String[] args) {
               </p>
             </panel>
             <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/76#issuecomment-703110470" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Same issue here
+              </p>
+            </panel>
+            <p></p>
           </panel>
-          <panel type="info" collapsed id="25-riaz-amed-riazaham-3-posts"><template slot="_header">
-              <h3 id="25-riaz-amed-riazaham-3-posts">25. RIAZ..AMED <code v-pre>@riazaham</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="21-dani-jie-daniellimzj-4-posts"><template slot="_header">
+              <h3 id="21-dani-jie-daniellimzj-4-posts">21. DANI..-JIE <code v-pre>@daniellimzj</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#25-riaz-amed-riazaham-3-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#21-dani-jie-daniellimzj-4-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/59" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> For the increment A-MoreOOP, why do we use instances of classes instead of static methods?</strong></p>
+              </template>
+              <p>Hi,</p>
+              <p>I don't really understand about why the example code for the increment A-MoreOOP initialises instances of classes instead of just using static methods.</p>
+              <p>For example, it initialises a instance <code v-pre>ui</code> of class <code v-pre>Ui</code> to print things, but couldn't we achieve the functionality of printing things with static methods?</p>
+              <p>Would like to know if there's any benefits of using instances of classes instead of static methods in these cases that I'm missing.</p>
+              <p>Thank you!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/47#issuecomment-691679828" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I seem to have the same issues. Running the command with the -Dfile.encoding=UTF-8 parameter just changes my output from a regular question mark &quot;?&quot; to the same symbol that @kstonekuan sees.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/59#issuecomment-695753370" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <blockquote>
+                <p>I think in terms of member functions: if a method do not invoke any non-static variables, the method should be static.</p>
+              </blockquote>
+              <p>I also thought this way, that's why I was a bit confused why the example code used non-static methods even though I don't see how the methods for those classes could invoke non-static variables.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/59#issuecomment-695791630" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Hi Prof,</p>
+              <p>Okay! Thank you for the clarifications.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="22-lim-bing-farice9-4-posts"><template slot="_header">
+              <h3 id="22-lim-bing-farice9-4-posts">22. LIM ..BING <code v-pre>@farice9</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#22-lim-bing-farice9-4-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Did not fulfill participation requirement on Week 2/3</strong></p>
+              </template>
+              <p>Hey! I don't understand why I did not get the participation mark for Week 2/3 despite attending lecture and answered the in-lecture questions (the one hosted on pollev), finished the <a href="http://repl.it">repl.it</a> questions &amp; ip progress before tutorial.</p>
+              <p>I would appreciate it if I can understand why this happened so that I can avoid the same mistake in the future. Thanks!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/1#issuecomment-671157439" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Hi! I noticed that the link to <a href="http://repl.it">repl.it</a> &quot;cs2113-2020 Aug-Dec&quot; classroom is not attached under <a href="https://nus-cs2113-ay2021s1.github.io/website/schedule/week1/admin.html">https://nus-cs2113-ay2021s1.github.io/website/schedule/week1/admin.html</a> &gt; &quot;Tools - <a href="http://repl.it">repl.it</a>&quot;
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26#issuecomment-683304572" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I see, thanks for the reply. I opened up and noticed that my &quot;First Name&quot; on <a href="http://repl.it">repl.it</a> was my real name instead of GitHub name. I hadn't considered that an issue as my <a href="http://repl.it">repl.it</a> username was the same as github.</p>
+              <p><a href="https://user-images.githubusercontent.com/56571027/91640211-602afc80-ea4e-11ea-8ab4-f2157027acb0.png" target="_self"><img src="https://user-images.githubusercontent.com/56571027/91640211-602afc80-ea4e-11ea-8ab4-f2157027acb0.png" alt class="img-fluid"></a></p>
+              <p>I've changed the &quot;First Name&quot; to the GitHub name afterward.</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26#issuecomment-683306192" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Thanks @tobiasceg for pointing out and @okkhoy for verifying the issue. Really appreciate it!</p>
+              <p>I'll keep this issue open, hopefully affected people will notice this.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="23-neo-ern-neojiaern-4-posts"><template slot="_header">
+              <h3 id="23-neo-ern-neojiaern-4-posts">23. NEO .. ERN <code v-pre>@neojiaern</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#23-neo-ern-neojiaern-4-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/50" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Undo fast foward merge</strong></p>
+              </template>
+              <p>Hi, I was merging branch-Level-6 to master branch but did not check the &quot;Create a new commit even if fast forward is possible&quot;. It resulted in something like this:</p>
+              <p><a href="https://user-images.githubusercontent.com/37478363/93120936-ad69c800-f6f6-11ea-89be-e2a3dfa6ee6e.png" target="_self"><img src="https://user-images.githubusercontent.com/37478363/93120936-ad69c800-f6f6-11ea-89be-e2a3dfa6ee6e.png" alt class="img-fluid"></a></p>
+              <p>Then I did a <strong>git reset --keep branch-Level-6@{1}</strong> but was unable to revert back to the previous state before merging as the branch-Level-6 returned to the 2nd last commit in branch-Level-6 and master stayed at my last commit of branch-Level-6. So I merged master back into branch-Level-6 which went back into the situation shown in the picture above. I was unable to revert the merge after that.</p>
+              <p>How do I move master back to origin/master? Would it be safe to checkout origin/master and reset master branch there? Or may I know if there is any other solution to this?</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/5" expanded><template slot="_header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> iP: Level-0</strong></p>
+              </template>
+              <p>Hi Prof, regarding Level-0 of the iP, the task states that we should commit after making changes, for this increment are we supposed to push the changes to the fork on github after committing? In addition, are we supposed to keep the DUKE logo that shows at the start?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/5#issuecomment-674406397" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Noted, thank you prof
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/50#issuecomment-692439695" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Thank you! It is working now.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="24-tan-elia-ameliatyr-4-posts"><template slot="_header">
+              <h3 id="24-tan-elia-ameliatyr-4-posts">24. TAN ..ELIA <code v-pre>@AmeliaTYR</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#24-tan-elia-ameliatyr-4-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/41" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> branch-Level-5 not detected in dashboard</strong></p>
+              </template>
+              <p>Hi sorry I pushed branch-Level-5 two days ago (8sep) and it says the ip progress dashboard updated yesterday (9sep) but it still says it doesn't detect the branch-Level-5.</p>
+              <p><a href="https://user-images.githubusercontent.com/53657436/92683529-b3ae1c00-f365-11ea-9b4d-7fdcf71ac6f1.png" target="_self"><img src="https://user-images.githubusercontent.com/53657436/92683529-b3ae1c00-f365-11ea-9b4d-7fdcf71ac6f1.png" alt class="img-fluid"></a></p>
+              <p><a href="https://user-images.githubusercontent.com/53657436/92683682-1bfcfd80-f366-11ea-850b-a6e6fe4a1118.png" target="_self"><img src="https://user-images.githubusercontent.com/53657436/92683682-1bfcfd80-f366-11ea-850b-a6e6fe4a1118.png" alt class="img-fluid"></a></p>
+              <p>did I do something wrongly?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/41#issuecomment-690097107" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I merged the branch that it was merged to to the master is that ok?</p>
+              <p><a href="https://user-images.githubusercontent.com/53657436/92706420-119f2b80-f387-11ea-91f3-e2c1ffb424f7.png" target="_self"><img src="https://user-images.githubusercontent.com/53657436/92706420-119f2b80-f387-11ea-91f3-e2c1ffb424f7.png" alt class="img-fluid"></a></p>
+              <p>Or how do I undo the merging mess I made?</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/41#issuecomment-690138541" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I reverted it to branch-Level-5 and then merged it to master so now it's like this:</p>
+              <p><a href="https://user-images.githubusercontent.com/53657436/92716900-043b6e80-f392-11ea-8f05-cbed905ed039.png" target="_self"><img src="https://user-images.githubusercontent.com/53657436/92716900-043b6e80-f392-11ea-8f05-cbed905ed039.png" alt class="img-fluid"></a></p>
+              <p>master now has the latest version of the code</p>
+              <p>is this acceptable? (also do i need to undo all of the other merge stuff I did or can I just leave it? I'm afraid I might accidentally delete something important?)
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/41#issuecomment-690896569" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Thank you @okkhoy and @ChanJianHao for your help!
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="25-r-ra-mana-r-ramana-3-posts"><template slot="_header">
+              <h3 id="25-r-ra-mana-r-ramana-3-posts">25. R RA..MANA <code v-pre>@R-Ramana</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#25-r-ra-mana-r-ramana-3-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/21" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> iP: Level-3</strong></p>
+              </template>
+              <p>For Level-3 of the iP, can we assume that the input from the user will always be done &lt; int &gt; and no other variations like &lt; int &gt; done/I have done &lt; int &gt;?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/21#issuecomment-681617750" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Thanks all
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/74#issuecomment-704051476" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Or if you don't want to restart the program, I tend to just right-click to create the method, then copy-paste the code!
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="26-riaz-amed-riazaham-3-posts"><template slot="_header">
+              <h3 id="26-riaz-amed-riazaham-3-posts">26. RIAZ..AMED <code v-pre>@riazaham</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#26-riaz-amed-riazaham-3-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-687695109" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -2644,8 +2723,45 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="26-marc-yong-reinbowl-3-posts"><template slot="_header">
-              <h3 id="26-marc-yong-reinbowl-3-posts">26. MARC..YONG <code v-pre>@Reinbowl</code> (3 posts)<a class="fa fa-anchor" href="#26-marc-yong-reinbowl-3-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="27-chan-hao-chanjianhao-3-posts"><template slot="_header">
+              <h3 id="27-chan-hao-chanjianhao-3-posts">27. CHAN.. HAO <code v-pre>@ChanJianHao</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#27-chan-hao-chanjianhao-3-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/78" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Requesting Permission to use JSON Path</strong></p>
+              </template>
+              <h2 id="library-3">Library<a class="fa fa-anchor" href="#library-3" onclick="event.stopPropagation()"></a></h2>
+              <p><a href="https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path/2.4.0">Project ':json Path'</a></p>
+              <h2 id="purpose-3">Purpose<a class="fa fa-anchor" href="#purpose-3" onclick="event.stopPropagation()"></a></h2>
+              <p>For parsing our data source .json file into objects.</p>
+              <p>We are planning to use this instead of the currently approved gson as gson parser has limitations on how they parse data.</p>
+              <h2 id="license-3">License<a class="fa fa-anchor" href="#license-3" onclick="event.stopPropagation()"></a></h2>
+              <p>Apache-2.0 License</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/43" expanded><template slot="_header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Requesting Permission to use AniList</strong></p>
+              </template>
+              <h2 id="library-4">Library<a class="fa fa-anchor" href="#library-4" onclick="event.stopPropagation()"></a></h2>
+              <p><a href="https://github.com/AniList/ApiV2-GraphQL-Docs">AniList GraphQL</a></p>
+              <p><a href="https://github.com/jimkyndemeyer/js-graphql-intellij-plugin/">GraphQL Plugin</a></p>
+              <h2 id="purpose-4">Purpose<a class="fa fa-anchor" href="#purpose-4" onclick="event.stopPropagation()"></a></h2>
+              <p>To obtain information on anime and manga via a credible source.</p>
+              <h2 id="license-4">License<a class="fa fa-anchor" href="#license-4" onclick="event.stopPropagation()"></a></h2>
+              <p>Free for non-commercial use.</p>
+              <p>Our team has obtained permission from the AniList administrator for making use of this. We will minimize the usage of the library whenever possible to avoid stressing their service.</p>
+              <p><a href="https://anilist.gitbook.io/anilist-apiv2-docs/overview/overview">AniList Terms of Use</a></p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/41#issuecomment-690119344" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Hello, I believe you could try to revert the merge. Check <a href="https://community.atlassian.com/t5/Sourcetree-questions/How-do-I-revert-abort-a-merge-using-source-tree/qaq-p/350099">this</a> out for more information.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="28-marc-yong-reinbowl-3-posts"><template slot="_header">
+              <h3 id="28-marc-yong-reinbowl-3-posts">28. MARC..YONG <code v-pre>@Reinbowl</code> (3 posts)<a class="fa fa-anchor" href="#28-marc-yong-reinbowl-3-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/58" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Git push changed commit time on Github</strong></p>
@@ -2669,28 +2785,42 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="27-r-ra-mana-r-ramana-2-posts"><template slot="_header">
-              <h3 id="27-r-ra-mana-r-ramana-2-posts">27. R RA..MANA <code v-pre>@R-Ramana</code> (2 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#27-r-ra-mana-r-ramana-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="29-lam-rold-jerroldlam-3-posts"><template slot="_header">
+              <h3 id="29-lam-rold-jerroldlam-3-posts">29. LAM ..ROLD <code v-pre>@jerroldlam</code> (3 posts)<a class="fa fa-anchor" href="#29-lam-rold-jerroldlam-3-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/21" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> iP: Level-3</strong></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/77" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Gradle Check style flagging constants naming as error</strong></p>
               </template>
-              <p>For Level-3 of the iP, can we assume that the input from the user will always be done &lt; int &gt; and no other variations like &lt; int &gt; done/I have done &lt; int &gt;?
+              <p>As per coding standards, constants should be in all caps separated by an underscore &quot;_&quot;. However, for my team's tp, the checkstyle has flagged all our constants as error with the following</p>
+              <p>'''</p>
+              <p>Abbreviation in name 'STARTING_SEMESTER_INDEX' must contain no more than '2' consecutive capital letters.</p>
+              <p>'''</p>
+              <p>Inside the code it looks like this</p>
+              <p>'''</p>
+              <p>private final int STARTING_SEMESTER_INDEX = 1;</p>
+              <p>'''</p>
+              <p>I have tried running the script again when I have deleted the private and it is still appearing as an error. Unsure of how to proceed, whether to change the names for constants to fit the check style or ignore the check style warnings.
               </p>
             </panel>
             <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/21#issuecomment-681617750" expanded><template slot="_header">
-                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/42" expanded><template slot="_header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Request to apache commons lang 3</strong></p>
               </template>
-              <p>Thanks all
-              </p>
+              <h2 id="library-5">Library<a class="fa fa-anchor" href="#library-5" onclick="event.stopPropagation()"></a></h2>
+              <p><a href="https://commons.apache.org/proper/commons-lang/">Apache Commons Lang</a></p>
+              <h2 id="purpose-5">Purpose<a class="fa fa-anchor" href="#purpose-5" onclick="event.stopPropagation()"></a></h2>
+              <p>To allow for the class to be printed as a string.</p>
+              <h2 id="license-5">License<a class="fa fa-anchor" href="#license-5" onclick="event.stopPropagation()"></a></h2>
+              <p>Apache (<a href="http://www.apache.org/licenses/">http://www.apache.org/licenses/</a>)</p>
             </panel>
-            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/77#issuecomment-703241326" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Thank you Zhi You! That solved the problem!</p>
+            </panel>
           </panel>
-          <panel type="info" collapsed id="28-low-leon-leonlowzd-2-posts"><template slot="_header">
-              <h3 id="28-low-leon-leonlowzd-2-posts">28. LOW ..LEON <code v-pre>@leonlowzd</code> (2 posts)<a class="fa fa-anchor" href="#28-low-leon-leonlowzd-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="30-low-leon-leonlowzd-2-posts"><template slot="_header">
+              <h3 id="30-low-leon-leonlowzd-2-posts">30. LOW ..LEON <code v-pre>@leonlowzd</code> (2 posts)<a class="fa fa-anchor" href="#30-low-leon-leonlowzd-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/9" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Bye World problem issue</strong></p>
@@ -2707,8 +2837,8 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="29-prac-enka-prachi2023-2-posts"><template slot="_header">
-              <h3 id="29-prac-enka-prachi2023-2-posts">29. PRAC..ENKA <code v-pre>@prachi2023</code> (2 posts)<a class="fa fa-anchor" href="#29-prac-enka-prachi2023-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="31-prac-enka-prachi2023-2-posts"><template slot="_header">
+              <h3 id="31-prac-enka-prachi2023-2-posts">31. PRAC..ENKA <code v-pre>@prachi2023</code> (2 posts)<a class="fa fa-anchor" href="#31-prac-enka-prachi2023-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/31" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Tick and Cross characters not appearing when doing text ui testing</strong></p>
@@ -2725,10 +2855,10 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="30-andr-hua-andrewongzh-2-posts"><template slot="_header">
-              <h3 id="30-andr-hua-andrewongzh-2-posts">30. ANDR.. HUA <code v-pre>@AndreWongZH</code> (2 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="32-andr-hua-andrewongzh-2-posts"><template slot="_header">
+              <h3 id="32-andr-hua-andrewongzh-2-posts">32. ANDR.. HUA <code v-pre>@AndreWongZH</code> (2 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#30-andr-hua-andrewongzh-2-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#32-andr-hua-andrewongzh-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683378099" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -2746,8 +2876,8 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="31-brya-jun-bryanbeh1998-2-posts"><template slot="_header">
-              <h3 id="31-brya-jun-bryanbeh1998-2-posts">31. BRYA.. JUN <code v-pre>@Bryanbeh1998</code> (2 posts)<a class="fa fa-anchor" href="#31-brya-jun-bryanbeh1998-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="33-brya-jun-bryanbeh1998-2-posts"><template slot="_header">
+              <h3 id="33-brya-jun-bryanbeh1998-2-posts">33. BRYA.. JUN <code v-pre>@Bryanbeh1998</code> (2 posts)<a class="fa fa-anchor" href="#33-brya-jun-bryanbeh1998-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/71" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Unable to run gradle file</strong></p>
@@ -2768,10 +2898,10 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="32-wong-wei-keke101-2-posts"><template slot="_header">
-              <h3 id="32-wong-wei-keke101-2-posts">32. WONG.. WEI <code v-pre>@keke101</code> (2 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="34-wong-wei-keke101-2-posts"><template slot="_header">
+              <h3 id="34-wong-wei-keke101-2-posts">34. WONG.. WEI <code v-pre>@keke101</code> (2 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#32-wong-wei-keke101-2-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#34-wong-wei-keke101-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/37" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> On magic numbers</strong></p>
@@ -2793,34 +2923,8 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="33-chan-hao-chanjianhao-2-posts"><template slot="_header">
-              <h3 id="33-chan-hao-chanjianhao-2-posts">33. CHAN.. HAO <code v-pre>@ChanJianHao</code> (2 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#33-chan-hao-chanjianhao-2-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/43" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Requesting Permission to use AniList</strong></p>
-              </template>
-              <h2 id="library-2">Library<a class="fa fa-anchor" href="#library-2" onclick="event.stopPropagation()"></a></h2>
-              <p><a href="https://github.com/AniList/ApiV2-GraphQL-Docs">AniList GraphQL</a></p>
-              <p><a href="https://github.com/jimkyndemeyer/js-graphql-intellij-plugin/">GraphQL Plugin</a></p>
-              <h2 id="purpose-2">Purpose<a class="fa fa-anchor" href="#purpose-2" onclick="event.stopPropagation()"></a></h2>
-              <p>To obtain information on anime and manga via a credible source.</p>
-              <h2 id="license-2">License<a class="fa fa-anchor" href="#license-2" onclick="event.stopPropagation()"></a></h2>
-              <p>Free for non-commercial use.</p>
-              <p>Our team has obtained permission from the AniList administrator for making use of this. We will minimize the usage of the library whenever possible to avoid stressing their service.</p>
-              <p><a href="https://anilist.gitbook.io/anilist-apiv2-docs/overview/overview">AniList Terms of Use</a></p>
-            </panel>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/41#issuecomment-690119344" expanded><template slot="_header">
-                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Hello, I believe you could try to revert the merge. Check <a href="https://community.atlassian.com/t5/Sourcetree-questions/How-do-I-revert-abort-a-merge-using-source-tree/qaq-p/350099">this</a> out for more information.
-              </p>
-            </panel>
-            <p></p>
-          </panel>
-          <panel type="info" collapsed id="34-nguy-long-longngng-2-posts"><template slot="_header">
-              <h3 id="34-nguy-long-longngng-2-posts">34. NGUY..LONG <code v-pre>@longngng</code> (2 posts)<a class="fa fa-anchor" href="#34-nguy-long-longngng-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="35-nguy-long-longngng-2-posts"><template slot="_header">
+              <h3 id="35-nguy-long-longngng-2-posts">35. NGUY..LONG <code v-pre>@longngng</code> (2 posts)<a class="fa fa-anchor" href="#35-nguy-long-longngng-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/68" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Automated testing after dividing classes into packages</strong></p>
@@ -2842,8 +2946,8 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="35-wu-y-uxin-lezn0-2-posts"><template slot="_header">
-              <h3 id="35-wu-y-uxin-lezn0-2-posts">35. WU Y..UXIN <code v-pre>@Lezn0</code> (2 posts)<a class="fa fa-anchor" href="#35-wu-y-uxin-lezn0-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="36-wu-y-uxin-lezn0-2-posts"><template slot="_header">
+              <h3 id="36-wu-y-uxin-lezn0-2-posts">36. WU Y..UXIN <code v-pre>@Lezn0</code> (2 posts)<a class="fa fa-anchor" href="#36-wu-y-uxin-lezn0-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/30" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Automated runtest issues: cannot find symbol</strong></p>
@@ -2859,10 +2963,10 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="36-liu-feng-liu-yifeng-1-2-posts"><template slot="_header">
-              <h3 id="36-liu-feng-liu-yifeng-1-2-posts">36. LIU ..FENG <code v-pre>@LIU-YiFeng-1</code> (2 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="37-liu-feng-liu-yifeng-1-2-posts"><template slot="_header">
+              <h3 id="37-liu-feng-liu-yifeng-1-2-posts">37. LIU ..FENG <code v-pre>@LIU-YiFeng-1</code> (2 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#36-liu-feng-liu-yifeng-1-2-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#37-liu-feng-liu-yifeng-1-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/67" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> [Urgent] JAR file cannot run on Mac due to DateTimeParseException</strong></p>
@@ -2883,8 +2987,8 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="37-lim-g-le-limgl1998-2-posts"><template slot="_header">
-              <h3 id="37-lim-g-le-limgl1998-2-posts">37. LIM ..G LE <code v-pre>@limgl1998</code> (2 posts)<a class="fa fa-anchor" href="#37-lim-g-le-limgl1998-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="38-lim-g-le-limgl1998-2-posts"><template slot="_header">
+              <h3 id="38-lim-g-le-limgl1998-2-posts">38. LIM ..G LE <code v-pre>@limgl1998</code> (2 posts)<a class="fa fa-anchor" href="#38-lim-g-le-limgl1998-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/55" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Unable to access JAR file</strong></p>
@@ -2903,8 +3007,8 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="38-ang-yang-acyang97-1-posts"><template slot="_header">
-              <h3 id="38-ang-yang-acyang97-1-posts">38. ANG ..YANG <code v-pre>@acyang97</code> (1 posts)<a class="fa fa-anchor" href="#38-ang-yang-acyang97-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="39-ang-yang-acyang97-1-posts"><template slot="_header">
+              <h3 id="39-ang-yang-acyang97-1-posts">39. ANG ..YANG <code v-pre>@acyang97</code> (1 posts)<a class="fa fa-anchor" href="#39-ang-yang-acyang97-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/19" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> IP Level-3</strong></p>
@@ -2914,8 +3018,26 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="39-liau-jie-kaijiel24-1-posts"><template slot="_header">
-              <h3 id="39-liau-jie-kaijiel24-1-posts">39. LIAU.. JIE <code v-pre>@kaijiel24</code> (1 posts)<a class="fa fa-anchor" href="#39-liau-jie-kaijiel24-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="40-tan-wei-tanleewei-1-posts"><template slot="_header">
+              <h3 id="40-tan-wei-tanleewei-1-posts">40. TAN .. WEI <code v-pre>@TanLeeWei</code> (1 posts)<a class="fa fa-anchor" href="#40-tan-wei-tanleewei-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/76" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Error: Invalid or corrupt jarfile ip.jar</strong></p>
+              </template>
+              <p>An automated smoke testing of your iP JAR file found the application crashes with the following error(s) upon launching:</p>
+              <p>On Windows, using Java 11, for the ip.jar uploaded on 10-02-2020 (DD-MM-YYYY) at 04:22:13:</p>
+              <p>Error: Invalid or corrupt jarfile ip.jar</p>
+              <p>On Linux, using Java 11, for the ip.jar uploaded on 10-02-2020 (DD-MM-YYYY) at 04:22:13:</p>
+              <p>Error: Invalid or corrupt jarfile ip.jar</p>
+              <p>On Mac, using Java 11, for the ip.jar uploaded on 10-02-2020 (DD-MM-YYYY) at 04:22:13:</p>
+              <p>Error: Invalid or corrupt jarfile ip.jar</p>
+              <p>Anyone know what causes this errors? I tried running this jar file on my windows and it works. I asked my friends using MAC and Windows to try running the jar file and all of them said that they can run it.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="41-liau-jie-kaijiel24-1-posts"><template slot="_header">
+              <h3 id="41-liau-jie-kaijiel24-1-posts">41. LIAU.. JIE <code v-pre>@kaijiel24</code> (1 posts)<a class="fa fa-anchor" href="#41-liau-jie-kaijiel24-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/22#issuecomment-683693127" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -2928,8 +3050,8 @@ public static void main(String[] args) {
               <p>'''</p>
             </panel>
           </panel>
-          <panel type="info" collapsed id="40-ang-jun-ang-cheng-jun-1-posts"><template slot="_header">
-              <h3 id="40-ang-jun-ang-cheng-jun-1-posts">40. ANG .. JUN <code v-pre>@Ang-Cheng-Jun</code> (1 posts)<a class="fa fa-anchor" href="#40-ang-jun-ang-cheng-jun-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="42-ang-jun-ang-cheng-jun-1-posts"><template slot="_header">
+              <h3 id="42-ang-jun-ang-cheng-jun-1-posts">42. ANG .. JUN <code v-pre>@Ang-Cheng-Jun</code> (1 posts)<a class="fa fa-anchor" href="#42-ang-jun-ang-cheng-jun-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/72" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Table display on github pages</strong></p>
@@ -2938,8 +3060,8 @@ public static void main(String[] args) {
               <p>Anyone encounter this problem in your github pages ?</p>
             </panel>
           </panel>
-          <panel type="info" collapsed id="41-yeow-ndon-brandonywl-1-posts"><template slot="_header">
-              <h3 id="41-yeow-ndon-brandonywl-1-posts">41. YEOW..NDON <code v-pre>@brandonywl</code> (1 posts)<a class="fa fa-anchor" href="#41-yeow-ndon-brandonywl-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="43-yeow-ndon-brandonywl-1-posts"><template slot="_header">
+              <h3 id="43-yeow-ndon-brandonywl-1-posts">43. YEOW..NDON <code v-pre>@brandonywl</code> (1 posts)<a class="fa fa-anchor" href="#43-yeow-ndon-brandonywl-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/25" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> No Invitation to nus-cs2113-AY2021S1</strong></p>
@@ -2951,8 +3073,8 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="42-chan-jing-shaojingle-1-posts"><template slot="_header">
-              <h3 id="42-chan-jing-shaojingle-1-posts">42. CHAN..JING <code v-pre>@shaojingle</code> (1 posts)<a class="fa fa-anchor" href="#42-chan-jing-shaojingle-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="44-chan-jing-shaojingle-1-posts"><template slot="_header">
+              <h3 id="44-chan-jing-shaojingle-1-posts">44. CHAN..JING <code v-pre>@shaojingle</code> (1 posts)<a class="fa fa-anchor" href="#44-chan-jing-shaojingle-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/56" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> A-Jar .JAR File Error</strong></p>
@@ -2968,8 +3090,23 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="43-sim-you-f0fz-1-posts"><template slot="_header">
-              <h3 id="43-sim-you-f0fz-1-posts">43. SIM .. YOU <code v-pre>@f0fz</code> (1 posts)<a class="fa fa-anchor" href="#43-sim-you-f0fz-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="45-tang-you-zhi-you-1-posts"><template slot="_header">
+              <h3 id="45-tang-you-zhi-you-1-posts">45. TANG.. YOU <code v-pre>@Zhi-You</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#45-tang-you-zhi-you-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/77#issuecomment-703232723" expanded><template slot="_header">
+                <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>This is something new to me too as I thought the code that you have written for your constant is fine. I tried what you did and the check gave me the same warning. However, when I added 'static' before 'final' the check passed. So, I believe that constants should have the 'static' keyword in it and hence the check only passes such cases.</p>
+              <p>Also, if you try to refactor something in your code into a constant, the IDE will automatically declare it with the 'static' key word in it, like so:</p>
+              <p><a href="https://user-images.githubusercontent.com/49060098/95012506-b56cb600-066b-11eb-9cf0-fc38bbf5f438.png" target="_self"><img src="https://user-images.githubusercontent.com/49060098/95012506-b56cb600-066b-11eb-9cf0-fc38bbf5f438.png" alt class="img-fluid"></a></p>
+              <p>Below are some useful information I found about what static does and I hope this might explain why we need 'static' when declaring our constants.</p>
+              <p><a href="https://stackoverflow.com/questions/8093230/why-are-java-constants-declared-static#:~:text=If%20a%20constant%20is%20not,of%20the%20constant%20per%20object">StackOverflow (see the comment with 104 upvotes)</a></p>
+            </panel>
+          </panel>
+          <panel type="info" collapsed id="46-sim-you-f0fz-1-posts"><template slot="_header">
+              <h3 id="46-sim-you-f0fz-1-posts">46. SIM .. YOU <code v-pre>@f0fz</code> (1 posts)<a class="fa fa-anchor" href="#46-sim-you-f0fz-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/49" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Progress Dashboard not detecting A-Jar tag/release</strong></p>
@@ -2980,10 +3117,10 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="44-jeri-quan-jerichochua-1-posts"><template slot="_header">
-              <h3 id="44-jeri-quan-jerichochua-1-posts">44. JERI..QUAN <code v-pre>@jerichochua</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="47-jeri-quan-jerichochua-1-posts"><template slot="_header">
+              <h3 id="47-jeri-quan-jerichochua-1-posts">47. JERI..QUAN <code v-pre>@jerichochua</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#44-jeri-quan-jerichochua-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#47-jeri-quan-jerichochua-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/52#issuecomment-693130427" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -2993,10 +3130,10 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="45-tan-bias-tobiasceg-1-posts"><template slot="_header">
-              <h3 id="45-tan-bias-tobiasceg-1-posts">45. TAN ..BIAS <code v-pre>@tobiasceg</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="48-tan-bias-tobiasceg-1-posts"><template slot="_header">
+              <h3 id="48-tan-bias-tobiasceg-1-posts">48. TAN ..BIAS <code v-pre>@tobiasceg</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#45-tan-bias-tobiasceg-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#48-tan-bias-tobiasceg-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26#issuecomment-683304118" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -3006,24 +3143,10 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="46-lam-rold-jerroldlam-1-posts"><template slot="_header">
-              <h3 id="46-lam-rold-jerroldlam-1-posts">46. LAM ..ROLD <code v-pre>@jerroldlam</code> (1 posts)<a class="fa fa-anchor" href="#46-lam-rold-jerroldlam-1-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/42" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Request to apache commons lang 3</strong></p>
-              </template>
-              <h2 id="library-3">Library<a class="fa fa-anchor" href="#library-3" onclick="event.stopPropagation()"></a></h2>
-              <p><a href="https://commons.apache.org/proper/commons-lang/">Apache Commons Lang</a></p>
-              <h2 id="purpose-3">Purpose<a class="fa fa-anchor" href="#purpose-3" onclick="event.stopPropagation()"></a></h2>
-              <p>To allow for the class to be printed as a string.</p>
-              <h2 id="license-3">License<a class="fa fa-anchor" href="#license-3" onclick="event.stopPropagation()"></a></h2>
-              <p>Apache (<a href="http://www.apache.org/licenses/">http://www.apache.org/licenses/</a>)</p>
-            </panel>
-          </panel>
-          <panel type="info" collapsed id="47-matt-gani-matthewgani-1-posts"><template slot="_header">
-              <h3 id="47-matt-gani-matthewgani-1-posts">47. MATT..GANI <code v-pre>@matthewgani</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="49-matt-gani-matthewgani-1-posts"><template slot="_header">
+              <h3 id="49-matt-gani-matthewgani-1-posts">49. MATT..GANI <code v-pre>@matthewgani</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#47-matt-gani-matthewgani-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#49-matt-gani-matthewgani-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/17" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> IP Level-3 Question</strong></p>
@@ -3034,10 +3157,10 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="48-ni-y-ilun-lunzard-1-posts"><template slot="_header">
-              <h3 id="48-ni-y-ilun-lunzard-1-posts">48. NI Y..ILUN <code v-pre>@lunzard</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="50-ni-y-ilun-lunzard-1-posts"><template slot="_header">
+              <h3 id="50-ni-y-ilun-lunzard-1-posts">50. NI Y..ILUN <code v-pre>@lunzard</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#48-ni-y-ilun-lunzard-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#50-ni-y-ilun-lunzard-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/6" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Individual Project: updates in iP progress dashboard</strong></p>
@@ -3048,10 +3171,10 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="49-mooi-cene-chuckiex3-1-posts"><template slot="_header">
-              <h3 id="49-mooi-cene-chuckiex3-1-posts">49. MOOI..CENE <code v-pre>@chuckiex3</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="51-mooi-cene-chuckiex3-1-posts"><template slot="_header">
+              <h3 id="51-mooi-cene-chuckiex3-1-posts">51. MOOI..CENE <code v-pre>@chuckiex3</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#49-mooi-cene-chuckiex3-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#51-mooi-cene-chuckiex3-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/47#issuecomment-694308866" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -3061,8 +3184,8 @@ public static void main(String[] args) {
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="50-wang-song-wgzesg-1-posts"><template slot="_header">
-              <h3 id="50-wang-song-wgzesg-1-posts">50. WANG..SONG <code v-pre>@wgzesg</code> (1 posts)<a class="fa fa-anchor" href="#50-wang-song-wgzesg-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="52-wang-song-wgzesg-1-posts"><template slot="_header">
+              <h3 id="52-wang-song-wgzesg-1-posts">52. WANG..SONG <code v-pre>@wgzesg</code> (1 posts)<a class="fa fa-anchor" href="#52-wang-song-wgzesg-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/46" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Use a .csv file to store data</strong></p>
@@ -3082,12 +3205,12 @@ public static void main(String[] args) {
             <a class="nav-link py-1" href="#forum-activities-dashboard">Forum activities dashboard&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#1-wang-qin-wangqinnick-29-posts">1. WANG.. QIN @wangqinNick (29 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#2-neil-rjee-neilbaner-28-posts">2. NEIL..RJEE @neilbaner (28 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#2-neil-rjee-neilbaner-29-posts">2. NEIL..RJEE @neilbaner (29 posts)&#x200E;</a>
               <a class="nav-link py-1" href="#3-wira-hmad-hughjazzman-20-posts">3. WIRA..HMAD @hughjazzman (20 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#4-teoh-iang-zhixiangteoh-16-posts">4. TEOH..IANG @zhixiangteoh (16 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#5-adi-nata-adinata15-15-posts">5. ADI ..NATA @adinata15 (15 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#6-heng-yuen-hengfuyuen-12-posts">6. HENG..YUEN @HengFuYuen (12 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#7-king-iang-kstonekuan-10-posts">7. KING..IANG @kstonekuan (10 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#4-teoh-iang-zhixiangteoh-17-posts">4. TEOH..IANG @zhixiangteoh (17 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#5-adi-nata-adinata15-16-posts">5. ADI ..NATA @adinata15 (16 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#6-heng-yuen-hengfuyuen-13-posts">6. HENG..YUEN @HengFuYuen (13 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#7-king-iang-kstonekuan-11-posts">7. KING..IANG @kstonekuan (11 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#8-feli-alim-felixhalim-8-posts">8. FELI..ALIM @felixhalim (8 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#9-dani-oong-daniellimws-7-posts">9. DANI..OONG @daniellimws (7 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#10-zhan-ukai-zsk612-6-posts">10. ZHAN..UKAI @zsk612 (6 posts)&#x200E;</a>
@@ -3100,37 +3223,39 @@ public static void main(String[] args) {
               <a class="nav-link py-1" href="#17-muha-wala-muhammadhoze-4-posts">17. MUHA..WALA @MuhammadHoze (4 posts)&#x200E;</a>
               <a class="nav-link py-1" href="#18-chen-jun-iamchenjiajun-4-posts">18. CHEN.. JUN @iamchenjiajun (4 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#19-li-b-zhao-tomlbz-4-posts">19. LI B..ZHAO @TomLBZ (4 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#20-dani-jie-daniellimzj-4-posts">20. DANI..-JIE @daniellimzj (4 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#21-lim-bing-farice9-4-posts">21. LIM ..BING @farice9 (4 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#22-neo-ern-neojiaern-4-posts">22. NEO .. ERN @neojiaern (4 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#23-tan-elia-ameliatyr-4-posts">23. TAN ..ELIA @AmeliaTYR (4 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#24-tang-ting-t170815518-3-posts">24. TANG..TING @t170815518 (3 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#25-riaz-amed-riazaham-3-posts">25. RIAZ..AMED @riazaham (3 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#26-marc-yong-reinbowl-3-posts">26. MARC..YONG @Reinbowl (3 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#27-r-ra-mana-r-ramana-2-posts">27. R RA..MANA @R-Ramana (2 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#28-low-leon-leonlowzd-2-posts">28. LOW ..LEON @leonlowzd (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#29-prac-enka-prachi2023-2-posts">29. PRAC..ENKA @prachi2023 (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#30-andr-hua-andrewongzh-2-posts">30. ANDR.. HUA @AndreWongZH (2 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#31-brya-jun-bryanbeh1998-2-posts">31. BRYA.. JUN @Bryanbeh1998 (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#32-wong-wei-keke101-2-posts">32. WONG.. WEI @keke101 (2 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#33-chan-hao-chanjianhao-2-posts">33. CHAN.. HAO @ChanJianHao (2 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#34-nguy-long-longngng-2-posts">34. NGUY..LONG @longngng (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#35-wu-y-uxin-lezn0-2-posts">35. WU Y..UXIN @Lezn0 (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#36-liu-feng-liu-yifeng-1-2-posts">36. LIU ..FENG @LIU-YiFeng-1 (2 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#37-lim-g-le-limgl1998-2-posts">37. LIM ..G LE @limgl1998 (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#38-ang-yang-acyang97-1-posts">38. ANG ..YANG @acyang97 (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#39-liau-jie-kaijiel24-1-posts">39. LIAU.. JIE @kaijiel24 (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#40-ang-jun-ang-cheng-jun-1-posts">40. ANG .. JUN @Ang-Cheng-Jun (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#41-yeow-ndon-brandonywl-1-posts">41. YEOW..NDON @brandonywl (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#42-chan-jing-shaojingle-1-posts">42. CHAN..JING @shaojingle (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#43-sim-you-f0fz-1-posts">43. SIM .. YOU @f0fz (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#44-jeri-quan-jerichochua-1-posts">44. JERI..QUAN @jerichochua (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#45-tan-bias-tobiasceg-1-posts">45. TAN ..BIAS @tobiasceg (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#46-lam-rold-jerroldlam-1-posts">46. LAM ..ROLD @jerroldlam (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#47-matt-gani-matthewgani-1-posts">47. MATT..GANI @matthewgani (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#48-ni-y-ilun-lunzard-1-posts">48. NI Y..ILUN @lunzard (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#49-mooi-cene-chuckiex3-1-posts">49. MOOI..CENE @chuckiex3 (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#50-wang-song-wgzesg-1-posts">50. WANG..SONG @wgzesg (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#20-tang-ting-t170815518-4-posts">20. TANG..TING @t170815518 (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#21-dani-jie-daniellimzj-4-posts">21. DANI..-JIE @daniellimzj (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#22-lim-bing-farice9-4-posts">22. LIM ..BING @farice9 (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#23-neo-ern-neojiaern-4-posts">23. NEO .. ERN @neojiaern (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#24-tan-elia-ameliatyr-4-posts">24. TAN ..ELIA @AmeliaTYR (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#25-r-ra-mana-r-ramana-3-posts">25. R RA..MANA @R-Ramana (3 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#26-riaz-amed-riazaham-3-posts">26. RIAZ..AMED @riazaham (3 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#27-chan-hao-chanjianhao-3-posts">27. CHAN.. HAO @ChanJianHao (3 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#28-marc-yong-reinbowl-3-posts">28. MARC..YONG @Reinbowl (3 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#29-lam-rold-jerroldlam-3-posts">29. LAM ..ROLD @jerroldlam (3 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#30-low-leon-leonlowzd-2-posts">30. LOW ..LEON @leonlowzd (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#31-prac-enka-prachi2023-2-posts">31. PRAC..ENKA @prachi2023 (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#32-andr-hua-andrewongzh-2-posts">32. ANDR.. HUA @AndreWongZH (2 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#33-brya-jun-bryanbeh1998-2-posts">33. BRYA.. JUN @Bryanbeh1998 (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#34-wong-wei-keke101-2-posts">34. WONG.. WEI @keke101 (2 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#35-nguy-long-longngng-2-posts">35. NGUY..LONG @longngng (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#36-wu-y-uxin-lezn0-2-posts">36. WU Y..UXIN @Lezn0 (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#37-liu-feng-liu-yifeng-1-2-posts">37. LIU ..FENG @LIU-YiFeng-1 (2 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#38-lim-g-le-limgl1998-2-posts">38. LIM ..G LE @limgl1998 (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#39-ang-yang-acyang97-1-posts">39. ANG ..YANG @acyang97 (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#40-tan-wei-tanleewei-1-posts">40. TAN .. WEI @TanLeeWei (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#41-liau-jie-kaijiel24-1-posts">41. LIAU.. JIE @kaijiel24 (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#42-ang-jun-ang-cheng-jun-1-posts">42. ANG .. JUN @Ang-Cheng-Jun (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#43-yeow-ndon-brandonywl-1-posts">43. YEOW..NDON @brandonywl (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#44-chan-jing-shaojingle-1-posts">44. CHAN..JING @shaojingle (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#45-tang-you-zhi-you-1-posts">45. TANG.. YOU @Zhi-You (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#46-sim-you-f0fz-1-posts">46. SIM .. YOU @f0fz (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#47-jeri-quan-jerichochua-1-posts">47. JERI..QUAN @jerichochua (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#48-tan-bias-tobiasceg-1-posts">48. TAN ..BIAS @tobiasceg (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#49-matt-gani-matthewgani-1-posts">49. MATT..GANI @matthewgani (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#50-ni-y-ilun-lunzard-1-posts">50. NI Y..ILUN @lunzard (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#51-mooi-cene-chuckiex3-1-posts">51. MOOI..CENE @chuckiex3 (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#52-wang-song-wgzesg-1-posts">52. WANG..SONG @wgzesg (1 posts)&#x200E;</a>
             </nav>
 
           </nav>
@@ -3140,7 +3265,7 @@ public static void main(String[] args) {
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Wed, 7 Oct 2020, 0:25:15 GMT+8]</small>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Thu, 8 Oct 2020, 0:48:12 GMT+8]</small>
       </div>
     </footer>
   </div>
