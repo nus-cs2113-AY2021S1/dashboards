@@ -49,16 +49,27 @@
       <div id="content-wrapper">
         <h1 class="display-4" id="forum-activities-dashboard">Forum activities dashboard<a class="fa fa-anchor" href="#forum-activities-dashboard" onclick="event.stopPropagation()"></a></h1>
         <div>
-          <p><span class="dimmed">[This page was last updated on Oct 12 2020]</span> [<strong><span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <p><span class="dimmed">[This page was last updated on Oct 16 2020]</span> [<strong><span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                   <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
                 </svg></span> indicates those <em>watching</em> the forum</strong> (kudos 👍)]</p>
-          <panel type="info" collapsed id="1-neil-rjee-neilbaner-30-posts"><template slot="_header">
-              <h3 id="1-neil-rjee-neilbaner-30-posts">1. NEIL..RJEE <code v-pre>@neilbaner</code> (30 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="1-neil-rjee-neilbaner-40-posts"><template slot="_header">
+              <h3 id="1-neil-rjee-neilbaner-40-posts">1. NEIL..RJEE <code v-pre>@neilbaner</code> (40 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#1-neil-rjee-neilbaner-30-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#1-neil-rjee-neilbaner-40-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/88" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Static classes vs instances</strong></p>
+              </template>
+              <p>According to the lectures, and the notes on the website/textbook, something like</p>
+              <pre><code class="hljs java" v-pre><span>InputParser ip = <span class="hljs-keyword">new</span> InputParser ();<br></span><span>arguments = ip.getArguments(input);<br></span></code></pre>
+              <p>Is preferred over</p>
+              <pre><code class="hljs java" v-pre><span>arguments = InputParser.getArguments(input);<br></span></code></pre>
+              <p>However, if we have a class for printing the messages in the UI, must that also be instantiated every time? It would have to be instantiated in almost every single class in our program which I feel would bloat it somewhat. On the other hand it would make it less easily testable.
+              </p>
+            </panel>
+            <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/73" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> How to add resources to your Java project💡</strong></p>
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> How to add resources to your Java project💡</strong></p>
               </template>
               <p>In my iP, I wanted to use some text files as resources, containing some (not user-generated) data for my program. In the IDE, I was able to do so using the normal Files method, but this doesn't work with accessing files within a jar, as seen in #51 .</p>
               <p>I followed the tutorials online, but I couldn't seem to get the IDE to package the resources folder inside my jar, no matter what I tried. Finally, after poking around in the project settings, here's what I found out you have to do:</p>
@@ -91,7 +102,7 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/44" expanded><template slot="_header">
-                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> [General] Forking vs Branching for group projects</strong></p>
+                <p><strong>3. <span aria-hidden="true" class="fas fa-info-circle"></span> [General] Forking vs Branching for group projects</strong></p>
               </template>
               <p>As NUS SoC students, we all have to do many group projects, most of which involve collaborating on code. I've used GitHub in the past for this, but mostly in the very simple &quot;everyone just commits to master&quot; style. Of course, with CS2113T, we're all now more familiar with advanced git and revision control strategies.</p>
               <p>Prof, can I ask, in your opinion, for the type of small group project that we often undertake, what's the best approach of these:</p>
@@ -118,7 +129,7 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/40" expanded><template slot="_header">
-                <p><strong>3. <span aria-hidden="true" class="fas fa-info-circle"></span> [iP] Progress very out of date on the Code Dashboard</strong></p>
+                <p><strong>4. <span aria-hidden="true" class="fas fa-info-circle"></span> [iP] Progress very out of date on the Code Dashboard</strong></p>
               </template>
               <p>Hi Prof and everyone,</p>
               <p>I was looking through the RepoSense dashboard with all of our iPs, and I noticed that my iP is quite behind (the last commit was on 4th September). However, I have made more commits to my iP since then (including on the same day) but those don't seem to be picked up by RepoSense. I noticed others' commits as new as today are being picked up; is there something I'm doing wrong? Have I perhaps messed up a branch or something?</p>
@@ -127,7 +138,7 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/36" expanded><template slot="_header">
-                <p><strong>4. <span aria-hidden="true" class="fas fa-info-circle"></span> Using * wildcard for imports</strong></p>
+                <p><strong>5. <span aria-hidden="true" class="fas fa-info-circle"></span> Using * wildcard for imports</strong></p>
               </template>
               <p>Is it ever acceptable to use the * wildcard in an import statement? For example, I have a package called &quot;task&quot; with some different classes, all of which are accessed by my main Duke class in another package. Is it necessary to import every single class separately, or may I use, say, <code v-pre>import com.neilbaner.duke.task.*</code> ?</p>
               <p>Thank you!
@@ -135,7 +146,7 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/27" expanded><template slot="_header">
-                <p><strong>5. <span aria-hidden="true" class="fas fa-info-circle"></span> Policy on use of this keyword</strong></p>
+                <p><strong>6. <span aria-hidden="true" class="fas fa-info-circle"></span> Policy on use of this keyword</strong></p>
               </template>
               <p>Can I clarify when we are expected to use the &quot;this&quot; keyword to access member variables in a class? Personally, I prefer to use &quot;this&quot; at all times to be explicit, but I seem to remember being told (either in lecture or in tutorial, can't seem to recall which) not to use it when not required to cut down on clutter. I couldn't find anything on this in the Java coding standard guide. The notes on the website on the use of the &quot;this&quot; keyword don't cover this either.</p>
               <p>I just wanted to confirm if I should always use it or not?</p>
@@ -144,14 +155,14 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/16" expanded><template slot="_header">
-                <p><strong>6. <span aria-hidden="true" class="fas fa-info-circle"></span> 💡[<a href="http://repl.it">repl.it</a>] Replit Java version</strong></p>
+                <p><strong>7. <span aria-hidden="true" class="fas fa-info-circle"></span> 💡[<a href="http://repl.it">repl.it</a>] Replit Java version</strong></p>
               </template>
               <p>Note that <a href="http://repl.it">repl.it</a> uses Java version 1.8.0, aka Java 8, NOT Java 11 as we are using for class normally. This may or may not have implications for one of the exercises, due to differences in the String class (eg. Java 11 having some very convenient additions not present in Java 8...)
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/15" expanded><template slot="_header">
-                <p><strong>7. <span aria-hidden="true" class="fas fa-info-circle"></span> [Week 3 Ex3] Instructions slightly unclear</strong></p>
+                <p><strong>8. <span aria-hidden="true" class="fas fa-info-circle"></span> [Week 3 Ex3] Instructions slightly unclear</strong></p>
               </template>
               <p><a href="https://nus-cs2113-ay2021s1.github.io/website/schedule/week3/topics.html#key-exercise-pass-objects-to-move-method">https://nus-cs2113-ay2021s1.github.io/website/schedule/week3/topics.html#key-exercise-pass-objects-to-move-method</a></p>
               <p>The instructions for creating the move method specifies the following behaviour:</p>
@@ -182,7 +193,7 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/14" expanded><template slot="_header">
-                <p><strong>8. <span aria-hidden="true" class="fas fa-info-circle"></span> [Week 3 Ex2] Using Accessors/Getters vs directly accessing member variables</strong></p>
+                <p><strong>9. <span aria-hidden="true" class="fas fa-info-circle"></span> [Week 3 Ex2] Using Accessors/Getters vs directly accessing member variables</strong></p>
               </template>
               <p>Hi Prof,</p>
               <p>Week 3 Ex2 on <a href="http://repl.it">repl.it</a> requires us to calculate the area of a rectangle object, by multiplying its height and width together. Is it recommended to use the getter methods for the dimensions of the rectangle, or to just directly access the height and width variables? I noticed the model solution used the latter approach, but I used the getter methods myself.</p>
@@ -192,7 +203,7 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/12" expanded><template slot="_header">
-                <p><strong>9. <span aria-hidden="true" class="fas fa-info-circle"></span> 💡AdoptOpenJDK - potential solution to JDK installation issues?</strong></p>
+                <p><strong>10. <span aria-hidden="true" class="fas fa-info-circle"></span> 💡AdoptOpenJDK - potential solution to JDK installation issues?</strong></p>
               </template>
               <p>I hear a lot of my friends having issues with installing Java - specifically, the part about getting it to show up in their PATH as expected - so I thought I'd share what worked for me.</p>
               <p>I installed OpenJDK using the AdoptOpenJDK installer, linked <a href="https://adoptopenjdk.net/">here</a>. I chose OpenJDK 11 and Hotspot JVM.</p>
@@ -202,7 +213,7 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/3" expanded><template slot="_header">
-                <p><strong>10. <span aria-hidden="true" class="fas fa-info-circle"></span> Individual Project Repo: Public or Private?</strong></p>
+                <p><strong>11. <span aria-hidden="true" class="fas fa-info-circle"></span> Individual Project Repo: Public or Private?</strong></p>
               </template>
               <p>Hi Prof, should our repository for the individual project be made public or private? If the latter, then who should we add as collaborators?</p>
               <p>Thank you!
@@ -210,7 +221,7 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/2" expanded><template slot="_header">
-                <p><strong>11. <span aria-hidden="true" class="fas fa-info-circle"></span> Glitter link broken</strong></p>
+                <p><strong>12. <span aria-hidden="true" class="fas fa-info-circle"></span> Glitter link broken</strong></p>
               </template>
               <p>Good day 😃</p>
               <p>I might be getting ahead of myself, but I was trying to access the class Gitter chat, and can't seem to do so.</p>
@@ -220,14 +231,14 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/2#issuecomment-670808653" expanded><template slot="_header">
-                <p><strong>12 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>13 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Ah, thank you. I suspected I was being a bit eager. I'll check back later.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/11#issuecomment-678306177" expanded><template slot="_header">
-                <p><strong>13 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>14 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Agreed, I'm fairly sure indentation counts towards the limit.</p>
               <p>Don't ask me what happens if you have 30 levels of nested indentation though.
@@ -235,42 +246,42 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/15#issuecomment-678749094" expanded><template slot="_header">
-                <p><strong>14 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>15 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Ah, I didn't look at the hint. I figured it out when I saw the expected output. Thank you!
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26#issuecomment-683349638" expanded><template slot="_header">
-                <p><strong>15 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>16 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>If it makes you feel any better @farice9 I did the same thing. Whoops. A bit more care while reading the instructions would go a long way I guess 😛
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/27#issuecomment-683482929" expanded><template slot="_header">
-                <p><strong>16 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>17 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Ah, thank you @hughjazzman don't know how I missed that.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/25#issuecomment-683483096" expanded><template slot="_header">
-                <p><strong>17 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>18 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>I appear to have received the invite a few hours ago.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/36#issuecomment-689915299" expanded><template slot="_header">
-                <p><strong>18 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>19 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Sorry for the late response. Understood. Thank you.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/40#issuecomment-690295153" expanded><template slot="_header">
-                <p><strong>19 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>20 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>@wangqinNick Ahhh I think I see the problem then. Thank you. I also just double checked that all my tags were pushed because some of my tags this morning were only on my local repo 😕 I was just very confused since no one else seemed to have this issue; perhaps they already merged their branches.</p>
               <p>@okkhoy The <a href="http://user.name">user.name</a> seems to be fine. I'll wait for the reposense to update tomorrow.</p>
@@ -279,70 +290,70 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/40#issuecomment-690921483" expanded><template slot="_header">
-                <p><strong>20 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>21 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Update: All is well, the latest changes have been picked up.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/44#issuecomment-691655008" expanded><template slot="_header">
-                <p><strong>21 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>22 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Thank you for the helpful insight. When you say PR workflow, are there any significant advantages or disadvantages to creating forks vs. branches? I imagine forks keep the production repository cleaner, but branches are a bit easier to manage?
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/36#issuecomment-691655985" expanded><template slot="_header">
-                <p><strong>22 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>23 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Interesting update: If I use IntelliJ to automatically import each class (i.e. delete my import com.neilbaner.duke.exceptions.* and then Alt-Enter on each exception manually), then by the time I import every single exception (eg. import com.neilbaner.duke.exceptions.TaskIndexOutOfBoundsException, com.neilbaner.duke.exceptions.UnknownCommandException etc. etc, IntelliJ decides that it should combine them all back into com.neilbaner.duke.exceptions.*. This does throw a bit of a spanner in the works.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/44#issuecomment-691673146" expanded><template slot="_header">
-                <p><strong>23 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>24 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>I see. I guess I need to try all the different approaches before settling on one. Thanks for your advice. It was very helpful. I'll close this issue now.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/51#issuecomment-692393580" expanded><template slot="_header">
-                <p><strong>24 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>25 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>I, too, am facing something similar. The same path that works in IntelliJ no longer works when I create a JAR and test it using<code v-pre>java -jar</code>. I handled the exception, but the feature doesn't work as expected which is a bit of a shame.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/51#issuecomment-692430567" expanded><template slot="_header">
-                <p><strong>25 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>26 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>For mine, there are some text files containing lists of application data (i.e. not user generated data) that I want to bundle with the application. I made sure that those text files are inside the jar, but the same path that works when running in IntelliJ don't work with the jar. Can I ask how we can access files within the jar? Should the path be something like ./ip.jar/... ?
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/16#issuecomment-699479241" expanded><template slot="_header">
-                <p><strong>26 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>27 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Since we no longer need Replit, I guess this issue can be closed.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/64#issuecomment-699479352" expanded><template slot="_header">
-                <p><strong>27 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>28 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Ah yes, very useful for those of us who won't be lucky enough to win the weekly pollev and also the subsequent wheel spin... Thanks.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/74#issuecomment-702621083" expanded><template slot="_header">
-                <p><strong>28 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>29 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>It does this for me too intermittently, and it seems to go away by itself after a while or when I restart IntelliJ. For a program whose name is derived from &quot;intelligent&quot;, it can be quite dense at times...
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/76#issuecomment-704917483" expanded><template slot="_header">
-                <p><strong>29 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>30 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <blockquote>
                 <p>A possible issue is that your Manifest may have been edited/not included in the JAR. So try to rebuild the JAR.</p>
@@ -354,9 +365,86 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/76#issuecomment-705467809" expanded><template slot="_header">
-                <p><strong>30 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>31 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>@HengFuYuen The error would be produced when running the .jar file produced with java -jar or double clicking. If you download the jar file you published and you can run it, then you needn't worry.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/83#issuecomment-708355806" expanded><template slot="_header">
+                <p><strong>32 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Hi, how were you able to solve this?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/87#issuecomment-708373699" expanded><template slot="_header">
+                <p><strong>33 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I think prof mentioned in lecture, assertions are for when the programmer causes the error, and exceptions are for when the user or the environment causes the error. The main issue with assertions for errors that can be caused by the user is that ideally they should be disabled for production builds...</p>
+              <p>In this case, I'd say num can conceivably be null if the user enters, say &quot;omae wa mou shindeiru&quot;, so I'm going to go against the grain and say an exception would be the appropriate choice here.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/88#issuecomment-708700353" expanded><template slot="_header">
+                <p><strong>34 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Sorry, I'm not 100% sure what you mean @hughjazzman . Am I right to say that, according to the link you sent, my Ui class should be the only one printing messages anyway?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/48#issuecomment-709067047" expanded><template slot="_header">
+                <p><strong>35 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I had a bit of an idea on how to resolve this. What if, instead of using the dos2unix command, we simply create the EXPECTED_UNIX file manually? I believe many text editors, and indeed, IntelliJ, allow the user to choose between CRLF and LF...
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/48#issuecomment-709138250" expanded><template slot="_header">
+                <p><strong>36 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Update: I FIXED IT!!</p>
+              <p>I've managed to figure out a workaround for this issue, involving getting rid of the dos2unix command entirely.</p>
+              <p>How I found this fix:</p>
+              <p>I tested on my own machine on Ubuntu (with WSL, didn't feel like rebooting multiple times), and I faced the same error with dos2unix. One <code v-pre>sudo apt install dos2unix</code> later, it worked fine. I suspect dos2unix isn't included on the CI system.</p>
+              <p>How I fixed:</p>
+              <p>First, I removed the lines</p>
+              <pre><code class="hljs sh" v-pre><span><br></span><span>cp EXPECTED.TXT EXPECTED-UNIX.TXT<br></span><span><br></span><span>dos2unix EXPECTED-UNIX.TXT input.txt<br></span><span><br></span></code></pre>
+              <p>Then, I manually created a copy of EXPECTED.TXT and named it EXPECTED-UNIX.txt. (Remember to update the .gitignore to push this file as well!)</p>
+              <p>Finally, I used the button at the bottom right on IntelliJ</p>
+              <p><a href="https://user-images.githubusercontent.com/30567828/96112323-02c31000-0f15-11eb-9969-9860170fb152.png" target="_self"><img src="https://user-images.githubusercontent.com/30567828/96112323-02c31000-0f15-11eb-9969-9860170fb152.png" alt class="img-fluid"></a></p>
+              <p>to change the EXPECTED-UNIX.txt to use LF instead of CRLF</p>
+              <p>et voila!</p>
+              <p><a href="https://user-images.githubusercontent.com/30567828/96112493-47e74200-0f15-11eb-8c6d-f731fe696920.png" target="_self"><img src="https://user-images.githubusercontent.com/30567828/96112493-47e74200-0f15-11eb-8c6d-f731fe696920.png" alt class="img-fluid"></a></p>
+              <p>hi prof pls giv me a plus grade thank u</p>
+              <p>(NB. This method does require you to update 2 different files every time you need to update your tests, but it's not too bad since you can simply copy and paste it, or you can use dos2unix on your own machine to do it for you even though copy and paste and changing the format is probably fewer keystrokes/clicks)</p>
+              <p>@TomLBZ @Lee-Juntong @okkhoy</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/89#issuecomment-709149458" expanded><template slot="_header">
+                <p><strong>37 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Does this mean that if our program uses, say, usernames and passwords, the passwords must also be stored in plaintext? What about API keys?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/48#issuecomment-709282848" expanded><template slot="_header">
+                <p><strong>38 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>It was certainly very satisfying seeing the green tick finally 😄
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/89#issuecomment-709283514" expanded><template slot="_header">
+                <p><strong>39 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I was thinking for logging into online services, such as GitHub perhaps.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/88#issuecomment-709607628" expanded><template slot="_header">
+                <p><strong>40 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I see what you mean. How would you suggest I do this for exceptions though? java.lang.Exception, for example, includes a printStackTrace method which means the exception, not the UI class is responsible for printing error messages. For my ip I (not knowing better until much too late) used a static messages class and called it's methods everywhere I needed to print something, including in my DukeException.printErrorMessage().
               </p>
             </panel>
             <p></p>
@@ -726,13 +814,42 @@
               <p>Thanks for the explanation!</p>
             </panel>
           </panel>
-          <panel type="info" collapsed id="3-wira-hmad-hughjazzman-20-posts"><template slot="_header">
-              <h3 id="3-wira-hmad-hughjazzman-20-posts">3. WIRA..HMAD <code v-pre>@hughjazzman</code> (20 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="3-wira-hmad-hughjazzman-25-posts"><template slot="_header">
+              <h3 id="3-wira-hmad-hughjazzman-25-posts">3. WIRA..HMAD <code v-pre>@hughjazzman</code> (25 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#3-wira-hmad-hughjazzman-20-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#3-wira-hmad-hughjazzman-25-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/87" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Assertion and Exception</strong></p>
+              </template>
+              <p>So given the following code</p>
+              <pre><code class="hljs Java" v-pre><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span>() </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">private</span> Integer a;<br></span><span><br></span><span><br></span><span><br></span><span>    A(<span class="hljs-keyword">int</span> a) { <br></span><span><br></span><span>        <span class="hljs-keyword">assert</span> a != <span class="hljs-keyword">null</span>; <span class="hljs-comment">// Method 1 - assert in constructor</span><br></span><span><br></span><span>        <span class="hljs-keyword">if</span> (a == <span class="hljs-keyword">null</span>) {  <br></span><span><br></span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> SpecialException(); <span class="hljs-comment">// Method 2 - throw Exception to be caught</span><br></span><span><br></span><span>        }<br></span><span><br></span><span>        <span class="hljs-keyword">this</span>.a = a;<br></span><span><br></span><span>    }<br></span><span><br></span><span>}<br></span><span><br></span><span><br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> class <span class="hljs-title">Main</span><span class="hljs-params">()</span> </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Scanner IN = <span class="hljs-keyword">new</span> Scanner(System.in);<br></span><span><br></span><span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span><br></span><span>        String line = IN.nextLine().strip();<br></span><span><br></span><span>        Integer num = <span class="hljs-keyword">null</span>;<br></span><span><br></span><span>        <span class="hljs-keyword">try</span> {<br></span><span><br></span><span>            num = Integer.parseInt(line);<br></span><span><br></span><span>        } <span class="hljs-keyword">catch</span> (NumberFormatException e) {} <span class="hljs-comment">// Is exception handling here enough?</span><br></span><span><br></span><span><br></span><span><br></span><span>        <span class="hljs-keyword">assert</span> num != <span class="hljs-keyword">null</span>; <span class="hljs-comment">// Method 3 - assert before initialising</span><br></span><span><br></span><span>        <span class="hljs-keyword">try</span> {<br></span><span><br></span><span>            A objA = <span class="hljs-keyword">new</span> A(num);<br></span><span><br></span><span>        } <span class="hljs-keyword">catch</span> (SpecialException e) {} <span class="hljs-comment">// Method 2 - catch Exception thrown</span><br></span><span><br></span><span>    }<br></span><span><br></span><span>}<br></span><span><br></span></code></pre>
+              <p>If we want to prevent <code v-pre>A.a</code> from being initialised as <code v-pre>null</code>, should I</p>
+              <ol>
+                <li>
+                  <p><code v-pre>assert</code> within the constructor (Method 1)?</p>
+                </li>
+                <li>
+                  <p>catch <code v-pre>Exception</code> while initialising (Method 2)?</p>
+                </li>
+                <li>
+                  <p><code v-pre>assert</code> before initialising (Method 3)?</p>
+                </li>
+              </ol>
+              <p>The use of assertions and exceptions depends whether the input is from the user or the programmer, so if it's parsed properly would it be considered from the user or the programmer after parsing?</p>
+              <p>Thanks to TA @nishanthelango for the following input as well:</p>
+              <blockquote>
+                <p>I think if you want <code v-pre>num</code> to be never <code v-pre>null</code> at any point of the code then method 3 makes sense</p>
+              </blockquote>
+              <blockquote>
+                <p>But if you just don't want any instance of Class <code v-pre>A</code> to have a <code v-pre>null</code> variable <code v-pre>a</code> then you could use method 1
+                </p>
+              </blockquote>
+            </panel>
+            <p></p>
+
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/61" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> 💡 Tables, Emojis in GitHub pages</strong></p>
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> 💡 Tables, Emojis in GitHub pages</strong></p>
               </template>
               <p>If you made a User Guide with tables, you might be wondering why the formatting for the tables works in GitHub but breaks in GitHub pages. Following the advice at this link - <a href="https://github.com/pages-themes/cayman/issues/82">https://github.com/pages-themes/cayman/issues/82</a> - you just need to change the <code v-pre>_config.yml</code> file to render with <code v-pre>GFM</code> (GitHub Flavored Markdown). <a href="https://help.github.com/en/github/working-with-github-pages/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll">More details found here.</a></p>
               <p>As for adding emojis like seen at <a href="https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md">this link</a> to your GitHub pages, there is an extra step explained at <a href="https://docs.github.com/en/enterprise/2.13/user/articles/emoji-on-github-pages">this link</a> for the change needed in the <code v-pre>_config.yml</code> file.</p>
@@ -748,7 +865,7 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/22" expanded><template slot="_header">
-                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Automated Text UI Testing</strong></p>
+                <p><strong>3. <span aria-hidden="true" class="fas fa-info-circle"></span> Automated Text UI Testing</strong></p>
               </template>
               <p>OS: Windows 10</p>
               <p>Increment: <a href="https://nus-cs2113-ay2021s1.github.io/website/schedule/week4/project.html#a-textuitesting"><code v-pre>A-TextUiTesting</code></a></p>
@@ -763,7 +880,7 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/20" expanded><template slot="_header">
-                <p><strong>3. <span aria-hidden="true" class="fas fa-info-circle"></span> Week 3 Tutorial Exercise - Coding Standard Violations</strong></p>
+                <p><strong>4. <span aria-hidden="true" class="fas fa-info-circle"></span> Week 3 Tutorial Exercise - Coding Standard Violations</strong></p>
               </template>
               <pre><code class="hljs Java" v-pre><span><br></span><span><span class="hljs-keyword">import</span> java.util.*;<br></span><span><br></span><span><br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{<br></span><span><br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String descriptionPrefix = <span class="hljs-string">"description: "</span>;<br></span><span><br></span><span>    <span class="hljs-keyword">private</span> String description;<br></span><span><br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> important;<br></span><span><br></span><span>    List&lt;String&gt; pastDescription = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(); <span class="hljs-comment">// a list of past descriptions</span><br></span><span><br></span><span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String d)</span> </span>{<br></span><span><br></span><span>      <span class="hljs-keyword">this</span>.description = d;<br></span><span><br></span><span>      <span class="hljs-keyword">if</span> (!d.isEmpty())<br></span><span><br></span><span>          <span class="hljs-keyword">this</span>.important = <span class="hljs-keyword">true</span>;<br></span><span><br></span><span>    }<br></span><span><br></span><span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getAsXML</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">"&lt;task&gt;"</span>+description+<span class="hljs-string">"&lt;/task&gt;"</span>; }<br></span><span><br></span><span><br></span><span><br></span><span>    <span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment"></span><br></span><span><span class="hljs-comment">     * Print the description as a string.</span><br></span><span><span class="hljs-comment"></span><br></span><span><span class="hljs-comment">     */</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printingDescription</span><span class="hljs-params">()</span></span>{ System.out.println(<span class="hljs-keyword">this</span>); }<br></span><span><br></span><span><br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> descriptionPrefix + description; }<br></span><span><br></span><span>}<br></span><span><br></span></code></pre>
               <p>Other than the given ones regarding <code v-pre>descriptionPrefix</code>, <code v-pre>printingDescription()</code>, and <code v-pre>important</code>, these should be the other ones:</p>
@@ -787,28 +904,28 @@
               <p>Did I miss anything?</p>
             </panel>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/11#issuecomment-678271798" expanded><template slot="_header">
-                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>I assume since the wrapped lines is about the layout to improve readability, it is so that the code is easily viewable on smaller widths. Then this means the spaces would be part of the limit.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/21#issuecomment-680952533" expanded><template slot="_header">
-                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>6 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>I would assume all the input we get is completely ideal, and that we will learn about catching errors in future weeks.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/22#issuecomment-681765124" expanded><template slot="_header">
-                <p><strong>6 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>7 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Nice! It works, thanks @wangqinNick.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/27#issuecomment-683380238" expanded><template slot="_header">
-                <p><strong>7 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>8 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>It’s here: <a href="https://se-education.org/guides/conventions/java/index.html#variables">https://se-education.org/guides/conventions/java/index.html#variables</a></p>
               <blockquote>
@@ -819,27 +936,27 @@
               </blockquote>
             </panel>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26#issuecomment-683398093" expanded><template slot="_header">
-                <p><strong>8 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>9 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Assuming the data from the classrooms follows what's said here - <a href="https://docs.repl.it/classrooms/exports">https://docs.repl.it/classrooms/exports</a> - then that's probably why they can't use our <a href="http://repl.it">repl.it</a> usernames. If only <a href="http://repl.it">repl.it</a> gave the data with usernames.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683418650" expanded><template slot="_header">
-                <p><strong>9 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>10 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>@adinata15 What's your OS? The forward/backslash seems like something to do with using the right file on the right OS.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683440611" expanded><template slot="_header">
-                <p><strong>10 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>11 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>@adinata15 Hmm then maybe not. Looking at your package structure, because you packaged Duke in <code v-pre>main.java</code> I believe these should work:</p>
               <pre><code class="hljs bash" v-pre><span><br></span><span>javac -cp ..\src -Xlint:none -d ..\bin ..\src\main\java\Duke.java<br></span><span><br></span><span>java -Dfile.encoding=UTF-8 -classpath ..\bin main.java.Duke &lt; input.txt &gt; ACTUAL.TXT<br></span><span><br></span></code></pre>
             </panel>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/22#issuecomment-683806460" expanded><template slot="_header">
-                <p><strong>11 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>12 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>@kaijiel24 Yep, since they are special characters you would need to change the console code page as well as the font to print them. Of the fonts available in my <code v-pre>cmd</code>, only MS Gothic, NSimSun, SimSun-ExtB could display them.</p>
               <pre><code class="hljs" v-pre><span><br></span><span>chcp 65001<br></span><span><br></span></code></pre>
@@ -849,14 +966,14 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/31#issuecomment-684621953" expanded><template slot="_header">
-                <p><strong>12 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>13 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Answered in #22
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/36#issuecomment-687758900" expanded><template slot="_header">
-                <p><strong>13 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>14 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>It's in the Coding Standard: <a href="https://se-education.org/guides/conventions/java/basic.html#package-and-import-statements">https://se-education.org/guides/conventions/java/basic.html#package-and-import-statements</a></p>
               <blockquote>
@@ -867,7 +984,7 @@
             <p></p>
 
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/56#issuecomment-696215594" expanded><template slot="_header">
-                <p><strong>14 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>15 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p><a href="https://stackoverflow.com/questions/47457105/class-has-been-compiled-by-a-more-recent-version-of-the-java-environment">https://stackoverflow.com/questions/47457105/class-has-been-compiled-by-a-more-recent-version-of-the-java-environment</a></p>
               <p>Yup it looks like Java 14 was used to compile, and Java 8 is being used to run.
@@ -875,27 +992,27 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/47#issuecomment-696216763" expanded><template slot="_header">
-                <p><strong>15 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>16 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>For reference, this goes as far back as #22.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/56#issuecomment-696499236" expanded><template slot="_header">
-                <p><strong>16 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>17 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>@okkhoy Whoops yep.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/36#issuecomment-696696914" expanded><template slot="_header">
-                <p><strong>17 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>18 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Follow this: <a href="https://www.jetbrains.com/help/idea/creating-and-optimizing-imports.html#disable-wildcard-imports">https://www.jetbrains.com/help/idea/creating-and-optimizing-imports.html#disable-wildcard-imports</a></p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/62#issuecomment-697296576" expanded><template slot="_header">
-                <p><strong>18 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>19 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>From the page:</p>
               <blockquote>
@@ -906,16 +1023,46 @@
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/65#issuecomment-699666886" expanded><template slot="_header">
-                <p><strong>19 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>20 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Hi, try tips from #61.
               </p>
             </panel>
             <p></p>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/72#issuecomment-701894770" expanded><template slot="_header">
-                <p><strong>20 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+                <p><strong>21 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>Try tips in #61, was also asked in #65.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/87#issuecomment-708471147" expanded><template slot="_header">
+                <p><strong>22 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>@AndreWongZH Good point, I've changed the example to <code v-pre>Integer</code>.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/88#issuecomment-708482154" expanded><template slot="_header">
+                <p><strong>23 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>If we were to take <a href="https://se-education.org/addressbook-level3/DeveloperGuide.html#architecture">https://se-education.org/addressbook-level3/DeveloperGuide.html#architecture</a> as an example, then the navigability shows that <code v-pre>Ui</code> should be the one aware of the <code v-pre>Logic</code> and <code v-pre>Model</code> of the application instead of the other way round. I haven't implemented this, but if I were to guess, you could initialise the <code v-pre>Ui</code> in the main app class and check the other 2 components in the <code v-pre>while</code> loop.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/88#issuecomment-708931178" expanded><template slot="_header">
+                <p><strong>24 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Let me see if I can try to illustrate. Suppose we have a <code v-pre>Command</code> class.</p>
+              <pre><code class="hljs Java" v-pre><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Duke</span> </span>{<br></span><span><br></span><span>    <span class="hljs-comment">/** Instances of class objects for UI. **/</span><br></span><span><br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Ui ui;<br></span><span><br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Parser parser;<br></span><span><br></span><span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Duke</span><span class="hljs-params">()</span> </span>{<br></span><span><br></span><span>        ui = <span class="hljs-keyword">new</span> Ui();<br></span><span><br></span><span>        parser = <span class="hljs-keyword">new</span> Parser();<br></span><span><br></span><span>    }<br></span><span><br></span><span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{<br></span><span><br></span><span>        <span class="hljs-keyword">boolean</span> isExit = <span class="hljs-keyword">false</span>;<br></span><span><br></span><span>        <span class="hljs-keyword">while</span> (!isExit) {<br></span><span><br></span><span>            String line = ui.readLine();<br></span><span><br></span><span>            Command c = parser.parse(line);<br></span><span><br></span><span>            c.execute();<br></span><span><br></span><span>            isExit = c.isExit();<br></span><span><br></span><span>            ui.printCommand(c); <span class="hljs-comment">// here, we could try have the Command c as input to the Ui instance</span><br></span><span><br></span><span>        }<br></span><span><br></span><span>    }<br></span><span><br></span><span><br></span><span><br></span><span>    <span class="hljs-comment">/**</span><br></span><span><span class="hljs-comment"></span><br></span><span><span class="hljs-comment">     * Main entry-point for the java.duke.Duke application.</span><br></span><span><span class="hljs-comment"></span><br></span><span><span class="hljs-comment">     */</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span><br></span><span>        <span class="hljs-keyword">new</span> Duke().run();<br></span><span><br></span><span>    }<br></span><span><br></span><span>}<br></span><span><br></span></code></pre>
+              <p>Maybe the <code v-pre>Command</code> class might have an overridden <code v-pre>toString()</code> method? This leaves the <code v-pre>Logic</code> not having to deal with <code v-pre>Ui</code> as well.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/91#issuecomment-709206672" expanded><template slot="_header">
+                <p><strong>25 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Not necessarily. If you have proper abstraction within the <code v-pre>Parser</code> class, a new command could simply use an existing method to prepare the arguments. If your <code v-pre>Parser</code>, <code v-pre>Command</code>, <code v-pre>Messages</code> don't need to be aware of <code v-pre>Ui</code> as discussed in #88, then a new command would just be a new <code v-pre>Command</code> subclass, with <code v-pre>Messages</code> being associated with the <code v-pre>Command</code>.
               </p>
             </panel>
             <p></p>
@@ -1438,10 +1585,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="6-heng-yuen-hengfuyuen-14-posts"><template slot="_header">
-              <h3 id="6-heng-yuen-hengfuyuen-14-posts">6. HENG..YUEN <code v-pre>@HengFuYuen</code> (14 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="6-heng-yuen-hengfuyuen-15-posts"><template slot="_header">
+              <h3 id="6-heng-yuen-hengfuyuen-15-posts">6. HENG..YUEN <code v-pre>@HengFuYuen</code> (15 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#6-heng-yuen-hengfuyuen-14-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#6-heng-yuen-hengfuyuen-15-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/65" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Table formatting for User Guide</strong></p>
@@ -1554,11 +1701,19 @@
               </p>
             </panel>
             <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/87#issuecomment-708304870" expanded><template slot="_header">
+                <p><strong>15 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Personally, I would use method 1 because if it was an invalid input from the user I would assume that the parser/main class caught the error as an exception perhaps while parsing. Therefore, if class A was initialised with null it would be a programmer error. For example, in my tp I actually worked on a person class and the age of a person cannot be &lt; 0 and I used assertion in my constructor rather than an exception because I assumed that the parser class would have caught the error as an exception. However, I am not sure if I'm right either...</p>
+              <p>Regarding method 3, I think it can still be used, however, I would still prefer method 1 because I am assuming that having num == null in main is fine but num == null in Class A is not.
+              </p>
+            </panel>
+            <p></p>
           </panel>
-          <panel type="info" collapsed id="7-king-iang-kstonekuan-11-posts"><template slot="_header">
-              <h3 id="7-king-iang-kstonekuan-11-posts">7. KING..IANG <code v-pre>@kstonekuan</code> (11 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="7-king-iang-kstonekuan-12-posts"><template slot="_header">
+              <h3 id="7-king-iang-kstonekuan-12-posts">7. KING..IANG <code v-pre>@kstonekuan</code> (12 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#7-king-iang-kstonekuan-11-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#7-king-iang-kstonekuan-12-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/79" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Requesting Permission to use JSON.simple</strong></p>
@@ -1652,11 +1807,84 @@
               </p>
             </panel>
             <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/91#issuecomment-709041814" expanded><template slot="_header">
+                <p><strong>12 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I think this is a very valid concern and my team has also faced this issue with many merge conflicts over the Ui class. However, I think putting a lot of logic into the Command classes would start to violate SRP and as a result the code becomes more procedural in nature rather that being object-oriented.
+              </p>
+            </panel>
+            <p></p>
           </panel>
-          <panel type="info" collapsed id="8-feli-alim-felixhalim-8-posts"><template slot="_header">
-              <h3 id="8-feli-alim-felixhalim-8-posts">8. FELI..ALIM <code v-pre>@felixhalim</code> (8 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="8-dani-oong-daniellimws-8-posts"><template slot="_header">
+              <h3 id="8-dani-oong-daniellimws-8-posts">8. DANI..OONG <code v-pre>@daniellimws</code> (8 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#8-feli-alim-felixhalim-8-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#8-dani-oong-daniellimws-8-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/35#issuecomment-687739348" expanded><template slot="_header">
+                <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>You can click on &quot;branches&quot; here (which links you to <a href="https://github.com/e0426051/circus/branches">https://github.com/e0426051/circus/branches</a>)</p>
+              <p><a href="https://user-images.githubusercontent.com/8130120/92322937-274ee100-f067-11ea-8713-7a65b9f0ca9b.png" target="_self"><img src="https://user-images.githubusercontent.com/8130120/92322937-274ee100-f067-11ea-8713-7a65b9f0ca9b.png" alt class="img-fluid"></a></p>
+              <p>Then you should be able to delete the <code v-pre>in-lecture</code> branch on GitHub</p>
+              <p><a href="https://user-images.githubusercontent.com/8130120/92322953-3766c080-f067-11ea-9f02-5982c053655a.png" target="_self"><img src="https://user-images.githubusercontent.com/8130120/92322953-3766c080-f067-11ea-9f02-5982c053655a.png" alt class="img-fluid"></a></p>
+              <p>Then there shouldn't be a problem with pushing anymore.</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/47#issuecomment-691681659" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Maybe because your terminal is using a font that doesn't support this character? Try changing to a different font? Or maybe one from <a href="https://github.com/powerline/fonts">here</a>? I hope this works
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/64#issuecomment-699481339" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Yay!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/48#issuecomment-699492123" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Maybe it is because of different line endings? In windows, the files have CRLF at the end of lines, and in MacOS/Linux they end with LF. I think <code v-pre>dos2unix</code> is supposed to fix this but it failed to run because your system doesn't have it.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/67#issuecomment-700343459" expanded><template slot="_header">
+                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Double check if you deleted the correct file? Because it does look like the program is reading from a file.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/67#issuecomment-700343508" expanded><template slot="_header">
+                <p><strong>6 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Double check if you deleted the correct file? Because it does look like the program is reading from a file.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/71#issuecomment-701159158" expanded><template slot="_header">
+                <p><strong>7 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Might be issue with nus WiFi. Happened to my team also.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/87#issuecomment-708280134" expanded><template slot="_header">
+                <p><strong>8 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>As I was considering whether I should throw/catch an exception for this, I wondered how would I handle this exception. I will most likely need to print an error message to the user. But I don't see any good way of letting the user know what went wrong, and how to correct it in this situation, since this is almost certainly a problem with the code itself. So, I don't think using an exception is useful.</p>
+              <p>I would prefer Method 1 so that this assertion is always made. If I do Method 3 I may forget to assert when doing <code v-pre>new A(num)</code> somewhere else.</p>
+              <p>Oh but I guess <code v-pre>num</code> will be <code v-pre>null</code> when there is a <code v-pre>NumberFormatException</code> so I think Method 2 could just be done in the <code v-pre>catch</code> clause for that?
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="9-feli-alim-felixhalim-8-posts"><template slot="_header">
+              <h3 id="9-feli-alim-felixhalim-8-posts">9. FELI..ALIM <code v-pre>@felixhalim</code> (8 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#9-feli-alim-felixhalim-8-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/10#issuecomment-677465756" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -1711,63 +1939,6 @@
                 <p><strong>8 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
               <p>I agree with @zhixiangteoh. There is no strict rule regarding that, hence, you might implement any variant but remember to provide relevant information on the user guide.
-              </p>
-            </panel>
-            <p></p>
-          </panel>
-          <panel type="info" collapsed id="9-dani-oong-daniellimws-7-posts"><template slot="_header">
-              <h3 id="9-dani-oong-daniellimws-7-posts">9. DANI..OONG <code v-pre>@daniellimws</code> (7 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#9-dani-oong-daniellimws-7-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/35#issuecomment-687739348" expanded><template slot="_header">
-                <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>You can click on &quot;branches&quot; here (which links you to <a href="https://github.com/e0426051/circus/branches">https://github.com/e0426051/circus/branches</a>)</p>
-              <p><a href="https://user-images.githubusercontent.com/8130120/92322937-274ee100-f067-11ea-8713-7a65b9f0ca9b.png" target="_self"><img src="https://user-images.githubusercontent.com/8130120/92322937-274ee100-f067-11ea-8713-7a65b9f0ca9b.png" alt class="img-fluid"></a></p>
-              <p>Then you should be able to delete the <code v-pre>in-lecture</code> branch on GitHub</p>
-              <p><a href="https://user-images.githubusercontent.com/8130120/92322953-3766c080-f067-11ea-9f02-5982c053655a.png" target="_self"><img src="https://user-images.githubusercontent.com/8130120/92322953-3766c080-f067-11ea-9f02-5982c053655a.png" alt class="img-fluid"></a></p>
-              <p>Then there shouldn't be a problem with pushing anymore.</p>
-            </panel>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/47#issuecomment-691681659" expanded><template slot="_header">
-                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Maybe because your terminal is using a font that doesn't support this character? Try changing to a different font? Or maybe one from <a href="https://github.com/powerline/fonts">here</a>? I hope this works
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/64#issuecomment-699481339" expanded><template slot="_header">
-                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Yay!
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/48#issuecomment-699492123" expanded><template slot="_header">
-                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Maybe it is because of different line endings? In windows, the files have CRLF at the end of lines, and in MacOS/Linux they end with LF. I think <code v-pre>dos2unix</code> is supposed to fix this but it failed to run because your system doesn't have it.
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/67#issuecomment-700343459" expanded><template slot="_header">
-                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Double check if you deleted the correct file? Because it does look like the program is reading from a file.
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/67#issuecomment-700343508" expanded><template slot="_header">
-                <p><strong>6 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Double check if you deleted the correct file? Because it does look like the program is reading from a file.
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/71#issuecomment-701159158" expanded><template slot="_header">
-                <p><strong>7 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>Might be issue with nus WiFi. Happened to my team also.
               </p>
             </panel>
             <p></p>
@@ -2071,10 +2242,59 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="15-zhao-iang-e0426051-5-posts"><template slot="_header">
-              <h3 id="15-zhao-iang-e0426051-5-posts">15. ZHAO..IANG <code v-pre>@e0426051</code> (5 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="15-wong-wei-keke101-5-posts"><template slot="_header">
+              <h3 id="15-wong-wei-keke101-5-posts">15. WONG.. WEI <code v-pre>@keke101</code> (5 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#15-zhao-iang-e0426051-5-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#15-wong-wei-keke101-5-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/90" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Request Permission to Use Dozer</strong></p>
+              </template>
+              <h2 id="library-3">Library<a class="fa fa-anchor" href="#library-3" onclick="event.stopPropagation()"></a></h2>
+              <p><a href="https://github.com/DozerMapper/dozer">Dozer</a></p>
+              <h2 id="purpose-3">Purpose<a class="fa fa-anchor" href="#purpose-3" onclick="event.stopPropagation()"></a></h2>
+              <p>To map JSON to Java object.</p>
+              <h2 id="license-3">License<a class="fa fa-anchor" href="#license-3" onclick="event.stopPropagation()"></a></h2>
+              <p>Apache 2.0</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/82" expanded><template slot="_header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Requesting Permission to use json-simple 3.1.1</strong></p>
+              </template>
+              <h2 id="library-4">Library<a class="fa fa-anchor" href="#library-4" onclick="event.stopPropagation()"></a></h2>
+              <p><a href="https://cliftonlabs.github.io/json-simple/">json-simple</a></p>
+              <h2 id="purpose-4">Purpose<a class="fa fa-anchor" href="#purpose-4" onclick="event.stopPropagation()"></a></h2>
+              <p>Load and store persistent data as JSON. This library has a similar name as the other library that was requested <a href="https://github.com/nus-cs2113-AY2021S1/forum/issues/79">here</a>, but it is different.</p>
+              <h2 id="license-4">License<a class="fa fa-anchor" href="#license-4" onclick="event.stopPropagation()"></a></h2>
+              <p>Apache 2.0</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/37" expanded><template slot="_header">
+                <p><strong>3. <span aria-hidden="true" class="fas fa-info-circle"></span> On magic numbers</strong></p>
+              </template>
+              <p>Hello, can I check if the following array indexes used are deemed as magic numbers?</p>
+              <pre><code class="hljs" v-pre><span><br></span><span>String name = arguments[0];<br></span><span><br></span><span>String date = arguments[1];<br></span><span><br></span></code></pre>
+              <p>My understanding is that this is pretty straight forward as I'm assigning them directly to two variables which have descriptive names.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/37#issuecomment-688591278" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>That's what I thought so too, thanks for the clarification!
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/82#issuecomment-706481036" expanded><template slot="_header">
+                <p><strong>5 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I believe this is the successor of the previous JSON simple, the other JSON simple is authored by a single person (Yidong). For this JSON simple it is merged with the old JSON simple and maintained under Clifton Labs. I was confused by it as well haha.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="16-zhao-iang-e0426051-5-posts"><template slot="_header">
+              <h3 id="16-zhao-iang-e0426051-5-posts">16. ZHAO..IANG <code v-pre>@e0426051</code> (5 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#16-zhao-iang-e0426051-5-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/35" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Not sure how to redo circus activity in lecture</strong></p>
@@ -2123,10 +2343,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="16-guni-ttal-gmit22-5-posts"><template slot="_header">
-              <h3 id="16-guni-ttal-gmit22-5-posts">16. GUNI..TTAL <code v-pre>@gmit22</code> (5 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="17-guni-ttal-gmit22-5-posts"><template slot="_header">
+              <h3 id="17-guni-ttal-gmit22-5-posts">17. GUNI..TTAL <code v-pre>@gmit22</code> (5 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#16-guni-ttal-gmit22-5-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#17-guni-ttal-gmit22-5-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/33" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Automated Text-UI Testing Issue : Cannot find file and symbol</strong></p>
@@ -2168,8 +2388,8 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="17-muha-wala-muhammadhoze-4-posts"><template slot="_header">
-              <h3 id="17-muha-wala-muhammadhoze-4-posts">17. MUHA..WALA <code v-pre>@MuhammadHoze</code> (4 posts)<a class="fa fa-anchor" href="#17-muha-wala-muhammadhoze-4-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="18-muha-wala-muhammadhoze-4-posts"><template slot="_header">
+              <h3 id="18-muha-wala-muhammadhoze-4-posts">18. MUHA..WALA <code v-pre>@MuhammadHoze</code> (4 posts)<a class="fa fa-anchor" href="#18-muha-wala-muhammadhoze-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/7" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Exercise: [Key Exercise] getMultipleGradeCaps Method</strong></p>
@@ -2206,10 +2426,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="18-chen-jun-iamchenjiajun-4-posts"><template slot="_header">
-              <h3 id="18-chen-jun-iamchenjiajun-4-posts">18. CHEN.. JUN <code v-pre>@iamchenjiajun</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="19-chen-jun-iamchenjiajun-4-posts"><template slot="_header">
+              <h3 id="19-chen-jun-iamchenjiajun-4-posts">19. CHEN.. JUN <code v-pre>@iamchenjiajun</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#18-chen-jun-iamchenjiajun-4-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#19-chen-jun-iamchenjiajun-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/54" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Do we add the data files generated to .gitignore?</strong></p>
@@ -2241,8 +2461,8 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="19-li-b-zhao-tomlbz-4-posts"><template slot="_header">
-              <h3 id="19-li-b-zhao-tomlbz-4-posts">19. LI B..ZHAO <code v-pre>@TomLBZ</code> (4 posts)<a class="fa fa-anchor" href="#19-li-b-zhao-tomlbz-4-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="20-li-b-zhao-tomlbz-4-posts"><template slot="_header">
+              <h3 id="20-li-b-zhao-tomlbz-4-posts">20. LI B..ZHAO <code v-pre>@TomLBZ</code> (4 posts)<a class="fa fa-anchor" href="#20-li-b-zhao-tomlbz-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/48" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> [Urgent] Broken <a href="http://runtest.sh">runtest.sh</a> during the tp pull requests online automated testing</strong></p>
@@ -2299,10 +2519,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="20-tang-ting-t170815518-4-posts"><template slot="_header">
-              <h3 id="20-tang-ting-t170815518-4-posts">20. TANG..TING <code v-pre>@t170815518</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="21-tang-ting-t170815518-4-posts"><template slot="_header">
+              <h3 id="21-tang-ting-t170815518-4-posts">21. TANG..TING <code v-pre>@t170815518</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#20-tang-ting-t170815518-4-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#21-tang-ting-t170815518-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/18" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> <a href="http://Repl.it">Repl.it</a> Error: Note: Recompile with -Xlint:unchecked for details.</strong></p>
@@ -2349,10 +2569,45 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="21-dani-jie-daniellimzj-4-posts"><template slot="_header">
-              <h3 id="21-dani-jie-daniellimzj-4-posts">21. DANI..-JIE <code v-pre>@daniellimzj</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="22-andr-hua-andrewongzh-4-posts"><template slot="_header">
+              <h3 id="22-andr-hua-andrewongzh-4-posts">22. ANDR.. HUA <code v-pre>@AndreWongZH</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#21-dani-jie-daniellimzj-4-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#22-andr-hua-andrewongzh-4-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/81" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> 5 checks instead of 3 during PR</strong></p>
+              </template>
+              <p><a href="https://user-images.githubusercontent.com/21986187/95603296-9f565f80-0a88-11eb-9388-c4c5f5abaebf.png" target="_self"><img src="https://user-images.githubusercontent.com/21986187/95603296-9f565f80-0a88-11eb-9388-c4c5f5abaebf.png" alt class="img-fluid"></a></p>
+              <p>Is it okay to disable the page build and github/pages check?</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683378099" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p><a href="https://user-images.githubusercontent.com/21986187/91651800-a53d4600-eac3-11ea-809f-b56cf0302e4b.png" target="_self"><img src="https://user-images.githubusercontent.com/21986187/91651800-a53d4600-eac3-11ea-809f-b56cf0302e4b.png" alt class="img-fluid"></a></p>
+              <p>Maybe you did not initialize a value and called it?
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/49#issuecomment-692152142" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>It seems like your version 1.0 is listed as a pre-release or maybe the progress dashboard is not updated yet.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/87#issuecomment-708389872" expanded><template slot="_header">
+                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I think there is no need for assertions or exceptions to check if num is null. Since int is a primitive type and not an object, the programmer will get a compile time error if they happen to do <code v-pre>int num = null</code>. All primitive types have a default value, so if the parsing of user input into an integer fails, we can assume that num will be initialized into 0.</p>
+              <p>However if you are asking for other object types, my answer would be method 1. Because it lets the programmer know that the program had tried to initialize with a null value. Prompting the programmer to look for instances of where this was called.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="23-dani-jie-daniellimzj-4-posts"><template slot="_header">
+              <h3 id="23-dani-jie-daniellimzj-4-posts">23. DANI..-JIE <code v-pre>@daniellimzj</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#23-dani-jie-daniellimzj-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/59" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> For the increment A-MoreOOP, why do we use instances of classes instead of static methods?</strong></p>
@@ -2391,49 +2646,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="22-wong-wei-keke101-4-posts"><template slot="_header">
-              <h3 id="22-wong-wei-keke101-4-posts">22. WONG.. WEI <code v-pre>@keke101</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="24-lim-bing-farice9-4-posts"><template slot="_header">
+              <h3 id="24-lim-bing-farice9-4-posts">24. LIM ..BING <code v-pre>@farice9</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#22-wong-wei-keke101-4-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/82" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Requesting Permission to use json-simple 3.1.1</strong></p>
-              </template>
-              <h2 id="library-3">Library<a class="fa fa-anchor" href="#library-3" onclick="event.stopPropagation()"></a></h2>
-              <p><a href="https://cliftonlabs.github.io/json-simple/">json-simple</a></p>
-              <h2 id="purpose-3">Purpose<a class="fa fa-anchor" href="#purpose-3" onclick="event.stopPropagation()"></a></h2>
-              <p>Load and store persistent data as JSON. This library has a similar name as the other library that was requested <a href="https://github.com/nus-cs2113-AY2021S1/forum/issues/79">here</a>, but it is different.</p>
-              <h2 id="license-3">License<a class="fa fa-anchor" href="#license-3" onclick="event.stopPropagation()"></a></h2>
-              <p>Apache 2.0</p>
-            </panel>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/37" expanded><template slot="_header">
-                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> On magic numbers</strong></p>
-              </template>
-              <p>Hello, can I check if the following array indexes used are deemed as magic numbers?</p>
-              <pre><code class="hljs" v-pre><span><br></span><span>String name = arguments[0];<br></span><span><br></span><span>String date = arguments[1];<br></span><span><br></span></code></pre>
-              <p>My understanding is that this is pretty straight forward as I'm assigning them directly to two variables which have descriptive names.
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/37#issuecomment-688591278" expanded><template slot="_header">
-                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>That's what I thought so too, thanks for the clarification!
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/82#issuecomment-706481036" expanded><template slot="_header">
-                <p><strong>4 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
-              </template>
-              <p>I believe this is the successor of the previous JSON simple, the other JSON simple is authored by a single person (Yidong). For this JSON simple it is merged with the old JSON simple and maintained under Clifton Labs. I was confused by it as well haha.
-              </p>
-            </panel>
-            <p></p>
-          </panel>
-          <panel type="info" collapsed id="23-lim-bing-farice9-4-posts"><template slot="_header">
-              <h3 id="23-lim-bing-farice9-4-posts">23. LIM ..BING <code v-pre>@farice9</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#23-lim-bing-farice9-4-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#24-lim-bing-farice9-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Did not fulfill participation requirement on Week 2/3</strong></p>
@@ -2466,8 +2682,8 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="24-marc-yong-reinbowl-4-posts"><template slot="_header">
-              <h3 id="24-marc-yong-reinbowl-4-posts">24. MARC..YONG <code v-pre>@Reinbowl</code> (4 posts)<a class="fa fa-anchor" href="#24-marc-yong-reinbowl-4-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="25-marc-yong-reinbowl-4-posts"><template slot="_header">
+              <h3 id="25-marc-yong-reinbowl-4-posts">25. MARC..YONG <code v-pre>@Reinbowl</code> (4 posts)<a class="fa fa-anchor" href="#25-marc-yong-reinbowl-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/58" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Git push changed commit time on Github</strong></p>
@@ -2500,10 +2716,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="25-neo-ern-neojiaern-4-posts"><template slot="_header">
-              <h3 id="25-neo-ern-neojiaern-4-posts">25. NEO .. ERN <code v-pre>@neojiaern</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="26-neo-ern-neojiaern-4-posts"><template slot="_header">
+              <h3 id="26-neo-ern-neojiaern-4-posts">26. NEO .. ERN <code v-pre>@neojiaern</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#25-neo-ern-neojiaern-4-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#26-neo-ern-neojiaern-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/50" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Undo fast foward merge</strong></p>
@@ -2535,10 +2751,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="26-tan-elia-ameliatyr-4-posts"><template slot="_header">
-              <h3 id="26-tan-elia-ameliatyr-4-posts">26. TAN ..ELIA <code v-pre>@AmeliaTYR</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="27-tan-elia-ameliatyr-4-posts"><template slot="_header">
+              <h3 id="27-tan-elia-ameliatyr-4-posts">27. TAN ..ELIA <code v-pre>@AmeliaTYR</code> (4 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#26-tan-elia-ameliatyr-4-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#27-tan-elia-ameliatyr-4-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/41" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> branch-Level-5 not detected in dashboard</strong></p>
@@ -2575,10 +2791,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="27-r-ra-mana-r-ramana-3-posts"><template slot="_header">
-              <h3 id="27-r-ra-mana-r-ramana-3-posts">27. R RA..MANA <code v-pre>@R-Ramana</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="28-r-ra-mana-r-ramana-3-posts"><template slot="_header">
+              <h3 id="28-r-ra-mana-r-ramana-3-posts">28. R RA..MANA <code v-pre>@R-Ramana</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#27-r-ra-mana-r-ramana-3-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#28-r-ra-mana-r-ramana-3-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/21" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> iP: Level-3</strong></p>
@@ -2602,10 +2818,80 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="28-riaz-amed-riazaham-3-posts"><template slot="_header">
-              <h3 id="28-riaz-amed-riazaham-3-posts">28. RIAZ..AMED <code v-pre>@riazaham</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="29-chon-iang-chongjx-3-posts"><template slot="_header">
+              <h3 id="29-chon-iang-chongjx-3-posts">29. CHON..IANG <code v-pre>@Chongjx</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#28-riaz-amed-riazaham-3-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#29-chon-iang-chongjx-3-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/86#issuecomment-709041588" expanded><template slot="_header">
+                <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>@dojh111 I am trying to use this library as well but apparently windows terminal does not support ansi escape codes. So the output became [0m(string)[0m instead. I am wondering if its working for you.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/86#issuecomment-709058993" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Yeah, I found the reg command for enabling colored output but I'm trying to leave it as the last resort. I tried running with powershell but the output is similar as the command prompt.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/86#issuecomment-709481154" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>After some more searching, I have found a way (not sure if it's the correct one). Calling SetConsoleMode() to enable virtual terminal processing. The sample code in the first link gives the desired output, however when I try to digest and simplify it I could not the same output.</p>
+              <ol>
+                <li>
+                  <p><a href="https://stackoverflow.com/questions/52767585/how-can-you-use-vt100-escape-codes-in-java-on-windows">https://stackoverflow.com/questions/52767585/how-can-you-use-vt100-escape-codes-in-java-on-windows</a></p>
+                </li>
+                <li>
+                  <p><a href="https://docs.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences">https://docs.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences</a></p>
+                </li>
+              </ol>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="30-alvi-jun-trolommonm-3-posts"><template slot="_header">
+              <h3 id="30-alvi-jun-trolommonm-3-posts">30. ALVI.. JUN <code v-pre>@trolommonm</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#30-alvi-jun-trolommonm-3-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/85" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Request to use wrapper for stock price api</strong></p>
+              </template>
+              <h2 id="library-5">Library<a class="fa fa-anchor" href="#library-5" onclick="event.stopPropagation()"></a></h2>
+              <p><a href="https://github.com/patriques82/alphavantage4j">alphavantage4j</a></p>
+              <h2 id="purpose-5">Purpose<a class="fa fa-anchor" href="#purpose-5" onclick="event.stopPropagation()"></a></h2>
+              <p A Java wrapper to get stock data and indicators from the Alpha Vantage API. We use it fetch prices for our program></p>
+              <h2 id="license-5">License<a class="fa fa-anchor" href="#license-5" onclick="event.stopPropagation()"></a></h2>
+              <p Apache License 2.0></p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/85#issuecomment-707716318" expanded><template slot="_header">
+                <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Hi Sir @okkhoy ,</p>
+              <p>There is not many alternatives that we could find. Although it's no longer maintained, we tried it and found it to be the most intuitive to use.</p>
+              <p>Regards,</p>
+              <p>Alvin
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/85#issuecomment-708159534" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>Hi Sir,</p>
+              <p>Thanks. Will take note of the limits.</p>
+              <p>Regards,</p>
+              <p>Alvin
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="31-riaz-amed-riazaham-3-posts"><template slot="_header">
+              <h3 id="31-riaz-amed-riazaham-3-posts">31. RIAZ..AMED <code v-pre>@riazaham</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#31-riaz-amed-riazaham-3-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-687695109" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -2655,58 +2941,61 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="29-andr-hua-andrewongzh-3-posts"><template slot="_header">
-              <h3 id="29-andr-hua-andrewongzh-3-posts">29. ANDR.. HUA <code v-pre>@AndreWongZH</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="32-danz-hern-dojh111-3-posts"><template slot="_header">
+              <h3 id="32-danz-hern-dojh111-3-posts">32. DANZ..HERN <code v-pre>@dojh111</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#29-andr-hua-andrewongzh-3-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#32-danz-hern-dojh111-3-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/81" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> 5 checks instead of 3 during PR</strong></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/86" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Request permission to use JColor library</strong></p>
               </template>
-              <p><a href="https://user-images.githubusercontent.com/21986187/95603296-9f565f80-0a88-11eb-9388-c4c5f5abaebf.png" target="_self"><img src="https://user-images.githubusercontent.com/21986187/95603296-9f565f80-0a88-11eb-9388-c4c5f5abaebf.png" alt class="img-fluid"></a></p>
-              <p>Is it okay to disable the page build and github/pages check?</p>
+              <h2 id="library-6">Library<a class="fa fa-anchor" href="#library-6" onclick="event.stopPropagation()"></a></h2>
+              <p><a href="https://github.com/dialex/JColor">JColor</a></p>
+              <h2 id="purpose-6">Purpose<a class="fa fa-anchor" href="#purpose-6" onclick="event.stopPropagation()"></a></h2>
+              <p>We intend to use this library to see if it will help with allowing colours for text outputs in the windows CMD terminal. If it does not work, we will be removing it from the project.</p>
+              <h2 id="license-6">License<a class="fa fa-anchor" href="#license-6" onclick="event.stopPropagation()"></a></h2>
+              <p>MIT License - <a href="https://github.com/dialex/JColor/blob/main/LICENSE">https://github.com/dialex/JColor/blob/main/LICENSE</a></p>
             </panel>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/29#issuecomment-683378099" expanded><template slot="_header">
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/86#issuecomment-709054288" expanded><template slot="_header">
                 <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
-              <p><a href="https://user-images.githubusercontent.com/21986187/91651800-a53d4600-eac3-11ea-809f-b56cf0302e4b.png" target="_self"><img src="https://user-images.githubusercontent.com/21986187/91651800-a53d4600-eac3-11ea-809f-b56cf0302e4b.png" alt class="img-fluid"></a></p>
-              <p>Maybe you did not initialize a value and called it?
+              <p>@Chongjx I did some research and I think the issue is the windows command terminal (cmd) just does not enable ANSI escape codes by default. As such I think the only way to get coloured outputs in windows cmd would be to get the user to enable it on their terminal window, or ask them to use powershell instead
               </p>
             </panel>
             <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/49#issuecomment-692152142" expanded><template slot="_header">
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/86#issuecomment-709243447" expanded><template slot="_header">
                 <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
-              <p>It seems like your version 1.0 is listed as a pre-release or maybe the progress dashboard is not updated yet.
+              <p>I'll continue taking a look to find something that can enable colors on windows cmd, and update here if I find any. Don't want to resort to reg commands also.
               </p>
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="30-chan-hao-chanjianhao-3-posts"><template slot="_header">
-              <h3 id="30-chan-hao-chanjianhao-3-posts">30. CHAN.. HAO <code v-pre>@ChanJianHao</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="33-chan-hao-chanjianhao-3-posts"><template slot="_header">
+              <h3 id="33-chan-hao-chanjianhao-3-posts">33. CHAN.. HAO <code v-pre>@ChanJianHao</code> (3 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#30-chan-hao-chanjianhao-3-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#33-chan-hao-chanjianhao-3-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/78" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Requesting Permission to use JSON Path</strong></p>
               </template>
-              <h2 id="library-4">Library<a class="fa fa-anchor" href="#library-4" onclick="event.stopPropagation()"></a></h2>
+              <h2 id="library-7">Library<a class="fa fa-anchor" href="#library-7" onclick="event.stopPropagation()"></a></h2>
               <p><a href="https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path/2.4.0">Project ':json Path'</a></p>
-              <h2 id="purpose-4">Purpose<a class="fa fa-anchor" href="#purpose-4" onclick="event.stopPropagation()"></a></h2>
+              <h2 id="purpose-7">Purpose<a class="fa fa-anchor" href="#purpose-7" onclick="event.stopPropagation()"></a></h2>
               <p>For parsing our data source .json file into objects.</p>
               <p>We are planning to use this instead of the currently approved gson as gson parser has limitations on how they parse data.</p>
-              <h2 id="license-4">License<a class="fa fa-anchor" href="#license-4" onclick="event.stopPropagation()"></a></h2>
+              <h2 id="license-7">License<a class="fa fa-anchor" href="#license-7" onclick="event.stopPropagation()"></a></h2>
               <p>Apache-2.0 License</p>
             </panel>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/43" expanded><template slot="_header">
                 <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Requesting Permission to use AniList</strong></p>
               </template>
-              <h2 id="library-5">Library<a class="fa fa-anchor" href="#library-5" onclick="event.stopPropagation()"></a></h2>
+              <h2 id="library-8">Library<a class="fa fa-anchor" href="#library-8" onclick="event.stopPropagation()"></a></h2>
               <p><a href="https://github.com/AniList/ApiV2-GraphQL-Docs">AniList GraphQL</a></p>
               <p><a href="https://github.com/jimkyndemeyer/js-graphql-intellij-plugin/">GraphQL Plugin</a></p>
-              <h2 id="purpose-5">Purpose<a class="fa fa-anchor" href="#purpose-5" onclick="event.stopPropagation()"></a></h2>
+              <h2 id="purpose-8">Purpose<a class="fa fa-anchor" href="#purpose-8" onclick="event.stopPropagation()"></a></h2>
               <p>To obtain information on anime and manga via a credible source.</p>
-              <h2 id="license-5">License<a class="fa fa-anchor" href="#license-5" onclick="event.stopPropagation()"></a></h2>
+              <h2 id="license-8">License<a class="fa fa-anchor" href="#license-8" onclick="event.stopPropagation()"></a></h2>
               <p>Free for non-commercial use.</p>
               <p>Our team has obtained permission from the AniList administrator for making use of this. We will minimize the usage of the library whenever possible to avoid stressing their service.</p>
               <p><a href="https://anilist.gitbook.io/anilist-apiv2-docs/overview/overview">AniList Terms of Use</a></p>
@@ -2719,8 +3008,8 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="31-lam-rold-jerroldlam-3-posts"><template slot="_header">
-              <h3 id="31-lam-rold-jerroldlam-3-posts">31. LAM ..ROLD <code v-pre>@jerroldlam</code> (3 posts)<a class="fa fa-anchor" href="#31-lam-rold-jerroldlam-3-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="34-lam-rold-jerroldlam-3-posts"><template slot="_header">
+              <h3 id="34-lam-rold-jerroldlam-3-posts">34. LAM ..ROLD <code v-pre>@jerroldlam</code> (3 posts)<a class="fa fa-anchor" href="#34-lam-rold-jerroldlam-3-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/77" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Gradle Check style flagging constants naming as error</strong></p>
@@ -2736,11 +3025,11 @@
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/42" expanded><template slot="_header">
                 <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Request to apache commons lang 3</strong></p>
               </template>
-              <h2 id="library-6">Library<a class="fa fa-anchor" href="#library-6" onclick="event.stopPropagation()"></a></h2>
+              <h2 id="library-9">Library<a class="fa fa-anchor" href="#library-9" onclick="event.stopPropagation()"></a></h2>
               <p><a href="https://commons.apache.org/proper/commons-lang/">Apache Commons Lang</a></p>
-              <h2 id="purpose-6">Purpose<a class="fa fa-anchor" href="#purpose-6" onclick="event.stopPropagation()"></a></h2>
+              <h2 id="purpose-9">Purpose<a class="fa fa-anchor" href="#purpose-9" onclick="event.stopPropagation()"></a></h2>
               <p>To allow for the class to be printed as a string.</p>
-              <h2 id="license-6">License<a class="fa fa-anchor" href="#license-6" onclick="event.stopPropagation()"></a></h2>
+              <h2 id="license-9">License<a class="fa fa-anchor" href="#license-9" onclick="event.stopPropagation()"></a></h2>
               <p>Apache (<a href="http://www.apache.org/licenses/">http://www.apache.org/licenses/</a>)</p>
             </panel>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/77#issuecomment-703241326" expanded><template slot="_header">
@@ -2749,8 +3038,32 @@
               <p>Thank you Zhi You! That solved the problem!</p>
             </panel>
           </panel>
-          <panel type="info" collapsed id="32-low-leon-leonlowzd-2-posts"><template slot="_header">
-              <h3 id="32-low-leon-leonlowzd-2-posts">32. LOW ..LEON <code v-pre>@leonlowzd</code> (2 posts)<a class="fa fa-anchor" href="#32-low-leon-leonlowzd-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="35-yu-g-geng-gy716-3-posts"><template slot="_header">
+              <h3 id="35-yu-g-geng-gy716-3-posts">35. YU G..GENG <code v-pre>@gy716</code> (3 posts)<a class="fa fa-anchor" href="#35-yu-g-geng-gy716-3-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/84" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Request to modify the workflow files</strong></p>
+              </template>
+              <p>Are we allowed to modify the gradle.yml files? The file gradle.yml provided uses runtest file which we don't want to use.
+              </p>
+            </panel>
+            <p></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/83" expanded><template slot="_header">
+                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Java CI tests for building on different OS last too long</strong></p>
+              </template>
+              <p>When I create a pull request to the upstream, it will be automatically tested for building on ubuntu, windows and MacOs.</p>
+              <p>But I don't know why this process lasts too long like more than 1 hour. Are there any possible reasons casusing this?</p>
+            </panel>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/83#issuecomment-708389414" expanded><template slot="_header">
+                <p><strong>3 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>In our case, I changed the gradle.yml file that teacher provided in the workflow. This file will let github automatically test runtest.bat/sh, which has some problems that will make our program keep running for hours. So we just delete that part of code in the file to not test it.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="36-low-leon-leonlowzd-2-posts"><template slot="_header">
+              <h3 id="36-low-leon-leonlowzd-2-posts">36. LOW ..LEON <code v-pre>@leonlowzd</code> (2 posts)<a class="fa fa-anchor" href="#36-low-leon-leonlowzd-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/9" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Bye World problem issue</strong></p>
@@ -2767,8 +3080,8 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="33-prac-enka-prachi2023-2-posts"><template slot="_header">
-              <h3 id="33-prac-enka-prachi2023-2-posts">33. PRAC..ENKA <code v-pre>@prachi2023</code> (2 posts)<a class="fa fa-anchor" href="#33-prac-enka-prachi2023-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="37-prac-enka-prachi2023-2-posts"><template slot="_header">
+              <h3 id="37-prac-enka-prachi2023-2-posts">37. PRAC..ENKA <code v-pre>@prachi2023</code> (2 posts)<a class="fa fa-anchor" href="#37-prac-enka-prachi2023-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/31" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Tick and Cross characters not appearing when doing text ui testing</strong></p>
@@ -2785,34 +3098,29 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="34-alvi-jun-trolommonm-2-posts"><template slot="_header">
-              <h3 id="34-alvi-jun-trolommonm-2-posts">34. ALVI.. JUN <code v-pre>@trolommonm</code> (2 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#34-alvi-jun-trolommonm-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="38-jazh-shen-jazhten-2-posts"><template slot="_header">
+              <h3 id="38-jazh-shen-jazhten-2-posts">38. JAZH..SHEN <code v-pre>@jazhten</code> (2 posts)<a class="fa fa-anchor" href="#38-jazh-shen-jazhten-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/85" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Request to use wrapper for stock price api</strong></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/89" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Request permission to use crypto and security library</strong></p>
               </template>
-              <h2 id="library-7">Library<a class="fa fa-anchor" href="#library-7" onclick="event.stopPropagation()"></a></h2>
-              <p><a href="https://github.com/patriques82/alphavantage4j">alphavantage4j</a></p>
-              <h2 id="purpose-7">Purpose<a class="fa fa-anchor" href="#purpose-7" onclick="event.stopPropagation()"></a></h2>
-              <p A Java wrapper to get stock data and indicators from the Alpha Vantage API. We use it fetch prices for our program></p>
-              <h2 id="license-7">License<a class="fa fa-anchor" href="#license-7" onclick="event.stopPropagation()"></a></h2>
-              <p Apache License 2.0></p>
+              <h2 id="library-10">Library<a class="fa fa-anchor" href="#library-10" onclick="event.stopPropagation()"></a></h2>
+              <p>[Crypto] (<a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html">https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html</a>)</p>
+              <h2 id="purpose-10">Purpose<a class="fa fa-anchor" href="#purpose-10" onclick="event.stopPropagation()"></a></h2>
+              <p>Encrypt the saved data file so it is not saved in plaintext to protect the privacy of users.</p>
+              <h2 id="license-10">License<a class="fa fa-anchor" href="#license-10" onclick="event.stopPropagation()"></a></h2>
+              <p>Oracle? Sorry not sure if there's one.</p>
             </panel>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/85#issuecomment-707716318" expanded><template slot="_header">
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/89#issuecomment-709235010" expanded><template slot="_header">
                 <p><strong>2 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
               </template>
-              <p>Hi Sir @okkhoy ,</p>
-              <p>There is not many alternatives that we could find. Although it's no longer maintained, we tried it and found it to be the most intuitive to use.</p>
-              <p>Regards,</p>
-              <p>Alvin
+              <p>Ah okay, then I guess we won't be using this
               </p>
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="35-brya-jun-bryanbeh1998-2-posts"><template slot="_header">
-              <h3 id="35-brya-jun-bryanbeh1998-2-posts">35. BRYA.. JUN <code v-pre>@Bryanbeh1998</code> (2 posts)<a class="fa fa-anchor" href="#35-brya-jun-bryanbeh1998-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="39-brya-jun-bryanbeh1998-2-posts"><template slot="_header">
+              <h3 id="39-brya-jun-bryanbeh1998-2-posts">39. BRYA.. JUN <code v-pre>@Bryanbeh1998</code> (2 posts)<a class="fa fa-anchor" href="#39-brya-jun-bryanbeh1998-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/71" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Unable to run gradle file</strong></p>
@@ -2833,8 +3141,8 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="36-nguy-long-longngng-2-posts"><template slot="_header">
-              <h3 id="36-nguy-long-longngng-2-posts">36. NGUY..LONG <code v-pre>@longngng</code> (2 posts)<a class="fa fa-anchor" href="#36-nguy-long-longngng-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="40-nguy-long-longngng-2-posts"><template slot="_header">
+              <h3 id="40-nguy-long-longngng-2-posts">40. NGUY..LONG <code v-pre>@longngng</code> (2 posts)<a class="fa fa-anchor" href="#40-nguy-long-longngng-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/68" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Automated testing after dividing classes into packages</strong></p>
@@ -2856,8 +3164,8 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="37-wu-y-uxin-lezn0-2-posts"><template slot="_header">
-              <h3 id="37-wu-y-uxin-lezn0-2-posts">37. WU Y..UXIN <code v-pre>@Lezn0</code> (2 posts)<a class="fa fa-anchor" href="#37-wu-y-uxin-lezn0-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="41-wu-y-uxin-lezn0-2-posts"><template slot="_header">
+              <h3 id="41-wu-y-uxin-lezn0-2-posts">41. WU Y..UXIN <code v-pre>@Lezn0</code> (2 posts)<a class="fa fa-anchor" href="#41-wu-y-uxin-lezn0-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/30" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Automated runtest issues: cannot find symbol</strong></p>
@@ -2873,10 +3181,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="38-liu-feng-liu-yifeng-1-2-posts"><template slot="_header">
-              <h3 id="38-liu-feng-liu-yifeng-1-2-posts">38. LIU ..FENG <code v-pre>@LIU-YiFeng-1</code> (2 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="42-liu-feng-liu-yifeng-1-2-posts"><template slot="_header">
+              <h3 id="42-liu-feng-liu-yifeng-1-2-posts">42. LIU ..FENG <code v-pre>@LIU-YiFeng-1</code> (2 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#38-liu-feng-liu-yifeng-1-2-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#42-liu-feng-liu-yifeng-1-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/67" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> [Urgent] JAR file cannot run on Mac due to DateTimeParseException</strong></p>
@@ -2897,8 +3205,8 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="39-lim-g-le-limgl1998-2-posts"><template slot="_header">
-              <h3 id="39-lim-g-le-limgl1998-2-posts">39. LIM ..G LE <code v-pre>@limgl1998</code> (2 posts)<a class="fa fa-anchor" href="#39-lim-g-le-limgl1998-2-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="43-lim-g-le-limgl1998-2-posts"><template slot="_header">
+              <h3 id="43-lim-g-le-limgl1998-2-posts">43. LIM ..G LE <code v-pre>@limgl1998</code> (2 posts)<a class="fa fa-anchor" href="#43-lim-g-le-limgl1998-2-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/55" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Unable to access JAR file</strong></p>
@@ -2917,25 +3225,8 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="40-yu-g-geng-gy716-2-posts"><template slot="_header">
-              <h3 id="40-yu-g-geng-gy716-2-posts">40. YU G..GENG <code v-pre>@gy716</code> (2 posts)<a class="fa fa-anchor" href="#40-yu-g-geng-gy716-2-posts" onclick="event.stopPropagation()"></a></h3>
-            </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/84" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Request to modify the workflow files</strong></p>
-              </template>
-              <p>Are we allowed to modify the gradle.yml files? The file gradle.yml provided uses runtest file which we don't want to use.
-              </p>
-            </panel>
-            <p></p>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/83" expanded><template slot="_header">
-                <p><strong>2. <span aria-hidden="true" class="fas fa-info-circle"></span> Java CI tests for building on different OS last too long</strong></p>
-              </template>
-              <p>When I create a pull request to the upstream, it will be automatically tested for building on ubuntu, windows and MacOs.</p>
-              <p>But I don't know why this process lasts too long like more than 1 hour. Are there any possible reasons casusing this?</p>
-            </panel>
-          </panel>
-          <panel type="info" collapsed id="41-ang-yang-acyang97-1-posts"><template slot="_header">
-              <h3 id="41-ang-yang-acyang97-1-posts">41. ANG ..YANG <code v-pre>@acyang97</code> (1 posts)<a class="fa fa-anchor" href="#41-ang-yang-acyang97-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="44-ang-yang-acyang97-1-posts"><template slot="_header">
+              <h3 id="44-ang-yang-acyang97-1-posts">44. ANG ..YANG <code v-pre>@acyang97</code> (1 posts)<a class="fa fa-anchor" href="#44-ang-yang-acyang97-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/19" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> IP Level-3</strong></p>
@@ -2945,8 +3236,8 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="42-tan-wei-tanleewei-1-posts"><template slot="_header">
-              <h3 id="42-tan-wei-tanleewei-1-posts">42. TAN .. WEI <code v-pre>@TanLeeWei</code> (1 posts)<a class="fa fa-anchor" href="#42-tan-wei-tanleewei-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="45-tan-wei-tanleewei-1-posts"><template slot="_header">
+              <h3 id="45-tan-wei-tanleewei-1-posts">45. TAN .. WEI <code v-pre>@TanLeeWei</code> (1 posts)<a class="fa fa-anchor" href="#45-tan-wei-tanleewei-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/76" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Error: Invalid or corrupt jarfile ip.jar</strong></p>
@@ -2963,8 +3254,8 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="43-liau-jie-kaijiel24-1-posts"><template slot="_header">
-              <h3 id="43-liau-jie-kaijiel24-1-posts">43. LIAU.. JIE <code v-pre>@kaijiel24</code> (1 posts)<a class="fa fa-anchor" href="#43-liau-jie-kaijiel24-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="46-liau-jie-kaijiel24-1-posts"><template slot="_header">
+              <h3 id="46-liau-jie-kaijiel24-1-posts">46. LIAU.. JIE <code v-pre>@kaijiel24</code> (1 posts)<a class="fa fa-anchor" href="#46-liau-jie-kaijiel24-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/22#issuecomment-683693127" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -2974,8 +3265,8 @@
               <pre><code class="hljs" v-pre><span><br></span><span>Comparing files ACTUAL.TXT and EXPECTED.TXT<br></span><span><br></span><span>FC: no differences encountered<br></span><span><br></span></code></pre>
             </panel>
           </panel>
-          <panel type="info" collapsed id="44-ang-jun-ang-cheng-jun-1-posts"><template slot="_header">
-              <h3 id="44-ang-jun-ang-cheng-jun-1-posts">44. ANG .. JUN <code v-pre>@Ang-Cheng-Jun</code> (1 posts)<a class="fa fa-anchor" href="#44-ang-jun-ang-cheng-jun-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="47-ang-jun-ang-cheng-jun-1-posts"><template slot="_header">
+              <h3 id="47-ang-jun-ang-cheng-jun-1-posts">47. ANG .. JUN <code v-pre>@Ang-Cheng-Jun</code> (1 posts)<a class="fa fa-anchor" href="#47-ang-jun-ang-cheng-jun-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/72" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Table display on github pages</strong></p>
@@ -2984,8 +3275,8 @@
               <p>Anyone encounter this problem in your github pages ?</p>
             </panel>
           </panel>
-          <panel type="info" collapsed id="45-yeow-ndon-brandonywl-1-posts"><template slot="_header">
-              <h3 id="45-yeow-ndon-brandonywl-1-posts">45. YEOW..NDON <code v-pre>@brandonywl</code> (1 posts)<a class="fa fa-anchor" href="#45-yeow-ndon-brandonywl-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="48-yeow-ndon-brandonywl-1-posts"><template slot="_header">
+              <h3 id="48-yeow-ndon-brandonywl-1-posts">48. YEOW..NDON <code v-pre>@brandonywl</code> (1 posts)<a class="fa fa-anchor" href="#48-yeow-ndon-brandonywl-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/25" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> No Invitation to nus-cs2113-AY2021S1</strong></p>
@@ -2997,8 +3288,8 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="46-chan-jing-shaojingle-1-posts"><template slot="_header">
-              <h3 id="46-chan-jing-shaojingle-1-posts">46. CHAN..JING <code v-pre>@shaojingle</code> (1 posts)<a class="fa fa-anchor" href="#46-chan-jing-shaojingle-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="49-chan-jing-shaojingle-1-posts"><template slot="_header">
+              <h3 id="49-chan-jing-shaojingle-1-posts">49. CHAN..JING <code v-pre>@shaojingle</code> (1 posts)<a class="fa fa-anchor" href="#49-chan-jing-shaojingle-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/56" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> A-Jar .JAR File Error</strong></p>
@@ -3014,26 +3305,51 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="47-danz-hern-dojh111-1-posts"><template slot="_header">
-              <h3 id="47-danz-hern-dojh111-1-posts">47. DANZ..HERN <code v-pre>@dojh111</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="50-sean-i-an-thatseant-1-posts"><template slot="_header">
+              <h3 id="50-sean-i-an-thatseant-1-posts">50. SEAN..I AN <code v-pre>@thatseant</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#47-danz-hern-dojh111-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#50-sean-i-an-thatseant-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
-            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/86" expanded><template slot="_header">
-                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Request permission to use JColor library</strong></p>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/91" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Top-Down OOP increases coupling?</strong></p>
               </template>
-              <h2 id="library-8">Library<a class="fa fa-anchor" href="#library-8" onclick="event.stopPropagation()"></a></h2>
-              <p><a href="https://github.com/dialex/JColor">JColor</a></p>
-              <h2 id="purpose-8">Purpose<a class="fa fa-anchor" href="#purpose-8" onclick="event.stopPropagation()"></a></h2>
-              <p>We intend to use this library to see if it will help with allowing colours for text outputs in the windows CMD terminal. If it does not work, we will be removing it from the project.</p>
-              <h2 id="license-8">License<a class="fa fa-anchor" href="#license-8" onclick="event.stopPropagation()"></a></h2>
-              <p>MIT License - <a href="https://github.com/dialex/JColor/blob/main/LICENSE">https://github.com/dialex/JColor/blob/main/LICENSE</a></p>
+              <p>It has been frequently suggested during the course that output be extracted out to Ui and messages class and parsing functionalities be extracted to Parser class.</p>
+              <p>Doesn't this approach mean for every command added, we need to change Ui, Parser, Command, Messages and object classes extensively? Does this indicate high coupling? As most of our development are adding commands over time, are we changing too many classes every time we do that?</p>
+              <p>Would a better approach be to put most of the logic for every command in Command classes? Then, adding a command would mostly require changes only to that specific command class. Other teammates can work on other commands with lesser conflicts.
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="51-theo-into-theopin-1-posts"><template slot="_header">
+              <h3 id="51-theo-into-theopin-1-posts">51. THEO..INTO <code v-pre>@theopin</code> (1 posts)<a class="fa fa-anchor" href="#51-theo-into-theopin-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/94" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Request to use default text editor to edit files</strong></p>
+              </template>
+              <p>Are we allowed to use a default text editor such as notepad to edit files by calling methods from the import java.awt. library?</p>
             </panel>
           </panel>
-          <panel type="info" collapsed id="48-tang-you-zhi-you-1-posts"><template slot="_header">
-              <h3 id="48-tang-you-zhi-you-1-posts">48. TANG.. YOU <code v-pre>@Zhi-You</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="52-sean-iang-aseanseen-1-posts"><template slot="_header">
+              <h3 id="52-sean-iang-aseanseen-1-posts">52. SEAN..IANG <code v-pre>@Aseanseen</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#48-tang-you-zhi-you-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#52-sean-iang-aseanseen-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/92" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Requesting Permission to use NUSMods API</strong></p>
+              </template>
+              <h2 id="library-11">Library<a class="fa fa-anchor" href="#library-11" onclick="event.stopPropagation()"></a></h2>
+              <p><a href="https://api.nusmods.com/v2/">NUSMods API</a></p>
+              <h2 id="purpose-11">Purpose<a class="fa fa-anchor" href="#purpose-11" onclick="event.stopPropagation()"></a></h2>
+              <p>We would like to use NUSMods API to check the existence of the module that is entered by the user.</p>
+              <h2 id="license-11">License<a class="fa fa-anchor" href="#license-11" onclick="event.stopPropagation()"></a></h2>
+              <p>MIT License</p>
+              <p><a href="https://github.com/nusmodifications/nusmods">https://github.com/nusmodifications/nusmods</a></p>
+            </panel>
+          </panel>
+          <panel type="info" collapsed id="53-tang-you-zhi-you-1-posts"><template slot="_header">
+              <h3 id="53-tang-you-zhi-you-1-posts">53. TANG.. YOU <code v-pre>@Zhi-You</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
+                  </svg></span><a class="fa fa-anchor" href="#53-tang-you-zhi-you-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/77#issuecomment-703232723" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -3045,8 +3361,8 @@
               <p><a href="https://stackoverflow.com/questions/8093230/why-are-java-constants-declared-static#:~:text=If%20a%20constant%20is%20not,of%20the%20constant%20per%20object">StackOverflow (see the comment with 104 upvotes)</a></p>
             </panel>
           </panel>
-          <panel type="info" collapsed id="49-sim-you-f0fz-1-posts"><template slot="_header">
-              <h3 id="49-sim-you-f0fz-1-posts">49. SIM .. YOU <code v-pre>@f0fz</code> (1 posts)<a class="fa fa-anchor" href="#49-sim-you-f0fz-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="54-sim-you-f0fz-1-posts"><template slot="_header">
+              <h3 id="54-sim-you-f0fz-1-posts">54. SIM .. YOU <code v-pre>@f0fz</code> (1 posts)<a class="fa fa-anchor" href="#54-sim-you-f0fz-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/49" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Progress Dashboard not detecting A-Jar tag/release</strong></p>
@@ -3057,10 +3373,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="50-jeri-quan-jerichochua-1-posts"><template slot="_header">
-              <h3 id="50-jeri-quan-jerichochua-1-posts">50. JERI..QUAN <code v-pre>@jerichochua</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="55-jeri-quan-jerichochua-1-posts"><template slot="_header">
+              <h3 id="55-jeri-quan-jerichochua-1-posts">55. JERI..QUAN <code v-pre>@jerichochua</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#50-jeri-quan-jerichochua-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#55-jeri-quan-jerichochua-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/52#issuecomment-693130427" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -3070,10 +3386,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="51-marc-tan-marcursor-1-posts"><template slot="_header">
-              <h3 id="51-marc-tan-marcursor-1-posts">51. MARC.. TAN <code v-pre>@marcursor</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="56-marc-tan-marcursor-1-posts"><template slot="_header">
+              <h3 id="56-marc-tan-marcursor-1-posts">56. MARC.. TAN <code v-pre>@marcursor</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#51-marc-tan-marcursor-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#56-marc-tan-marcursor-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/80#issuecomment-705337573" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -3083,10 +3399,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="52-tan-bias-tobiasceg-1-posts"><template slot="_header">
-              <h3 id="52-tan-bias-tobiasceg-1-posts">52. TAN ..BIAS <code v-pre>@tobiasceg</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="57-tan-bias-tobiasceg-1-posts"><template slot="_header">
+              <h3 id="57-tan-bias-tobiasceg-1-posts">57. TAN ..BIAS <code v-pre>@tobiasceg</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#52-tan-bias-tobiasceg-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#57-tan-bias-tobiasceg-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/26#issuecomment-683304118" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -3096,10 +3412,35 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="53-matt-gani-matthewgani-1-posts"><template slot="_header">
-              <h3 id="53-matt-gani-matthewgani-1-posts">53. MATT..GANI <code v-pre>@matthewgani</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="58-ener-illa-johan9se-1-posts"><template slot="_header">
+              <h3 id="58-ener-illa-johan9se-1-posts">58. ENER..ILLA <code v-pre>@johan9se</code> (1 posts)<a class="fa fa-anchor" href="#58-ener-illa-johan9se-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/93" expanded><template slot="_header">
+                <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Request permission to use Jansi</strong></p>
+              </template>
+              <h2 id="library-12">Library<a class="fa fa-anchor" href="#library-12" onclick="event.stopPropagation()"></a></h2>
+              <p><a href="https://github.com/fusesource/jansi">Jansi</a></p>
+              <h2 id="purpose-12">Purpose<a class="fa fa-anchor" href="#purpose-12" onclick="event.stopPropagation()"></a></h2>
+              <p>To allow colourisation for text outputs in the windows CMD terminal.</p>
+              <h2 id="license-12">License<a class="fa fa-anchor" href="#license-12" onclick="event.stopPropagation()"></a></h2>
+              <p>Apache-2.0 License - <a href="https://github.com/fusesource/jansi">https://github.com/fusesource/jansi</a></p>
+            </panel>
+          </panel>
+          <panel type="info" collapsed id="59-zhua-gjin-lee-juntong-1-posts"><template slot="_header">
+              <h3 id="59-zhua-gjin-lee-juntong-1-posts">59. ZHUA..GJIN <code v-pre>@Lee-Juntong</code> (1 posts)<a class="fa fa-anchor" href="#59-zhua-gjin-lee-juntong-1-posts" onclick="event.stopPropagation()"></a></h3>
+            </template>
+            <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/48#issuecomment-708495452" expanded><template slot="_header">
+                <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
+              </template>
+              <p>I faced the same problem. The expected is the same as the actual, so quite confusing
+              </p>
+            </panel>
+            <p></p>
+          </panel>
+          <panel type="info" collapsed id="60-matt-gani-matthewgani-1-posts"><template slot="_header">
+              <h3 id="60-matt-gani-matthewgani-1-posts">60. MATT..GANI <code v-pre>@matthewgani</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#53-matt-gani-matthewgani-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#60-matt-gani-matthewgani-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/17" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> IP Level-3 Question</strong></p>
@@ -3110,10 +3451,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="54-ni-y-ilun-lunzard-1-posts"><template slot="_header">
-              <h3 id="54-ni-y-ilun-lunzard-1-posts">54. NI Y..ILUN <code v-pre>@lunzard</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="61-ni-y-ilun-lunzard-1-posts"><template slot="_header">
+              <h3 id="61-ni-y-ilun-lunzard-1-posts">61. NI Y..ILUN <code v-pre>@lunzard</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#54-ni-y-ilun-lunzard-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#61-ni-y-ilun-lunzard-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/6" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Individual Project: updates in iP progress dashboard</strong></p>
@@ -3124,10 +3465,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="55-mooi-cene-chuckiex3-1-posts"><template slot="_header">
-              <h3 id="55-mooi-cene-chuckiex3-1-posts">55. MOOI..CENE <code v-pre>@chuckiex3</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="62-mooi-cene-chuckiex3-1-posts"><template slot="_header">
+              <h3 id="62-mooi-cene-chuckiex3-1-posts">62. MOOI..CENE <code v-pre>@chuckiex3</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#55-mooi-cene-chuckiex3-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#62-mooi-cene-chuckiex3-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/47#issuecomment-694308866" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -3137,10 +3478,10 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="56-yen-fang-pinfang-1-posts"><template slot="_header">
-              <h3 id="56-yen-fang-pinfang-1-posts">56. YEN ..FANG <code v-pre>@pinfang</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
+          <panel type="info" collapsed id="63-yen-fang-pinfang-1-posts"><template slot="_header">
+              <h3 id="63-yen-fang-pinfang-1-posts">63. YEN ..FANG <code v-pre>@pinfang</code> (1 posts) <span class="text-warning"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-eye" aria-hidden="true">
                     <path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z" />
-                  </svg></span><a class="fa fa-anchor" href="#56-yen-fang-pinfang-1-posts" onclick="event.stopPropagation()"></a></h3>
+                  </svg></span><a class="fa fa-anchor" href="#63-yen-fang-pinfang-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/80#issuecomment-706470309" expanded><template slot="_header">
                 <p><strong>1 <span aria-hidden="true" class="fas fa-comment"></span></strong></p>
@@ -3150,8 +3491,8 @@
             </panel>
             <p></p>
           </panel>
-          <panel type="info" collapsed id="57-wang-song-wgzesg-1-posts"><template slot="_header">
-              <h3 id="57-wang-song-wgzesg-1-posts">57. WANG..SONG <code v-pre>@wgzesg</code> (1 posts)<a class="fa fa-anchor" href="#57-wang-song-wgzesg-1-posts" onclick="event.stopPropagation()"></a></h3>
+          <panel type="info" collapsed id="64-wang-song-wgzesg-1-posts"><template slot="_header">
+              <h3 id="64-wang-song-wgzesg-1-posts">64. WANG..SONG <code v-pre>@wgzesg</code> (1 posts)<a class="fa fa-anchor" href="#64-wang-song-wgzesg-1-posts" onclick="event.stopPropagation()"></a></h3>
             </template>
             <panel popup-url="https://github.com/nus-cs2113-AY2021S1/forum/issues/46" expanded><template slot="_header">
                 <p><strong>1. <span aria-hidden="true" class="fas fa-info-circle"></span> Use a .csv file to store data</strong></p>
@@ -3170,63 +3511,70 @@
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#forum-activities-dashboard">Forum activities dashboard&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#1-neil-rjee-neilbaner-30-posts">1. NEIL..RJEE @neilbaner (30 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#1-neil-rjee-neilbaner-40-posts">1. NEIL..RJEE @neilbaner (40 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#2-wang-qin-wangqinnick-29-posts">2. WANG.. QIN @wangqinNick (29 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#3-wira-hmad-hughjazzman-20-posts">3. WIRA..HMAD @hughjazzman (20 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#3-wira-hmad-hughjazzman-25-posts">3. WIRA..HMAD @hughjazzman (25 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#4-teoh-iang-zhixiangteoh-17-posts">4. TEOH..IANG @zhixiangteoh (17 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#5-adi-nata-adinata15-16-posts">5. ADI ..NATA @adinata15 (16 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#6-heng-yuen-hengfuyuen-14-posts">6. HENG..YUEN @HengFuYuen (14 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#7-king-iang-kstonekuan-11-posts">7. KING..IANG @kstonekuan (11 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#8-feli-alim-felixhalim-8-posts">8. FELI..ALIM @felixhalim (8 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#9-dani-oong-daniellimws-7-posts">9. DANI..OONG @daniellimws (7 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#6-heng-yuen-hengfuyuen-15-posts">6. HENG..YUEN @HengFuYuen (15 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#7-king-iang-kstonekuan-12-posts">7. KING..IANG @kstonekuan (12 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#8-dani-oong-daniellimws-8-posts">8. DANI..OONG @daniellimws (8 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#9-feli-alim-felixhalim-8-posts">9. FELI..ALIM @felixhalim (8 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#10-ng-n-olin-colin386-7-posts">10. NG N..OLIN @Colin386 (7 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#11-zhan-ukai-zsk612-6-posts">11. ZHAN..UKAI @zsk612 (6 posts)&#x200E;</a>
               <a class="nav-link py-1" href="#12-low-ning-ninggggx99-6-posts">12. LOW ..NING @ninggggx99 (6 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#13-shre-umar-shreytheshreyas-6-posts">13. SHRE..UMAR @shreytheshreyas (6 posts) &#x200E;</a>
               <a class="nav-link py-1" href="#14-chan-iang-scjx123-5-posts">14. CHAN..IANG @scjx123 (5 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#15-zhao-iang-e0426051-5-posts">15. ZHAO..IANG @e0426051 (5 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#16-guni-ttal-gmit22-5-posts">16. GUNI..TTAL @gmit22 (5 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#17-muha-wala-muhammadhoze-4-posts">17. MUHA..WALA @MuhammadHoze (4 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#18-chen-jun-iamchenjiajun-4-posts">18. CHEN.. JUN @iamchenjiajun (4 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#19-li-b-zhao-tomlbz-4-posts">19. LI B..ZHAO @TomLBZ (4 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#20-tang-ting-t170815518-4-posts">20. TANG..TING @t170815518 (4 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#21-dani-jie-daniellimzj-4-posts">21. DANI..-JIE @daniellimzj (4 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#22-wong-wei-keke101-4-posts">22. WONG.. WEI @keke101 (4 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#23-lim-bing-farice9-4-posts">23. LIM ..BING @farice9 (4 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#24-marc-yong-reinbowl-4-posts">24. MARC..YONG @Reinbowl (4 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#25-neo-ern-neojiaern-4-posts">25. NEO .. ERN @neojiaern (4 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#26-tan-elia-ameliatyr-4-posts">26. TAN ..ELIA @AmeliaTYR (4 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#27-r-ra-mana-r-ramana-3-posts">27. R RA..MANA @R-Ramana (3 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#28-riaz-amed-riazaham-3-posts">28. RIAZ..AMED @riazaham (3 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#29-andr-hua-andrewongzh-3-posts">29. ANDR.. HUA @AndreWongZH (3 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#30-chan-hao-chanjianhao-3-posts">30. CHAN.. HAO @ChanJianHao (3 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#31-lam-rold-jerroldlam-3-posts">31. LAM ..ROLD @jerroldlam (3 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#32-low-leon-leonlowzd-2-posts">32. LOW ..LEON @leonlowzd (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#33-prac-enka-prachi2023-2-posts">33. PRAC..ENKA @prachi2023 (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#34-alvi-jun-trolommonm-2-posts">34. ALVI.. JUN @trolommonm (2 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#35-brya-jun-bryanbeh1998-2-posts">35. BRYA.. JUN @Bryanbeh1998 (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#36-nguy-long-longngng-2-posts">36. NGUY..LONG @longngng (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#37-wu-y-uxin-lezn0-2-posts">37. WU Y..UXIN @Lezn0 (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#38-liu-feng-liu-yifeng-1-2-posts">38. LIU ..FENG @LIU-YiFeng-1 (2 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#39-lim-g-le-limgl1998-2-posts">39. LIM ..G LE @limgl1998 (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#40-yu-g-geng-gy716-2-posts">40. YU G..GENG @gy716 (2 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#41-ang-yang-acyang97-1-posts">41. ANG ..YANG @acyang97 (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#42-tan-wei-tanleewei-1-posts">42. TAN .. WEI @TanLeeWei (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#43-liau-jie-kaijiel24-1-posts">43. LIAU.. JIE @kaijiel24 (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#44-ang-jun-ang-cheng-jun-1-posts">44. ANG .. JUN @Ang-Cheng-Jun (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#45-yeow-ndon-brandonywl-1-posts">45. YEOW..NDON @brandonywl (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#46-chan-jing-shaojingle-1-posts">46. CHAN..JING @shaojingle (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#47-danz-hern-dojh111-1-posts">47. DANZ..HERN @dojh111 (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#48-tang-you-zhi-you-1-posts">48. TANG.. YOU @Zhi-You (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#49-sim-you-f0fz-1-posts">49. SIM .. YOU @f0fz (1 posts)&#x200E;</a>
-              <a class="nav-link py-1" href="#50-jeri-quan-jerichochua-1-posts">50. JERI..QUAN @jerichochua (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#51-marc-tan-marcursor-1-posts">51. MARC.. TAN @marcursor (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#52-tan-bias-tobiasceg-1-posts">52. TAN ..BIAS @tobiasceg (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#53-matt-gani-matthewgani-1-posts">53. MATT..GANI @matthewgani (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#54-ni-y-ilun-lunzard-1-posts">54. NI Y..ILUN @lunzard (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#55-mooi-cene-chuckiex3-1-posts">55. MOOI..CENE @chuckiex3 (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#56-yen-fang-pinfang-1-posts">56. YEN ..FANG @pinfang (1 posts) &#x200E;</a>
-              <a class="nav-link py-1" href="#57-wang-song-wgzesg-1-posts">57. WANG..SONG @wgzesg (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#15-wong-wei-keke101-5-posts">15. WONG.. WEI @keke101 (5 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#16-zhao-iang-e0426051-5-posts">16. ZHAO..IANG @e0426051 (5 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#17-guni-ttal-gmit22-5-posts">17. GUNI..TTAL @gmit22 (5 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#18-muha-wala-muhammadhoze-4-posts">18. MUHA..WALA @MuhammadHoze (4 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#19-chen-jun-iamchenjiajun-4-posts">19. CHEN.. JUN @iamchenjiajun (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#20-li-b-zhao-tomlbz-4-posts">20. LI B..ZHAO @TomLBZ (4 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#21-tang-ting-t170815518-4-posts">21. TANG..TING @t170815518 (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#22-andr-hua-andrewongzh-4-posts">22. ANDR.. HUA @AndreWongZH (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#23-dani-jie-daniellimzj-4-posts">23. DANI..-JIE @daniellimzj (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#24-lim-bing-farice9-4-posts">24. LIM ..BING @farice9 (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#25-marc-yong-reinbowl-4-posts">25. MARC..YONG @Reinbowl (4 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#26-neo-ern-neojiaern-4-posts">26. NEO .. ERN @neojiaern (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#27-tan-elia-ameliatyr-4-posts">27. TAN ..ELIA @AmeliaTYR (4 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#28-r-ra-mana-r-ramana-3-posts">28. R RA..MANA @R-Ramana (3 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#29-chon-iang-chongjx-3-posts">29. CHON..IANG @Chongjx (3 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#30-alvi-jun-trolommonm-3-posts">30. ALVI.. JUN @trolommonm (3 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#31-riaz-amed-riazaham-3-posts">31. RIAZ..AMED @riazaham (3 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#32-danz-hern-dojh111-3-posts">32. DANZ..HERN @dojh111 (3 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#33-chan-hao-chanjianhao-3-posts">33. CHAN.. HAO @ChanJianHao (3 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#34-lam-rold-jerroldlam-3-posts">34. LAM ..ROLD @jerroldlam (3 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#35-yu-g-geng-gy716-3-posts">35. YU G..GENG @gy716 (3 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#36-low-leon-leonlowzd-2-posts">36. LOW ..LEON @leonlowzd (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#37-prac-enka-prachi2023-2-posts">37. PRAC..ENKA @prachi2023 (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#38-jazh-shen-jazhten-2-posts">38. JAZH..SHEN @jazhten (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#39-brya-jun-bryanbeh1998-2-posts">39. BRYA.. JUN @Bryanbeh1998 (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#40-nguy-long-longngng-2-posts">40. NGUY..LONG @longngng (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#41-wu-y-uxin-lezn0-2-posts">41. WU Y..UXIN @Lezn0 (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#42-liu-feng-liu-yifeng-1-2-posts">42. LIU ..FENG @LIU-YiFeng-1 (2 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#43-lim-g-le-limgl1998-2-posts">43. LIM ..G LE @limgl1998 (2 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#44-ang-yang-acyang97-1-posts">44. ANG ..YANG @acyang97 (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#45-tan-wei-tanleewei-1-posts">45. TAN .. WEI @TanLeeWei (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#46-liau-jie-kaijiel24-1-posts">46. LIAU.. JIE @kaijiel24 (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#47-ang-jun-ang-cheng-jun-1-posts">47. ANG .. JUN @Ang-Cheng-Jun (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#48-yeow-ndon-brandonywl-1-posts">48. YEOW..NDON @brandonywl (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#49-chan-jing-shaojingle-1-posts">49. CHAN..JING @shaojingle (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#50-sean-i-an-thatseant-1-posts">50. SEAN..I AN @thatseant (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#51-theo-into-theopin-1-posts">51. THEO..INTO @theopin (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#52-sean-iang-aseanseen-1-posts">52. SEAN..IANG @Aseanseen (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#53-tang-you-zhi-you-1-posts">53. TANG.. YOU @Zhi-You (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#54-sim-you-f0fz-1-posts">54. SIM .. YOU @f0fz (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#55-jeri-quan-jerichochua-1-posts">55. JERI..QUAN @jerichochua (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#56-marc-tan-marcursor-1-posts">56. MARC.. TAN @marcursor (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#57-tan-bias-tobiasceg-1-posts">57. TAN ..BIAS @tobiasceg (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#58-ener-illa-johan9se-1-posts">58. ENER..ILLA @johan9se (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#59-zhua-gjin-lee-juntong-1-posts">59. ZHUA..GJIN @Lee-Juntong (1 posts)&#x200E;</a>
+              <a class="nav-link py-1" href="#60-matt-gani-matthewgani-1-posts">60. MATT..GANI @matthewgani (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#61-ni-y-ilun-lunzard-1-posts">61. NI Y..ILUN @lunzard (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#62-mooi-cene-chuckiex3-1-posts">62. MOOI..CENE @chuckiex3 (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#63-yen-fang-pinfang-1-posts">63. YEN ..FANG @pinfang (1 posts) &#x200E;</a>
+              <a class="nav-link py-1" href="#64-wang-song-wgzesg-1-posts">64. WANG..SONG @wgzesg (1 posts)&#x200E;</a>
             </nav>
 
           </nav>
@@ -3236,7 +3584,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Fri, 16 Oct 2020, 23:24:52 GMT+8]</small>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sat, 17 Oct 2020, 14:34:48 GMT+8]</small>
       </div>
     </footer>
   </div>
